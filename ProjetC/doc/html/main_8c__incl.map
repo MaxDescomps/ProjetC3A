@@ -1,0 +1,23 @@
+<map id="main.c" name="main.c">
+<area shape="rect" id="node1" title="Programme principal du jeu." alt="" coords="335,5,401,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,72,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="97,80,167,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="192,80,267,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="291,80,355,107"/>
+<area shape="rect" id="node6" href="$erreur_8h.html" title="Fichier contenant toutes les déclarations concernant les erreurs." alt="" coords="379,80,451,107"/>
+<area shape="rect" id="node7" href="$affichage_8h.html" title="Fichier contenant les déclarations des fonctions d&#39;affichage." alt="" coords="605,80,699,107"/>
+<area shape="rect" id="node20" href="$tir_8h.html" title="Fichier contenant toutes les déclarations concernant le tir." alt="" coords="466,155,513,181"/>
+<area shape="rect" id="node21" href="$jeu_8h.html" title="Fichier contenant toutes les déclarations concernant le jeu." alt="" coords="526,80,581,107"/>
+<area shape="rect" id="node8" href="$perso_8h.html" title="Fichier contenant toutes les déclarations concernant le personnage." alt="" coords="590,155,661,181"/>
+<area shape="rect" id="node9" href="$inventaire_8h.html" title="Fichier contenant toutes les déclarations concernant l&#39;inventaire." alt="" coords="610,229,710,256"/>
+<area shape="rect" id="node13" href="$carte_8h.html" title="Fichier contenant toutes les déclarations concernant la carte." alt="" coords="519,229,585,256"/>
+<area shape="rect" id="node10" href="$item_8h.html" title="Fichier contenant toutes les déclarations concernant les items." alt="" coords="628,379,692,405"/>
+<area shape="rect" id="node11" title=" " alt="" coords="638,453,722,480"/>
+<area shape="rect" id="node12" href="$matiere_8h.html" title="Fichier contenant les déclarations des matières." alt="" coords="528,453,613,480"/>
+<area shape="rect" id="node14" href="$mob_8h.html" title="Fichier contenant toutes les déclarations concernant les mobs." alt="" coords="453,304,515,331"/>
+<area shape="rect" id="node19" href="$coffre_8h.html" title="Fichier contenant toutes les déclarations communes aux coffres." alt="" coords="539,304,610,331"/>
+<area shape="rect" id="node15" href="$entite_8h.html" title="Fichier contenant toutes les déclarations communes aux entités." alt="" coords="436,379,508,405"/>
+<area shape="rect" id="node18" href="$menu_8h.html" title="Fichier contenant toutes les déclarations concernant les menus." alt="" coords="533,379,603,405"/>
+<area shape="rect" id="node16" href="$coord_8h.html" title="Fichier contenant les déclarations sur les coordonnées servant à résoudre un conflit d&#39;inclusion mutu..." alt="" coords="346,453,417,480"/>
+<area shape="rect" id="node17" href="$liste_8h.html" title="Déclarations relatives au type de structure liste générique." alt="" coords="441,453,503,480"/>
+</map>

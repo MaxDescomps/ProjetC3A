@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ProjetC:  Fichier source de item.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ProjetC
+   &#160;<span id="projectnumber">Projet C de 3A à l&#39;ESIEA</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">item.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="item_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;ncurses.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="matiere_8h.html">matiere.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="item_8h.html#a54f57d77ae5f656b3247eaf463ce76ee">   18</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> <a class="code" href="item_8h.html#a54f57d77ae5f656b3247eaf463ce76ee">itemType_s</a>{</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="item_8h.html#a54f57d77ae5f656b3247eaf463ce76eea067e3c952f95ec3b88e28baca8fce648">   19</a></span>&#160;    <a class="code" href="item_8h.html#a54f57d77ae5f656b3247eaf463ce76eea067e3c952f95ec3b88e28baca8fce648">NOTYPE</a>, </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="item_8h.html#a54f57d77ae5f656b3247eaf463ce76eeaabec81083b94f521744e24a37ca23657">   20</a></span>&#160;    <a class="code" href="item_8h.html#a54f57d77ae5f656b3247eaf463ce76eeaabec81083b94f521744e24a37ca23657">BLOC</a>, </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="item_8h.html#a54f57d77ae5f656b3247eaf463ce76eea67c496eee7e7349709db95f918460093">   21</a></span>&#160;    <a class="code" href="item_8h.html#a54f57d77ae5f656b3247eaf463ce76eea67c496eee7e7349709db95f918460093">ARME</a>, </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="item_8h.html#a54f57d77ae5f656b3247eaf463ce76eea8bc09035b2ca527fff0d247e405a76bd">   22</a></span>&#160;    <a class="code" href="item_8h.html#a54f57d77ae5f656b3247eaf463ce76eea8bc09035b2ca527fff0d247e405a76bd">CONSO</a>, </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="item_8h.html#a9da4042a096d752e77b7551cd48d4439">   23</a></span>&#160;}<a class="code" href="item_8h.html#a9da4042a096d752e77b7551cd48d4439">itemType_t</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="structitem__s.html">   29</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structitem__s.html">item_s</a>{</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="structitem__s.html#a67636ac328c8cccde295ad4771578ee3">   30</a></span>&#160;    <span class="keywordtype">char</span> <a class="code" href="structitem__s.html#a67636ac328c8cccde295ad4771578ee3">affCase</a>; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="structitem__s.html#a294dbb442de5d54514d8f423e86cb636">   31</a></span>&#160;    <a class="code" href="matiere_8h.html#a4c76c4372ca38d2897b2551c3136fd95">matiere_t</a> <a class="code" href="structitem__s.html#a294dbb442de5d54514d8f423e86cb636">couleur</a>; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="structitem__s.html#a6efbf089d27f43965c442aa2120eaa44">   32</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structitem__s.html#a6efbf089d27f43965c442aa2120eaa44">acces</a>; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="item_8h.html#a39fa0e97dea0645c57b7e7b0d0014ac4">   33</a></span>&#160;}<a class="code" href="item_8h.html#a39fa0e97dea0645c57b7e7b0d0014ac4">item_t</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="structconso__s.html">   39</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structconso__s.html">conso_s</a>{</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="structconso__s.html#ab0685e7a41612e8e9e916997e79c57fe">   40</a></span>&#160;    <span class="keywordtype">char</span> <a class="code" href="structconso__s.html#ab0685e7a41612e8e9e916997e79c57fe">affCase</a>; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="structconso__s.html#acd26234103935a57bb191bb9dc12acc6">   41</a></span>&#160;    <a class="code" href="matiere_8h.html#a4c76c4372ca38d2897b2551c3136fd95">matiere_t</a> <a class="code" href="structconso__s.html#acd26234103935a57bb191bb9dc12acc6">couleur</a>; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="structconso__s.html#a0c0a49054746ce4e934b6fea0af7b651">   42</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structconso__s.html#a0c0a49054746ce4e934b6fea0af7b651">acces</a>; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structconso__s.html#a99dd60f33faf5399261c359a17c29a11">   43</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structconso__s.html#a99dd60f33faf5399261c359a17c29a11">soin</a>; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="item_8h.html#a822bbdc95db49f907b0229c212564d4f">   44</a></span>&#160;}<a class="code" href="item_8h.html#a822bbdc95db49f907b0229c212564d4f">conso_t</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="structarme__s.html">   50</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structarme__s.html">arme_s</a>{</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="structarme__s.html#a2fa4055b53d2fee96ccacafbcee7c48a">   51</a></span>&#160;    <span class="keywordtype">char</span> <a class="code" href="structarme__s.html#a2fa4055b53d2fee96ccacafbcee7c48a">affCase</a>; </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="structarme__s.html#a156b60da5f073a3c5b72d5a9c47cb84c">   52</a></span>&#160;    <a class="code" href="matiere_8h.html#a4c76c4372ca38d2897b2551c3136fd95">matiere_t</a> <a class="code" href="structarme__s.html#a156b60da5f073a3c5b72d5a9c47cb84c">couleur</a>; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="structarme__s.html#a4b9d8916588bc573de2e1cad061c7592">   53</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structarme__s.html#a4b9d8916588bc573de2e1cad061c7592">acces</a>; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="structarme__s.html#a1d920bff1edd10f16c6fb359715c5e44">   54</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structarme__s.html#a1d920bff1edd10f16c6fb359715c5e44">att</a>; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="item_8h.html#a2cef8ad3151bbf5cc647a1149b3209bc">   55</a></span>&#160;}<a class="code" href="item_8h.html#a2cef8ad3151bbf5cc647a1149b3209bc">arme_t</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<a class="code" href="structitem__s.html">item_t</a>* <a class="code" href="item_8h.html#ac5024dbd3d658f98599a267dec08cde8">creerItem</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">void</span> <a class="code" href="item_8h.html#a809c118b9a076e43223a217d3a851ed1">detruireItem</a>(<a class="code" href="structitem__s.html">item_t</a>** item);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keywordtype">void</span> <a class="code" href="item_8h.html#a05f6009173271fe3e43ad549ea1b38d0">detruireItemCb</a>(<span class="keywordtype">void</span>* item);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<a class="code" href="structitem__s.html">item_t</a>* <a class="code" href="item_8h.html#a34353ef7c6dccaca2456a061b8187cef">ajoutItem</a>(<a class="code" href="structitem__s.html">item_t</a>* item);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keywordtype">void</span>* <a class="code" href="item_8h.html#a20b8fdc4cf3b9b7de2e5b700a6188790">ajoutItemCb</a>(<span class="keywordtype">void</span>* item);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<a class="code" href="structconso__s.html">conso_t</a>* <a class="code" href="item_8h.html#a6c25a1208515e0371a61ff175a572a0c">creerConso</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keywordtype">void</span> <a class="code" href="item_8h.html#addf8209a091a97135b2b6c92663390d1">afficherItem</a>(WINDOW* w, <a class="code" href="structitem__s.html">item_t</a>* item);</div>
+<div class="ttc" id="aitem_8h_html_a05f6009173271fe3e43ad549ea1b38d0"><div class="ttname"><a href="item_8h.html#a05f6009173271fe3e43ad549ea1b38d0">detruireItemCb</a></div><div class="ttdeci">void detruireItemCb(void *item)</div><div class="ttdoc">Fonction de callback pour détruire un item.</div><div class="ttdef"><b>Definition:</b> item.c:46</div></div>
+<div class="ttc" id="aitem_8h_html_a20b8fdc4cf3b9b7de2e5b700a6188790"><div class="ttname"><a href="item_8h.html#a20b8fdc4cf3b9b7de2e5b700a6188790">ajoutItemCb</a></div><div class="ttdeci">void * ajoutItemCb(void *item)</div><div class="ttdoc">Fonction de callback d'ajout d'item pour liste doublement chaînée.</div><div class="ttdef"><b>Definition:</b> item.c:54</div></div>
+<div class="ttc" id="aitem_8h_html_a2cef8ad3151bbf5cc647a1149b3209bc"><div class="ttname"><a href="item_8h.html#a2cef8ad3151bbf5cc647a1149b3209bc">arme_t</a></div><div class="ttdeci">struct arme_s arme_t</div><div class="ttdoc">Structure contenant les propiétées d'une arme.</div></div>
+<div class="ttc" id="aitem_8h_html_a34353ef7c6dccaca2456a061b8187cef"><div class="ttname"><a href="item_8h.html#a34353ef7c6dccaca2456a061b8187cef">ajoutItem</a></div><div class="ttdeci">item_t * ajoutItem(item_t *item)</div><div class="ttdoc">Ajout d'item pour liste doublement chaînée.</div><div class="ttdef"><b>Definition:</b> item.c:50</div></div>
+<div class="ttc" id="aitem_8h_html_a39fa0e97dea0645c57b7e7b0d0014ac4"><div class="ttname"><a href="item_8h.html#a39fa0e97dea0645c57b7e7b0d0014ac4">item_t</a></div><div class="ttdeci">struct item_s item_t</div><div class="ttdoc">Structure contenant les propiétées d'un item.</div></div>
+<div class="ttc" id="aitem_8h_html_a54f57d77ae5f656b3247eaf463ce76ee"><div class="ttname"><a href="item_8h.html#a54f57d77ae5f656b3247eaf463ce76ee">itemType_s</a></div><div class="ttdeci">itemType_s</div><div class="ttdoc">Le type d'item.</div><div class="ttdef"><b>Definition:</b> item.h:18</div></div>
+<div class="ttc" id="aitem_8h_html_a54f57d77ae5f656b3247eaf463ce76eea067e3c952f95ec3b88e28baca8fce648"><div class="ttname"><a href="item_8h.html#a54f57d77ae5f656b3247eaf463ce76eea067e3c952f95ec3b88e28baca8fce648">NOTYPE</a></div><div class="ttdeci">@ NOTYPE</div><div class="ttdef"><b>Definition:</b> item.h:19</div></div>
+<div class="ttc" id="aitem_8h_html_a54f57d77ae5f656b3247eaf463ce76eea67c496eee7e7349709db95f918460093"><div class="ttname"><a href="item_8h.html#a54f57d77ae5f656b3247eaf463ce76eea67c496eee7e7349709db95f918460093">ARME</a></div><div class="ttdeci">@ ARME</div><div class="ttdef"><b>Definition:</b> item.h:21</div></div>
+<div class="ttc" id="aitem_8h_html_a54f57d77ae5f656b3247eaf463ce76eea8bc09035b2ca527fff0d247e405a76bd"><div class="ttname"><a href="item_8h.html#a54f57d77ae5f656b3247eaf463ce76eea8bc09035b2ca527fff0d247e405a76bd">CONSO</a></div><div class="ttdeci">@ CONSO</div><div class="ttdef"><b>Definition:</b> item.h:22</div></div>
+<div class="ttc" id="aitem_8h_html_a54f57d77ae5f656b3247eaf463ce76eeaabec81083b94f521744e24a37ca23657"><div class="ttname"><a href="item_8h.html#a54f57d77ae5f656b3247eaf463ce76eeaabec81083b94f521744e24a37ca23657">BLOC</a></div><div class="ttdeci">@ BLOC</div><div class="ttdef"><b>Definition:</b> item.h:20</div></div>
+<div class="ttc" id="aitem_8h_html_a6c25a1208515e0371a61ff175a572a0c"><div class="ttname"><a href="item_8h.html#a6c25a1208515e0371a61ff175a572a0c">creerConso</a></div><div class="ttdeci">conso_t * creerConso(void)</div><div class="ttdoc">Créé un consommable.</div><div class="ttdef"><b>Definition:</b> item.c:28</div></div>
+<div class="ttc" id="aitem_8h_html_a809c118b9a076e43223a217d3a851ed1"><div class="ttname"><a href="item_8h.html#a809c118b9a076e43223a217d3a851ed1">detruireItem</a></div><div class="ttdeci">void detruireItem(item_t **item)</div><div class="ttdoc">Détruit un item.</div><div class="ttdef"><b>Definition:</b> item.c:41</div></div>
+<div class="ttc" id="aitem_8h_html_a822bbdc95db49f907b0229c212564d4f"><div class="ttname"><a href="item_8h.html#a822bbdc95db49f907b0229c212564d4f">conso_t</a></div><div class="ttdeci">struct conso_s conso_t</div><div class="ttdoc">Structure contenant les propiétées d'un consommable.</div></div>
+<div class="ttc" id="aitem_8h_html_a9da4042a096d752e77b7551cd48d4439"><div class="ttname"><a href="item_8h.html#a9da4042a096d752e77b7551cd48d4439">itemType_t</a></div><div class="ttdeci">enum itemType_s itemType_t</div><div class="ttdoc">Le type d'item.</div></div>
+<div class="ttc" id="aitem_8h_html_ac5024dbd3d658f98599a267dec08cde8"><div class="ttname"><a href="item_8h.html#ac5024dbd3d658f98599a267dec08cde8">creerItem</a></div><div class="ttdeci">item_t * creerItem(void)</div><div class="ttdoc">Créé un item générique pour tests.</div><div class="ttdef"><b>Definition:</b> item.c:15</div></div>
+<div class="ttc" id="aitem_8h_html_addf8209a091a97135b2b6c92663390d1"><div class="ttname"><a href="item_8h.html#addf8209a091a97135b2b6c92663390d1">afficherItem</a></div><div class="ttdeci">void afficherItem(WINDOW *w, item_t *item)</div><div class="ttdoc">Affiche un item.</div><div class="ttdef"><b>Definition:</b> item.c:58</div></div>
+<div class="ttc" id="amatiere_8h_html"><div class="ttname"><a href="matiere_8h.html">matiere.h</a></div><div class="ttdoc">Fichier contenant les déclarations des matières.</div></div>
+<div class="ttc" id="amatiere_8h_html_a4c76c4372ca38d2897b2551c3136fd95"><div class="ttname"><a href="matiere_8h.html#a4c76c4372ca38d2897b2551c3136fd95">matiere_t</a></div><div class="ttdeci">matiere_t</div><div class="ttdoc">L'énumération des codes couleurs.</div><div class="ttdef"><b>Definition:</b> matiere.h:15</div></div>
+<div class="ttc" id="astructarme__s_html"><div class="ttname"><a href="structarme__s.html">arme_s</a></div><div class="ttdoc">Structure contenant les propiétées d'une arme.</div><div class="ttdef"><b>Definition:</b> item.h:50</div></div>
+<div class="ttc" id="astructarme__s_html_a156b60da5f073a3c5b72d5a9c47cb84c"><div class="ttname"><a href="structarme__s.html#a156b60da5f073a3c5b72d5a9c47cb84c">arme_s::couleur</a></div><div class="ttdeci">matiere_t couleur</div><div class="ttdef"><b>Definition:</b> item.h:52</div></div>
+<div class="ttc" id="astructarme__s_html_a1d920bff1edd10f16c6fb359715c5e44"><div class="ttname"><a href="structarme__s.html#a1d920bff1edd10f16c6fb359715c5e44">arme_s::att</a></div><div class="ttdeci">int att</div><div class="ttdef"><b>Definition:</b> item.h:54</div></div>
+<div class="ttc" id="astructarme__s_html_a2fa4055b53d2fee96ccacafbcee7c48a"><div class="ttname"><a href="structarme__s.html#a2fa4055b53d2fee96ccacafbcee7c48a">arme_s::affCase</a></div><div class="ttdeci">char affCase</div><div class="ttdef"><b>Definition:</b> item.h:51</div></div>
+<div class="ttc" id="astructarme__s_html_a4b9d8916588bc573de2e1cad061c7592"><div class="ttname"><a href="structarme__s.html#a4b9d8916588bc573de2e1cad061c7592">arme_s::acces</a></div><div class="ttdeci">int acces</div><div class="ttdef"><b>Definition:</b> item.h:53</div></div>
+<div class="ttc" id="astructconso__s_html"><div class="ttname"><a href="structconso__s.html">conso_s</a></div><div class="ttdoc">Structure contenant les propiétées d'un consommable.</div><div class="ttdef"><b>Definition:</b> item.h:39</div></div>
+<div class="ttc" id="astructconso__s_html_a0c0a49054746ce4e934b6fea0af7b651"><div class="ttname"><a href="structconso__s.html#a0c0a49054746ce4e934b6fea0af7b651">conso_s::acces</a></div><div class="ttdeci">int acces</div><div class="ttdef"><b>Definition:</b> item.h:42</div></div>
+<div class="ttc" id="astructconso__s_html_a99dd60f33faf5399261c359a17c29a11"><div class="ttname"><a href="structconso__s.html#a99dd60f33faf5399261c359a17c29a11">conso_s::soin</a></div><div class="ttdeci">int soin</div><div class="ttdef"><b>Definition:</b> item.h:43</div></div>
+<div class="ttc" id="astructconso__s_html_ab0685e7a41612e8e9e916997e79c57fe"><div class="ttname"><a href="structconso__s.html#ab0685e7a41612e8e9e916997e79c57fe">conso_s::affCase</a></div><div class="ttdeci">char affCase</div><div class="ttdef"><b>Definition:</b> item.h:40</div></div>
+<div class="ttc" id="astructconso__s_html_acd26234103935a57bb191bb9dc12acc6"><div class="ttname"><a href="structconso__s.html#acd26234103935a57bb191bb9dc12acc6">conso_s::couleur</a></div><div class="ttdeci">matiere_t couleur</div><div class="ttdef"><b>Definition:</b> item.h:41</div></div>
+<div class="ttc" id="astructitem__s_html"><div class="ttname"><a href="structitem__s.html">item_s</a></div><div class="ttdoc">Structure contenant les propiétées d'un item.</div><div class="ttdef"><b>Definition:</b> item.h:29</div></div>
+<div class="ttc" id="astructitem__s_html_a294dbb442de5d54514d8f423e86cb636"><div class="ttname"><a href="structitem__s.html#a294dbb442de5d54514d8f423e86cb636">item_s::couleur</a></div><div class="ttdeci">matiere_t couleur</div><div class="ttdef"><b>Definition:</b> item.h:31</div></div>
+<div class="ttc" id="astructitem__s_html_a67636ac328c8cccde295ad4771578ee3"><div class="ttname"><a href="structitem__s.html#a67636ac328c8cccde295ad4771578ee3">item_s::affCase</a></div><div class="ttdeci">char affCase</div><div class="ttdef"><b>Definition:</b> item.h:30</div></div>
+<div class="ttc" id="astructitem__s_html_a6efbf089d27f43965c442aa2120eaa44"><div class="ttname"><a href="structitem__s.html#a6efbf089d27f43965c442aa2120eaa44">item_s::acces</a></div><div class="ttdeci">int acces</div><div class="ttdef"><b>Definition:</b> item.h:32</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

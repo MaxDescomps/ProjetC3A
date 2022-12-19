@@ -1,0 +1,4 @@
+<map id="invCase_t" name="invCase_t">
+<area shape="rect" id="node1" title="Structure contenant les propiétées d&#39;une case d&#39;inventaire." alt="" coords="5,95,92,121"/>
+<area shape="rect" id="node2" href="$structitem__s.html" title="Structure contenant les propiétées d&#39;un item." alt="" coords="15,5,82,32"/>
+</map>

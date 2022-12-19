@@ -1,0 +1,68 @@
+\hypertarget{entite_8c}{}\doxysection{Référence du fichier entite.\+c}
+\label{entite_8c}\index{entite.c@{entite.c}}
+
+
+Fonctions relatives au type de structure entite.  
+
+
+{\ttfamily \#include \char`\"{}entite.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}perso.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de entite.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{entite_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{entite_8c_aa442e91a42434f7f25776fc35971c9f1}{bouger\+Entite}} (\mbox{\hyperlink{coord_8h_ae9ae980041e438eed7a3af43ce4e9f6b}{direction\+\_\+t}} direction, \mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$carte, \mbox{\hyperlink{structentite__t}{entite\+\_\+t}} $\ast$entite, \mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$liste\+Tirs)
+\begin{DoxyCompactList}\small\item\em Déplace une entité \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Fonctions relatives au type de structure entite. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps (\href{mailto:descomps@et.esiea.fr}{\texttt{ descomps@et.\+esiea.\+fr}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+09/10/2022 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{entite_8c_aa442e91a42434f7f25776fc35971c9f1}\label{entite_8c_aa442e91a42434f7f25776fc35971c9f1}} 
+\index{entite.c@{entite.c}!bougerEntite@{bougerEntite}}
+\index{bougerEntite@{bougerEntite}!entite.c@{entite.c}}
+\doxysubsubsection{\texorpdfstring{bougerEntite()}{bougerEntite()}}
+{\footnotesize\ttfamily int bouger\+Entite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{coord_8h_ae9ae980041e438eed7a3af43ce4e9f6b}{direction\+\_\+t}}}]{direction,  }\item[{\mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$}]{carte,  }\item[{\mbox{\hyperlink{structentite__t}{entite\+\_\+t}} $\ast$}]{entite,  }\item[{\mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$}]{liste\+Tirs }\end{DoxyParamCaption})}
+
+
+
+Déplace une entité 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em direction} & La direction du déplacement \\
+\hline
+{\em carte} & La carte ou l\textquotesingle{}entité se déplace \\
+\hline
+{\em entite} & L\textquotesingle{}entité qui se déplace \\
+\hline
+{\em liste\+Tirs} & La liste des tirs \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+1 si l\textquotesingle{}entité à pu se déplacer, 0 sinon 
+\end{DoxyReturn}

@@ -1,0 +1,20 @@
+<map id="coffre.h" name="coffre.h">
+<area shape="rect" id="node1" title="Fichier contenant toutes les déclarations communes aux coffres." alt="" coords="388,5,459,32"/>
+<area shape="rect" id="node2" href="$carte_8h.html" title="Fichier contenant toutes les déclarations concernant la carte." alt="" coords="355,80,422,107"/>
+<area shape="rect" id="node17" href="$coffre_8c.html" title="Fonctions liées au module coffre." alt="" coords="500,155,571,181"/>
+<area shape="rect" id="node3" href="$jeu_8h.html" title="Fichier contenant toutes les déclarations concernant le jeu." alt="" coords="720,229,775,256"/>
+<area shape="rect" id="node4" href="$carte_8c.html" title="Fonctions liées au module carte." alt="" coords="135,304,202,331"/>
+<area shape="rect" id="node8" href="$perso_8h.html" title="Fichier contenant toutes les déclarations concernant le personnage." alt="" coords="353,155,424,181"/>
+<area shape="rect" id="node15" href="$tir_8h.html" title="Fichier contenant toutes les déclarations concernant le tir." alt="" coords="169,155,216,181"/>
+<area shape="rect" id="node18" href="$mob_8c.html" title="Fonctions liées au module mob." alt="" coords="83,155,145,181"/>
+<area shape="rect" id="node5" href="$jeu_8c.html" title="Fonctions liées au module jeu." alt="" coords="677,304,730,331"/>
+<area shape="rect" id="node6" href="$main_8c.html" title="Programme principal du jeu." alt="" coords="354,304,421,331"/>
+<area shape="rect" id="node7" href="$menu_8c.html" title="Fonctions liées au module menu." alt="" coords="755,304,825,331"/>
+<area shape="rect" id="node9" href="$affichage_8h.html" title="Fichier contenant les déclarations des fonctions d&#39;affichage." alt="" coords="288,229,383,256"/>
+<area shape="rect" id="node11" href="$coord_8c.html" title="Fonctions liées au module coord." alt="" coords="407,229,477,256"/>
+<area shape="rect" id="node12" href="$entite_8c.html" title="Fonctions relatives au type de structure entite." alt="" coords="501,229,572,256"/>
+<area shape="rect" id="node13" href="$inventaire_8c.html" title="Fonctions liées au module inventaire." alt="" coords="597,229,695,256"/>
+<area shape="rect" id="node14" href="$perso_8c.html" title="Fonctions liées au module perso." alt="" coords="194,229,263,256"/>
+<area shape="rect" id="node10" href="$affichage_8c.html" title="Fonctions liées au module affichage." alt="" coords="237,304,330,331"/>
+<area shape="rect" id="node16" href="$tir_8c.html" title="Fonctions liées au module tir." alt="" coords="21,229,68,256"/>
+</map>

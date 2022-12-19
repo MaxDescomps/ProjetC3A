@@ -1,0 +1,106 @@
+\hypertarget{erreur_8h}{}\doxysection{Référence du fichier erreur.\+h}
+\label{erreur_8h}\index{erreur.h@{erreur.h}}
+
+
+Fichier contenant toutes les déclarations concernant les erreurs.  
+
+
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{erreur_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Énumérations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{erreur_8h_a05d6b89d2430cee4aa41ca6dc857bc15}{erreur\+\_\+t}} \{ \newline
+\mbox{\hyperlink{erreur_8h_a05d6b89d2430cee4aa41ca6dc857bc15a05026b3fec347a94a7704e670be3eacc}{AUCUNE\+\_\+\+ERREUR}}
+, \mbox{\hyperlink{erreur_8h_a05d6b89d2430cee4aa41ca6dc857bc15ace616d82b8612bad9c12f23ab00ba1fb}{ERR\+\_\+\+MEMOIRE}}
+, \mbox{\hyperlink{erreur_8h_a05d6b89d2430cee4aa41ca6dc857bc15af9ae393a83a6fde8d694f405b6fad362}{ERR\+\_\+\+FICHIER}}
+, \mbox{\hyperlink{erreur_8h_a05d6b89d2430cee4aa41ca6dc857bc15acfe923ecc85a1b9d6d9e0ea774b1797d}{ERR\+\_\+\+FCT}}
+, \newline
+\mbox{\hyperlink{erreur_8h_a05d6b89d2430cee4aa41ca6dc857bc15aeeee00b9b0ac743734bb2fc940219c25}{ERR\+\_\+\+NCURSES}}
+ \}
+\begin{DoxyCompactList}\small\item\em L\textquotesingle{}énumération des codes d\textquotesingle{}erreur du programme. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{erreur_8h_ab76a78913e19aba25b61daf04b81ee79}{erreur}} (char $\ast$err\+\_\+msg, \mbox{\hyperlink{erreur_8h_a05d6b89d2430cee4aa41ca6dc857bc15}{erreur\+\_\+t}} err\+\_\+code)
+\begin{DoxyCompactList}\small\item\em Gère les erreurs et quitte le programme. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Fichier contenant toutes les déclarations concernant les erreurs. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps (\href{mailto:descomps@et.esiea.fr}{\texttt{ descomps@et.\+esiea.\+fr}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+1/10/2022 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Documentation du type de l\textquotesingle{}énumération}
+\mbox{\Hypertarget{erreur_8h_a05d6b89d2430cee4aa41ca6dc857bc15}\label{erreur_8h_a05d6b89d2430cee4aa41ca6dc857bc15}} 
+\index{erreur.h@{erreur.h}!erreur\_t@{erreur\_t}}
+\index{erreur\_t@{erreur\_t}!erreur.h@{erreur.h}}
+\doxysubsubsection{\texorpdfstring{erreur\_t}{erreur\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{erreur_8h_a05d6b89d2430cee4aa41ca6dc857bc15}{erreur\+\_\+t}}}
+
+
+
+L\textquotesingle{}énumération des codes d\textquotesingle{}erreur du programme. 
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AUCUNE\_ERREUR@{AUCUNE\_ERREUR}!erreur.h@{erreur.h}}\index{erreur.h@{erreur.h}!AUCUNE\_ERREUR@{AUCUNE\_ERREUR}}}\mbox{\Hypertarget{erreur_8h_a05d6b89d2430cee4aa41ca6dc857bc15a05026b3fec347a94a7704e670be3eacc}\label{erreur_8h_a05d6b89d2430cee4aa41ca6dc857bc15a05026b3fec347a94a7704e670be3eacc}} 
+AUCUNE\+\_\+\+ERREUR&Aucune erreur \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERR\_MEMOIRE@{ERR\_MEMOIRE}!erreur.h@{erreur.h}}\index{erreur.h@{erreur.h}!ERR\_MEMOIRE@{ERR\_MEMOIRE}}}\mbox{\Hypertarget{erreur_8h_a05d6b89d2430cee4aa41ca6dc857bc15ace616d82b8612bad9c12f23ab00ba1fb}\label{erreur_8h_a05d6b89d2430cee4aa41ca6dc857bc15ace616d82b8612bad9c12f23ab00ba1fb}} 
+ERR\+\_\+\+MEMOIRE&Erreur d\textquotesingle{}allocation mémoire \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERR\_FICHIER@{ERR\_FICHIER}!erreur.h@{erreur.h}}\index{erreur.h@{erreur.h}!ERR\_FICHIER@{ERR\_FICHIER}}}\mbox{\Hypertarget{erreur_8h_a05d6b89d2430cee4aa41ca6dc857bc15af9ae393a83a6fde8d694f405b6fad362}\label{erreur_8h_a05d6b89d2430cee4aa41ca6dc857bc15af9ae393a83a6fde8d694f405b6fad362}} 
+ERR\+\_\+\+FICHIER&Erreur de fichier (écriture ou lecture impossible) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERR\_FCT@{ERR\_FCT}!erreur.h@{erreur.h}}\index{erreur.h@{erreur.h}!ERR\_FCT@{ERR\_FCT}}}\mbox{\Hypertarget{erreur_8h_a05d6b89d2430cee4aa41ca6dc857bc15acfe923ecc85a1b9d6d9e0ea774b1797d}\label{erreur_8h_a05d6b89d2430cee4aa41ca6dc857bc15acfe923ecc85a1b9d6d9e0ea774b1797d}} 
+ERR\+\_\+\+FCT&Erreur de fonction (bon déroulement compromis) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERR\_NCURSES@{ERR\_NCURSES}!erreur.h@{erreur.h}}\index{erreur.h@{erreur.h}!ERR\_NCURSES@{ERR\_NCURSES}}}\mbox{\Hypertarget{erreur_8h_a05d6b89d2430cee4aa41ca6dc857bc15aeeee00b9b0ac743734bb2fc940219c25}\label{erreur_8h_a05d6b89d2430cee4aa41ca6dc857bc15aeeee00b9b0ac743734bb2fc940219c25}} 
+ERR\+\_\+\+NCURSES&Ncurses mal supporté \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{erreur_8h_ab76a78913e19aba25b61daf04b81ee79}\label{erreur_8h_ab76a78913e19aba25b61daf04b81ee79}} 
+\index{erreur.h@{erreur.h}!erreur@{erreur}}
+\index{erreur@{erreur}!erreur.h@{erreur.h}}
+\doxysubsubsection{\texorpdfstring{erreur()}{erreur()}}
+{\footnotesize\ttfamily void erreur (\begin{DoxyParamCaption}\item[{char $\ast$}]{err\+\_\+msg,  }\item[{\mbox{\hyperlink{erreur_8h_a05d6b89d2430cee4aa41ca6dc857bc15}{erreur\+\_\+t}}}]{err\+\_\+code }\end{DoxyParamCaption})}
+
+
+
+Gère les erreurs et quitte le programme. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em err\+\_\+msg} & Le message d\textquotesingle{}erreur personnalisable \\
+\hline
+{\em err\+\_\+code} & Le code d\textquotesingle{}erreur spécifique \\
+\hline
+\end{DoxyParams}

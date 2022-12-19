@@ -1,0 +1,9 @@
+<map id="mob.h" name="mob.h">
+<area shape="rect" id="node1" title="Fichier contenant toutes les déclarations concernant les mobs." alt="" coords="197,5,260,32"/>
+<area shape="rect" id="node2" href="$entite_8h.html" title="Fichier contenant toutes les déclarations communes aux entités." alt="" coords="145,80,217,107"/>
+<area shape="rect" id="node6" href="$menu_8h.html" title="Fichier contenant toutes les déclarations concernant les menus." alt="" coords="272,80,343,107"/>
+<area shape="rect" id="node3" href="$coord_8h.html" title="Fichier contenant les déclarations sur les coordonnées servant à résoudre un conflit d&#39;inclusion mutu..." alt="" coords="5,155,76,181"/>
+<area shape="rect" id="node4" href="$liste_8h.html" title="Déclarations relatives au type de structure liste générique." alt="" coords="100,155,163,181"/>
+<area shape="rect" id="node5" href="$matiere_8h.html" title="Fichier contenant les déclarations des matières." alt="" coords="187,155,273,181"/>
+<area shape="rect" id="node7" title=" " alt="" coords="297,155,381,181"/>
+</map>

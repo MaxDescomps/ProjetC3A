@@ -1,0 +1,7 @@
+<map id="jeu.h" name="jeu.h">
+<area shape="rect" id="node1" title="Fichier contenant toutes les déclarations concernant le jeu." alt="" coords="137,5,191,32"/>
+<area shape="rect" id="node2" href="$carte_8c.html" title="Fonctions liées au module carte." alt="" coords="5,80,72,107"/>
+<area shape="rect" id="node3" href="$jeu_8c.html" title="Fonctions liées au module jeu." alt="" coords="96,80,149,107"/>
+<area shape="rect" id="node4" href="$main_8c.html" title="Programme principal du jeu." alt="" coords="173,80,240,107"/>
+<area shape="rect" id="node5" href="$menu_8c.html" title="Fonctions liées au module menu." alt="" coords="265,80,335,107"/>
+</map>

@@ -1,0 +1,576 @@
+\hypertarget{perso_8h}{}\doxysection{Référence du fichier perso.\+h}
+\label{perso_8h}\index{perso.h@{perso.h}}
+
+
+Fichier contenant toutes les déclarations concernant le personnage.  
+
+
+{\ttfamily \#include \char`\"{}inventaire.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}carte.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de perso.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{perso_8h__incl}
+\end{center}
+\end{figure}
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{perso_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Structures de données}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structperso__s}{perso\+\_\+s}}
+\begin{DoxyCompactList}\small\item\em Structure contenant les informations sur le personnage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{perso_8h_ae5ee789c0ff6a449a52156fd2b22d9e5}{PERSO\+\_\+\+TICK}}~500
+\item 
+\#define \mbox{\hyperlink{perso_8h_a1b4f75582827f71ee2ebe25c662dca56}{XP\+\_\+\+LIMIT}}~10
+\item 
+\#define \mbox{\hyperlink{perso_8h_a959d17fa44ba07a0860685bd762427f1}{MAX\+\_\+\+ITEM\+\_\+\+PERSO}}~10
+\item 
+\#define \mbox{\hyperlink{perso_8h_a6b51a3cf797f29a5497cf373309e1587}{MAX\+\_\+\+TAILLE\+\_\+\+NOM}}~100
+\end{DoxyCompactItemize}
+\doxysubsection*{Définitions de type}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structScarte}{Scarte}} \mbox{\hyperlink{perso_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}}
+\item 
+typedef struct \mbox{\hyperlink{structperso__s}{perso\+\_\+s}} \mbox{\hyperlink{perso_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Structure contenant les informations sur le personnage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{perso_8h_a1c9ececf1357edf473d12393bd637abf}{bouger\+Perso}} (\mbox{\hyperlink{coord_8h_ae9ae980041e438eed7a3af43ce4e9f6b}{direction\+\_\+t}} direction, \mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$carte, \mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$perso, \mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$liste\+Tirs)
+\begin{DoxyCompactList}\small\item\em Déplace le personnage sur la carte. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{perso_8h_a12c5c5c081d1fc8d2bd9d84ef385abbc}{gestion\+XP}} (\mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$perso)
+\begin{DoxyCompactList}\small\item\em Vérifie l\textquotesingle{}expérience et augmente le niveau du personnage si nécessaire. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{perso_8h_ae1e2786516ebe9fbd7e4c2373fb559c5}{enlever}} (\mbox{\hyperlink{carte_8h_a59d9316fee245240d74c52ab19b9dacd}{carre\+\_\+t}} $\ast$carre)
+\begin{DoxyCompactList}\small\item\em Enlève un carré de la carte. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{perso_8h_a8db846c8f01e5692e1eb32049396234f}{action\+Utiliser}} (\mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$carte, \mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$perso)
+\begin{DoxyCompactList}\small\item\em Utilise un item de l\textquotesingle{}inventaire du personnage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{perso_8h_af0f8758d6255a45a7c5a99957b486035}{action\+Ramasser}} (WINDOW $\ast$fen\+Coffre, WINDOW $\ast$fen\+Inv, \mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$carte, \mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$perso)
+\begin{DoxyCompactList}\small\item\em Le personnage tente de ramasser. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{perso_8h_a76fd4f1f58095ef5b9e394f30743fb5a}{creer\+Perso}} (\mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$$\ast$perso)
+\begin{DoxyCompactList}\small\item\em Créé un personnage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{perso_8h_a720e4710d97a5307496313b0790eec23}{detruire\+Perso}} (\mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$$\ast$perso)
+\begin{DoxyCompactList}\small\item\em Désalloue l\textquotesingle{}espace attribué au personnage. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{perso_8h_a30118da03a744f76e6e7406515151d36}{direction\+Possible}} (\mbox{\hyperlink{coord_8h_ae9ae980041e438eed7a3af43ce4e9f6b}{direction\+\_\+t}} direction, \mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$carte, \mbox{\hyperlink{structcoord__t}{coord\+\_\+t}} $\ast$position)
+\begin{DoxyCompactList}\small\item\em Vérifie si le prochain carré dans une direction est accessible. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{perso_8h_aaaeeda5b8951b0bfcffeb0f17efa3daa}{direction\+Existe}} (\mbox{\hyperlink{coord_8h_ae9ae980041e438eed7a3af43ce4e9f6b}{direction\+\_\+t}} direction, \mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$carte, \mbox{\hyperlink{structcoord__t}{coord\+\_\+t}} $\ast$position)
+\begin{DoxyCompactList}\small\item\em Vérifie si le prochain carré dans une direction existe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{perso_8h_a4ba03f1b6915172378a584a796d91e47}{spawn\+Perso}} (\mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$carte, \mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$perso, \mbox{\hyperlink{structcoord__t}{coord\+\_\+t}} $\ast$coord)
+\begin{DoxyCompactList}\small\item\em Génère le personnage dans le jeu pour la première fois (placement et demande du nom) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{perso_8h_a48cbec22014a4a01813a8b4a58a5a758}{placer\+Perso}} (\mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$carte, \mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$perso, \mbox{\hyperlink{structcoord__t}{coord\+\_\+t}} $\ast$coord)
+\begin{DoxyCompactList}\small\item\em Place le personnage sur un carré s\textquotesingle{}il est accessible. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{perso_8h_a65d851e4a5153beb7a0d56adc0af23e3}{voit\+Hors\+Carte}} (\mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$carte, \mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$perso)
+\begin{DoxyCompactList}\small\item\em Indique si le personnage voit hors de la carte. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{perso_8h_abef2ec00c21eead8f35ef4615d3ce55a}{voit\+Bord\+Carte}} (\mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$carte, \mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$perso)
+\begin{DoxyCompactList}\small\item\em Indique si le personnage voit le bord de la carte. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{perso_8h_aa03d1a86417feabedef8d89c53d0b36f}{stat\+Perso}} (\mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$perso)
+\begin{DoxyCompactList}\small\item\em Paramètre un nouveau personnage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{perso_8h_a07a7b020e389d1160f7caa043012ced5}{actualiser\+Place\+Ecran}} (\mbox{\hyperlink{coord_8h_ae9ae980041e438eed7a3af43ce4e9f6b}{direction\+\_\+t}} direction, \mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$carte, \mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$perso)
+\begin{DoxyCompactList}\small\item\em Modifie la place du personnage dans la fenêtre de jeu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{perso_8h_a69a89951c9a9269ab862a9ac71538642}{check\+Mort}} (\mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$tirs, \mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$mobs, \mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$coffres, WINDOW $\ast$plateau, \mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$carte, \mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$perso, int $\ast$running)
+\begin{DoxyCompactList}\small\item\em Gère la mort du personnage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{perso_8h_add8bbd76054bd70fe9527146464af22c}{gestion\+Perso}} (\mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$tirs, \mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$mobs, \mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$coffres, WINDOW $\ast$plateau, \mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$carte, \mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$perso, int $\ast$running)
+\begin{DoxyCompactList}\small\item\em Gère le personnage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{perso_8h_a07d3414dd5f9360db2d108abcfd62647}{perso\+Tire}} (\mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$perso, \mbox{\hyperlink{coord_8h_ae9ae980041e438eed7a3af43ce4e9f6b}{direction\+\_\+t}} direction, \mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$carte, \mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$liste\+Tirs, int $\ast$stop\+Tir)
+\begin{DoxyCompactList}\small\item\em Gère un tir du personnage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Fichier contenant toutes les déclarations concernant le personnage. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps (\href{mailto:descomps@et.esiea.fr}{\texttt{ descomps@et.\+esiea.\+fr}}) 
+
+Dorian Creuze (\href{mailto:creuze@et.esiea.fr}{\texttt{ creuze@et.\+esiea.\+fr}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+29/09/2022 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Documentation des macros}
+\mbox{\Hypertarget{perso_8h_a959d17fa44ba07a0860685bd762427f1}\label{perso_8h_a959d17fa44ba07a0860685bd762427f1}} 
+\index{perso.h@{perso.h}!MAX\_ITEM\_PERSO@{MAX\_ITEM\_PERSO}}
+\index{MAX\_ITEM\_PERSO@{MAX\_ITEM\_PERSO}!perso.h@{perso.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_ITEM\_PERSO}{MAX\_ITEM\_PERSO}}
+{\footnotesize\ttfamily \#define MAX\+\_\+\+ITEM\+\_\+\+PERSO~10}
+
+Taille de l\textquotesingle{}inventaire du personnage \mbox{\Hypertarget{perso_8h_a6b51a3cf797f29a5497cf373309e1587}\label{perso_8h_a6b51a3cf797f29a5497cf373309e1587}} 
+\index{perso.h@{perso.h}!MAX\_TAILLE\_NOM@{MAX\_TAILLE\_NOM}}
+\index{MAX\_TAILLE\_NOM@{MAX\_TAILLE\_NOM}!perso.h@{perso.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_TAILLE\_NOM}{MAX\_TAILLE\_NOM}}
+{\footnotesize\ttfamily \#define MAX\+\_\+\+TAILLE\+\_\+\+NOM~100}
+
+Taille maximum du nom du personnage \mbox{\Hypertarget{perso_8h_ae5ee789c0ff6a449a52156fd2b22d9e5}\label{perso_8h_ae5ee789c0ff6a449a52156fd2b22d9e5}} 
+\index{perso.h@{perso.h}!PERSO\_TICK@{PERSO\_TICK}}
+\index{PERSO\_TICK@{PERSO\_TICK}!perso.h@{perso.h}}
+\doxysubsubsection{\texorpdfstring{PERSO\_TICK}{PERSO\_TICK}}
+{\footnotesize\ttfamily \#define PERSO\+\_\+\+TICK~500}
+
+Delai de mouvement du personnage \mbox{\Hypertarget{perso_8h_a1b4f75582827f71ee2ebe25c662dca56}\label{perso_8h_a1b4f75582827f71ee2ebe25c662dca56}} 
+\index{perso.h@{perso.h}!XP\_LIMIT@{XP\_LIMIT}}
+\index{XP\_LIMIT@{XP\_LIMIT}!perso.h@{perso.h}}
+\doxysubsubsection{\texorpdfstring{XP\_LIMIT}{XP\_LIMIT}}
+{\footnotesize\ttfamily \#define XP\+\_\+\+LIMIT~10}
+
+Experience pour monter de niveau 
+
+\doxysubsection{Documentation des définitions de type}
+\mbox{\Hypertarget{perso_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}\label{perso_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}} 
+\index{perso.h@{perso.h}!carte\_t@{carte\_t}}
+\index{carte\_t@{carte\_t}!perso.h@{perso.h}}
+\doxysubsubsection{\texorpdfstring{carte\_t}{carte\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structScarte}{Scarte}} \mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}}}
+
+Cette déclaration est là pour éviter un conflit d\textquotesingle{}inclusion mutuelle des fichiers \mbox{\hyperlink{perso_8h}{perso.\+h}} et \mbox{\hyperlink{carte_8h}{carte.\+h}} \mbox{\Hypertarget{perso_8h_a550089442e996a6b42d393992dbc5436}\label{perso_8h_a550089442e996a6b42d393992dbc5436}} 
+\index{perso.h@{perso.h}!perso\_t@{perso\_t}}
+\index{perso\_t@{perso\_t}!perso.h@{perso.h}}
+\doxysubsubsection{\texorpdfstring{perso\_t}{perso\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structperso__s}{perso\+\_\+s}} \mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}}}
+
+
+
+Structure contenant les informations sur le personnage. 
+
+\begin{DoxyAuthor}{Auteur}
+Descomps Max 
+
+Creuze Dorian 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{perso_8h_af0f8758d6255a45a7c5a99957b486035}\label{perso_8h_af0f8758d6255a45a7c5a99957b486035}} 
+\index{perso.h@{perso.h}!actionRamasser@{actionRamasser}}
+\index{actionRamasser@{actionRamasser}!perso.h@{perso.h}}
+\doxysubsubsection{\texorpdfstring{actionRamasser()}{actionRamasser()}}
+{\footnotesize\ttfamily void action\+Ramasser (\begin{DoxyParamCaption}\item[{WINDOW $\ast$}]{fen\+Coffre,  }\item[{WINDOW $\ast$}]{fen\+Inv,  }\item[{\mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$}]{carte,  }\item[{\mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$}]{perso }\end{DoxyParamCaption})}
+
+
+
+Le personnage tente de ramasser. 
+
+\begin{DoxyAuthor}{Auteurs}
+Dorian Creuze 
+
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em fen\+Coffre} & La fenêtre d\textquotesingle{}affichage des coffres \\
+\hline
+{\em fen\+Inv} & La fenêtre d\textquotesingle{}affichage de l\textquotesingle{}inventaire \\
+\hline
+{\em carte} & La carte sur laquelle le personnage ramasse \\
+\hline
+{\em perso} & Le personnage qui ramasse \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{perso_8h_a8db846c8f01e5692e1eb32049396234f}\label{perso_8h_a8db846c8f01e5692e1eb32049396234f}} 
+\index{perso.h@{perso.h}!actionUtiliser@{actionUtiliser}}
+\index{actionUtiliser@{actionUtiliser}!perso.h@{perso.h}}
+\doxysubsubsection{\texorpdfstring{actionUtiliser()}{actionUtiliser()}}
+{\footnotesize\ttfamily void action\+Utiliser (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$}]{carte,  }\item[{\mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$}]{perso }\end{DoxyParamCaption})}
+
+
+
+Utilise un item de l\textquotesingle{}inventaire du personnage. 
+
+\begin{DoxyAuthor}{Auteurs}
+Dorian Creuze 
+
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em carte} & La carte sur laquelle on utilise un item \\
+\hline
+{\em perso} & Le personnage qui utilise un item \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{perso_8h_a07a7b020e389d1160f7caa043012ced5}\label{perso_8h_a07a7b020e389d1160f7caa043012ced5}} 
+\index{perso.h@{perso.h}!actualiserPlaceEcran@{actualiserPlaceEcran}}
+\index{actualiserPlaceEcran@{actualiserPlaceEcran}!perso.h@{perso.h}}
+\doxysubsubsection{\texorpdfstring{actualiserPlaceEcran()}{actualiserPlaceEcran()}}
+{\footnotesize\ttfamily void actualiser\+Place\+Ecran (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{coord_8h_ae9ae980041e438eed7a3af43ce4e9f6b}{direction\+\_\+t}}}]{direction,  }\item[{\mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$}]{carte,  }\item[{\mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$}]{perso }\end{DoxyParamCaption})}
+
+
+
+Modifie la place du personnage dans la fenêtre de jeu. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em direction} & La direction prise par le personnage \\
+\hline
+{\em carte} & La carte ou se trouve le personnage \\
+\hline
+{\em perso} & Le personnage qui se déplace \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{perso_8h_a1c9ececf1357edf473d12393bd637abf}\label{perso_8h_a1c9ececf1357edf473d12393bd637abf}} 
+\index{perso.h@{perso.h}!bougerPerso@{bougerPerso}}
+\index{bougerPerso@{bougerPerso}!perso.h@{perso.h}}
+\doxysubsubsection{\texorpdfstring{bougerPerso()}{bougerPerso()}}
+{\footnotesize\ttfamily void bouger\+Perso (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{coord_8h_ae9ae980041e438eed7a3af43ce4e9f6b}{direction\+\_\+t}}}]{direction,  }\item[{\mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$}]{carte,  }\item[{\mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$}]{perso,  }\item[{\mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$}]{liste\+Tirs }\end{DoxyParamCaption})}
+
+
+
+Déplace le personnage sur la carte. 
+
+\begin{DoxyAuthor}{Auteurs}
+Max Descomps 
+
+Dorian Creuze 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em direction} & La direction prise par le personnage \\
+\hline
+{\em carte} & La carte sur laquelle se déplace le personnage \\
+\hline
+{\em perso} & Le personnage qui se déplace \\
+\hline
+{\em liste\+Tirs} & La liste des tirs \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{perso_8h_a69a89951c9a9269ab862a9ac71538642}\label{perso_8h_a69a89951c9a9269ab862a9ac71538642}} 
+\index{perso.h@{perso.h}!checkMort@{checkMort}}
+\index{checkMort@{checkMort}!perso.h@{perso.h}}
+\doxysubsubsection{\texorpdfstring{checkMort()}{checkMort()}}
+{\footnotesize\ttfamily void check\+Mort (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$}]{tirs,  }\item[{\mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$}]{mobs,  }\item[{\mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$}]{coffres,  }\item[{WINDOW $\ast$}]{plateau,  }\item[{\mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$}]{carte,  }\item[{\mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$}]{perso,  }\item[{int $\ast$}]{running }\end{DoxyParamCaption})}
+
+
+
+Gère la mort du personnage. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em tirs} & La liste des tirs \\
+\hline
+{\em mobs} & La liste des mobs \\
+\hline
+{\em coffres} & La liste des coffres \\
+\hline
+{\em plateau} & La fenêtre d\textquotesingle{}affichage du jeu \\
+\hline
+{\em carte} & La carte \\
+\hline
+{\em perso} & Le personnage à gérer \\
+\hline
+{\em running} & L\textquotesingle{}état du jeu \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{perso_8h_a76fd4f1f58095ef5b9e394f30743fb5a}\label{perso_8h_a76fd4f1f58095ef5b9e394f30743fb5a}} 
+\index{perso.h@{perso.h}!creerPerso@{creerPerso}}
+\index{creerPerso@{creerPerso}!perso.h@{perso.h}}
+\doxysubsubsection{\texorpdfstring{creerPerso()}{creerPerso()}}
+{\footnotesize\ttfamily void creer\+Perso (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$$\ast$}]{perso }\end{DoxyParamCaption})}
+
+
+
+Créé un personnage. 
+
+\begin{DoxyAuthor}{Auteurs}
+Max Descomps 
+
+Dorian Creuze 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em perso} & Le personnage à créer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{perso_8h_a720e4710d97a5307496313b0790eec23}\label{perso_8h_a720e4710d97a5307496313b0790eec23}} 
+\index{perso.h@{perso.h}!detruirePerso@{detruirePerso}}
+\index{detruirePerso@{detruirePerso}!perso.h@{perso.h}}
+\doxysubsubsection{\texorpdfstring{detruirePerso()}{detruirePerso()}}
+{\footnotesize\ttfamily void detruire\+Perso (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$$\ast$}]{perso }\end{DoxyParamCaption})}
+
+
+
+Désalloue l\textquotesingle{}espace attribué au personnage. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em perso} & Le personnage à détruire \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{perso_8h_aaaeeda5b8951b0bfcffeb0f17efa3daa}\label{perso_8h_aaaeeda5b8951b0bfcffeb0f17efa3daa}} 
+\index{perso.h@{perso.h}!directionExiste@{directionExiste}}
+\index{directionExiste@{directionExiste}!perso.h@{perso.h}}
+\doxysubsubsection{\texorpdfstring{directionExiste()}{directionExiste()}}
+{\footnotesize\ttfamily int direction\+Existe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{coord_8h_ae9ae980041e438eed7a3af43ce4e9f6b}{direction\+\_\+t}}}]{direction,  }\item[{\mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$}]{carte,  }\item[{\mbox{\hyperlink{structcoord__t}{coord\+\_\+t}} $\ast$}]{position }\end{DoxyParamCaption})}
+
+
+
+Vérifie si le prochain carré dans une direction existe. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em direction} & La direction choisie \\
+\hline
+{\em carte} & La carte étudiée \\
+\hline
+{\em position} & La position d\textquotesingle{}origine \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Un booléen 
+\end{DoxyReturn}
+\mbox{\Hypertarget{perso_8h_a30118da03a744f76e6e7406515151d36}\label{perso_8h_a30118da03a744f76e6e7406515151d36}} 
+\index{perso.h@{perso.h}!directionPossible@{directionPossible}}
+\index{directionPossible@{directionPossible}!perso.h@{perso.h}}
+\doxysubsubsection{\texorpdfstring{directionPossible()}{directionPossible()}}
+{\footnotesize\ttfamily int direction\+Possible (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{coord_8h_ae9ae980041e438eed7a3af43ce4e9f6b}{direction\+\_\+t}}}]{direction,  }\item[{\mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$}]{carte,  }\item[{\mbox{\hyperlink{structcoord__t}{coord\+\_\+t}} $\ast$}]{position }\end{DoxyParamCaption})}
+
+
+
+Vérifie si le prochain carré dans une direction est accessible. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em direction} & La direction choisie \\
+\hline
+{\em carte} & La carte étudiée \\
+\hline
+{\em position} & La position de référence \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Un booléen 
+\end{DoxyReturn}
+\mbox{\Hypertarget{perso_8h_ae1e2786516ebe9fbd7e4c2373fb559c5}\label{perso_8h_ae1e2786516ebe9fbd7e4c2373fb559c5}} 
+\index{perso.h@{perso.h}!enlever@{enlever}}
+\index{enlever@{enlever}!perso.h@{perso.h}}
+\doxysubsubsection{\texorpdfstring{enlever()}{enlever()}}
+{\footnotesize\ttfamily void enlever (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{carte_8h_a59d9316fee245240d74c52ab19b9dacd}{carre\+\_\+t}} $\ast$}]{carre }\end{DoxyParamCaption})}
+
+
+
+Enlève un carré de la carte. 
+
+\begin{DoxyAuthor}{Auteurs}
+Dorian Creuze 
+
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em carre} & Le carré à enlever \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{perso_8h_add8bbd76054bd70fe9527146464af22c}\label{perso_8h_add8bbd76054bd70fe9527146464af22c}} 
+\index{perso.h@{perso.h}!gestionPerso@{gestionPerso}}
+\index{gestionPerso@{gestionPerso}!perso.h@{perso.h}}
+\doxysubsubsection{\texorpdfstring{gestionPerso()}{gestionPerso()}}
+{\footnotesize\ttfamily void gestion\+Perso (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$}]{tirs,  }\item[{\mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$}]{mobs,  }\item[{\mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$}]{coffres,  }\item[{WINDOW $\ast$}]{plateau,  }\item[{\mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$}]{carte,  }\item[{\mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$}]{perso,  }\item[{int $\ast$}]{running }\end{DoxyParamCaption})}
+
+
+
+Gère le personnage. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em tirs} & La liste des tirs \\
+\hline
+{\em mobs} & La liste des mobs \\
+\hline
+{\em coffres} & La liste des coffres \\
+\hline
+{\em plateau} & La fenêtre d\textquotesingle{}affichage du jeu \\
+\hline
+{\em carte} & La carte \\
+\hline
+{\em perso} & Le personnage \\
+\hline
+{\em running} & L\textquotesingle{}état du jeu \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{perso_8h_a12c5c5c081d1fc8d2bd9d84ef385abbc}\label{perso_8h_a12c5c5c081d1fc8d2bd9d84ef385abbc}} 
+\index{perso.h@{perso.h}!gestionXP@{gestionXP}}
+\index{gestionXP@{gestionXP}!perso.h@{perso.h}}
+\doxysubsubsection{\texorpdfstring{gestionXP()}{gestionXP()}}
+{\footnotesize\ttfamily void gestion\+XP (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$}]{perso }\end{DoxyParamCaption})}
+
+
+
+Vérifie l\textquotesingle{}expérience et augmente le niveau du personnage si nécessaire. 
+
+\begin{DoxyAuthor}{Auteurs}
+Dorian Creuze 
+
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em perso} & Le personnage dont on vérifie l\textquotesingle{}expérience \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{perso_8h_a07d3414dd5f9360db2d108abcfd62647}\label{perso_8h_a07d3414dd5f9360db2d108abcfd62647}} 
+\index{perso.h@{perso.h}!persoTire@{persoTire}}
+\index{persoTire@{persoTire}!perso.h@{perso.h}}
+\doxysubsubsection{\texorpdfstring{persoTire()}{persoTire()}}
+{\footnotesize\ttfamily void perso\+Tire (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$}]{perso,  }\item[{\mbox{\hyperlink{coord_8h_ae9ae980041e438eed7a3af43ce4e9f6b}{direction\+\_\+t}}}]{direction,  }\item[{\mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$}]{carte,  }\item[{\mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$}]{liste\+Tirs,  }\item[{int $\ast$}]{stop\+Tir }\end{DoxyParamCaption})}
+
+
+
+Gère un tir du personnage. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em perso} & Le personnage \\
+\hline
+{\em direction} & La direction du tir \\
+\hline
+{\em carte} & La carte ou se trouve le personnage \\
+\hline
+{\em liste\+Tirs} & La liste des tirs \\
+\hline
+{\em stop\+Tir} & Le compteur avant le prochain tir \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{perso_8h_a48cbec22014a4a01813a8b4a58a5a758}\label{perso_8h_a48cbec22014a4a01813a8b4a58a5a758}} 
+\index{perso.h@{perso.h}!placerPerso@{placerPerso}}
+\index{placerPerso@{placerPerso}!perso.h@{perso.h}}
+\doxysubsubsection{\texorpdfstring{placerPerso()}{placerPerso()}}
+{\footnotesize\ttfamily void placer\+Perso (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$}]{carte,  }\item[{\mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$}]{perso,  }\item[{\mbox{\hyperlink{structcoord__t}{coord\+\_\+t}} $\ast$}]{coord }\end{DoxyParamCaption})}
+
+
+
+Place le personnage sur un carré s\textquotesingle{}il est accessible. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em carte} & La carte sur laquelle placer le personnage \\
+\hline
+{\em perso} & Le personnage à placer \\
+\hline
+{\em coord} & Les coordonnées ou placer personnage \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{perso_8h_a4ba03f1b6915172378a584a796d91e47}\label{perso_8h_a4ba03f1b6915172378a584a796d91e47}} 
+\index{perso.h@{perso.h}!spawnPerso@{spawnPerso}}
+\index{spawnPerso@{spawnPerso}!perso.h@{perso.h}}
+\doxysubsubsection{\texorpdfstring{spawnPerso()}{spawnPerso()}}
+{\footnotesize\ttfamily void spawn\+Perso (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$}]{carte,  }\item[{\mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$}]{perso,  }\item[{\mbox{\hyperlink{structcoord__t}{coord\+\_\+t}} $\ast$}]{coord }\end{DoxyParamCaption})}
+
+
+
+Génère le personnage dans le jeu pour la première fois (placement et demande du nom) 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em carte} & La carte sur laquelle évolue le personnage \\
+\hline
+{\em perso} & Le personnage à faire apparaître \\
+\hline
+{\em coord} & Les coordonnées du personnage quand il apparaît \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{perso_8h_aa03d1a86417feabedef8d89c53d0b36f}\label{perso_8h_aa03d1a86417feabedef8d89c53d0b36f}} 
+\index{perso.h@{perso.h}!statPerso@{statPerso}}
+\index{statPerso@{statPerso}!perso.h@{perso.h}}
+\doxysubsubsection{\texorpdfstring{statPerso()}{statPerso()}}
+{\footnotesize\ttfamily void stat\+Perso (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$}]{perso }\end{DoxyParamCaption})}
+
+
+
+Paramètre un nouveau personnage. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em perso} & Le personnage à paramétrer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{perso_8h_abef2ec00c21eead8f35ef4615d3ce55a}\label{perso_8h_abef2ec00c21eead8f35ef4615d3ce55a}} 
+\index{perso.h@{perso.h}!voitBordCarte@{voitBordCarte}}
+\index{voitBordCarte@{voitBordCarte}!perso.h@{perso.h}}
+\doxysubsubsection{\texorpdfstring{voitBordCarte()}{voitBordCarte()}}
+{\footnotesize\ttfamily int voit\+Bord\+Carte (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$}]{carte,  }\item[{\mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$}]{perso }\end{DoxyParamCaption})}
+
+
+
+Indique si le personnage voit le bord de la carte. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em carte} & La carte sur laquelle évolue le personnage \\
+\hline
+{\em perso} & Le personnage étudié \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Un booléen 
+\end{DoxyReturn}
+\mbox{\Hypertarget{perso_8h_a65d851e4a5153beb7a0d56adc0af23e3}\label{perso_8h_a65d851e4a5153beb7a0d56adc0af23e3}} 
+\index{perso.h@{perso.h}!voitHorsCarte@{voitHorsCarte}}
+\index{voitHorsCarte@{voitHorsCarte}!perso.h@{perso.h}}
+\doxysubsubsection{\texorpdfstring{voitHorsCarte()}{voitHorsCarte()}}
+{\footnotesize\ttfamily int voit\+Hors\+Carte (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$}]{carte,  }\item[{\mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$}]{perso }\end{DoxyParamCaption})}
+
+
+
+Indique si le personnage voit hors de la carte. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em carte} & La carte sur laquelle évolue le personnage \\
+\hline
+{\em perso} & Le personnage étudié \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Un booléen 
+\end{DoxyReturn}

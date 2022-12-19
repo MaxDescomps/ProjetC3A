@@ -1,0 +1,7 @@
+<map id="perso_s" name="perso_s">
+<area shape="rect" id="node1" title="Structure contenant les informations sur le personnage." alt="" coords="74,288,146,315"/>
+<area shape="rect" id="node2" href="$structinventaire__t.html" title="Structure contenant les propiétées d&#39;un inventaire." alt="" coords="5,184,105,211"/>
+<area shape="rect" id="node3" href="$structinvCase__t.html" title="Structure contenant les propiétées d&#39;une case d&#39;inventaire." alt="" coords="12,95,99,121"/>
+<area shape="rect" id="node4" href="$structitem__s.html" title="Structure contenant les propiétées d&#39;un item." alt="" coords="22,5,89,32"/>
+<area shape="rect" id="node5" href="$structcoord__t.html" title="Structure de coordonnees d&#39;un carre de la carte." alt="" coords="129,184,200,211"/>
+</map>

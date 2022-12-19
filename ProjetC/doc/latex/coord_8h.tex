@@ -1,0 +1,316 @@
+\hypertarget{coord_8h}{}\doxysection{Référence du fichier coord.\+h}
+\label{coord_8h}\index{coord.h@{coord.h}}
+
+
+Fichier contenant les déclarations sur les coordonnées servant à résoudre un conflit d\textquotesingle{}inclusion mutuelle contenant un type énuméré non déclarable sous forme de prototype.  
+
+
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{coord_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Structures de données}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structcoord__t}{coord\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Structure de coordonnees d\textquotesingle{}un carre de la carte. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Définitions de type}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structperso__s}{perso\+\_\+s}} \mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}}
+\item 
+typedef struct \mbox{\hyperlink{structScarte}{Scarte}} \mbox{\hyperlink{coord_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Énumérations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{coord_8h_ae9ae980041e438eed7a3af43ce4e9f6b}{direction\+\_\+t}} \{ \newline
+\mbox{\hyperlink{coord_8h_ae9ae980041e438eed7a3af43ce4e9f6ba5c97701a87d36c8f2c0de80c5865b8e2}{HAUT}}
+, \mbox{\hyperlink{coord_8h_ae9ae980041e438eed7a3af43ce4e9f6ba79f680205087956546ae263797bd1343}{DROITE}}
+, \mbox{\hyperlink{coord_8h_ae9ae980041e438eed7a3af43ce4e9f6ba4b07baad9e862178efeac3e522475caa}{BAS}}
+, \mbox{\hyperlink{coord_8h_ae9ae980041e438eed7a3af43ce4e9f6ba4ee960d97b04a1f22ed7ff81c7aa2e86}{GAUCHE}}
+, \newline
+\mbox{\hyperlink{coord_8h_ae9ae980041e438eed7a3af43ce4e9f6ba1d22e213a7c89888adc6c00f9c80646b}{NB\+\_\+\+DIR}}
+ \}
+\begin{DoxyCompactList}\small\item\em Direction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structcoord__t}{coord\+\_\+t}} $\ast$ \mbox{\hyperlink{coord_8h_a79bd793bdd087f64350982df9f525882}{creer\+Coord}} (void)
+\begin{DoxyCompactList}\small\item\em Créé des coordonnées. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{coord_8h_aab820197d2ac613a68dfad89e2df9404}{detruire\+Coord}} (\mbox{\hyperlink{structcoord__t}{coord\+\_\+t}} $\ast$$\ast$coord)
+\begin{DoxyCompactList}\small\item\em Désalloue l\textquotesingle{}espace attribué aux coordonnées. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{coord_8h_a38efaf6ce5b3c16b1866f95b72e8b1c0}{coord\+Proche}} (int i, int j, \mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$perso)
+\begin{DoxyCompactList}\small\item\em Evalue si un carré est dans le champ de vision du perso. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structcoord__t}{coord\+\_\+t}} \mbox{\hyperlink{coord_8h_a44b0ce42b4741451bfaf74076435e8e8}{coord\+Alea}} (\mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$carte)
+\begin{DoxyCompactList}\small\item\em Donne des coordonnées aléatoires sur une carte. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structcoord__t}{coord\+\_\+t}} \mbox{\hyperlink{coord_8h_aef47ea39dbc00bb97eb82ddd95920458}{coord\+Alea\+Acces}} (\mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$carte)
+\begin{DoxyCompactList}\small\item\em Donne des coordonnées aléatoires d\textquotesingle{}un carré accessible sur une carte. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{coord_8h_a8777484197b86b4f42e18de8424d10f1}{coord\+Existe}} (\mbox{\hyperlink{structcoord__t}{coord\+\_\+t}} $\ast$coord, \mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$carte)
+\begin{DoxyCompactList}\small\item\em Vérifie si un carré existe. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{coord_8h_a864f6db7579a0ba123c17f0a72c1aa8e}{coord\+Accessible}} (\mbox{\hyperlink{structcoord__t}{coord\+\_\+t}} $\ast$coord, \mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$carte)
+\begin{DoxyCompactList}\small\item\em Vérifie si un carré est accessible. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{coord_8h_a3dbcb2b40b4f88bd1d4a5d26398739af}{actualiser\+Coord}} (\mbox{\hyperlink{coord_8h_ae9ae980041e438eed7a3af43ce4e9f6b}{direction\+\_\+t}} direction, \mbox{\hyperlink{structcoord__t}{coord\+\_\+t}} $\ast$position)
+\begin{DoxyCompactList}\small\item\em Actualise une position selon un direction prise. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structcoord__t}{coord\+\_\+t}} $\ast$ \mbox{\hyperlink{coord_8h_a587be7e3572b52fb098cf7699ee9480b}{next\+Coord}} (\mbox{\hyperlink{coord_8h_ae9ae980041e438eed7a3af43ce4e9f6b}{direction\+\_\+t}} direction, \mbox{\hyperlink{structcoord__t}{coord\+\_\+t}} $\ast$position)
+\begin{DoxyCompactList}\small\item\em Renvoie les prochaines coordonnées que prendra un point. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Fichier contenant les déclarations sur les coordonnées servant à résoudre un conflit d\textquotesingle{}inclusion mutuelle contenant un type énuméré non déclarable sous forme de prototype. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps (\href{mailto:descomps@et.esiea.fr}{\texttt{ descomps@et.\+esiea.\+fr}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+02/10/2022 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Documentation des définitions de type}
+\mbox{\Hypertarget{coord_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}\label{coord_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}} 
+\index{coord.h@{coord.h}!carte\_t@{carte\_t}}
+\index{carte\_t@{carte\_t}!coord.h@{coord.h}}
+\doxysubsubsection{\texorpdfstring{carte\_t}{carte\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structScarte}{Scarte}} \mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}}}
+
+Cette déclaration est là pour éviter un conflit d\textquotesingle{}inclusion mutuelle des fichiers \mbox{\hyperlink{coord_8h}{coord.\+h}} et \mbox{\hyperlink{carte_8h}{carte.\+h}} \mbox{\Hypertarget{coord_8h_a550089442e996a6b42d393992dbc5436}\label{coord_8h_a550089442e996a6b42d393992dbc5436}} 
+\index{coord.h@{coord.h}!perso\_t@{perso\_t}}
+\index{perso\_t@{perso\_t}!coord.h@{coord.h}}
+\doxysubsubsection{\texorpdfstring{perso\_t}{perso\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structperso__s}{perso\+\_\+s}} \mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}}}
+
+Cette déclaration est là pour éviter un conflit d\textquotesingle{}inclusion mutuelle des fichiers \mbox{\hyperlink{coord_8h}{coord.\+h}} et \mbox{\hyperlink{perso_8h}{perso.\+h}} 
+
+\doxysubsection{Documentation du type de l\textquotesingle{}énumération}
+\mbox{\Hypertarget{coord_8h_ae9ae980041e438eed7a3af43ce4e9f6b}\label{coord_8h_ae9ae980041e438eed7a3af43ce4e9f6b}} 
+\index{coord.h@{coord.h}!direction\_t@{direction\_t}}
+\index{direction\_t@{direction\_t}!coord.h@{coord.h}}
+\doxysubsubsection{\texorpdfstring{direction\_t}{direction\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{coord_8h_ae9ae980041e438eed7a3af43ce4e9f6b}{direction\+\_\+t}}}
+
+
+
+Direction. 
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HAUT@{HAUT}!coord.h@{coord.h}}\index{coord.h@{coord.h}!HAUT@{HAUT}}}\mbox{\Hypertarget{coord_8h_ae9ae980041e438eed7a3af43ce4e9f6ba5c97701a87d36c8f2c0de80c5865b8e2}\label{coord_8h_ae9ae980041e438eed7a3af43ce4e9f6ba5c97701a87d36c8f2c0de80c5865b8e2}} 
+HAUT&Direction haut \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DROITE@{DROITE}!coord.h@{coord.h}}\index{coord.h@{coord.h}!DROITE@{DROITE}}}\mbox{\Hypertarget{coord_8h_ae9ae980041e438eed7a3af43ce4e9f6ba79f680205087956546ae263797bd1343}\label{coord_8h_ae9ae980041e438eed7a3af43ce4e9f6ba79f680205087956546ae263797bd1343}} 
+DROITE&Direction droite \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BAS@{BAS}!coord.h@{coord.h}}\index{coord.h@{coord.h}!BAS@{BAS}}}\mbox{\Hypertarget{coord_8h_ae9ae980041e438eed7a3af43ce4e9f6ba4b07baad9e862178efeac3e522475caa}\label{coord_8h_ae9ae980041e438eed7a3af43ce4e9f6ba4b07baad9e862178efeac3e522475caa}} 
+BAS&Direction bas \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GAUCHE@{GAUCHE}!coord.h@{coord.h}}\index{coord.h@{coord.h}!GAUCHE@{GAUCHE}}}\mbox{\Hypertarget{coord_8h_ae9ae980041e438eed7a3af43ce4e9f6ba4ee960d97b04a1f22ed7ff81c7aa2e86}\label{coord_8h_ae9ae980041e438eed7a3af43ce4e9f6ba4ee960d97b04a1f22ed7ff81c7aa2e86}} 
+GAUCHE&Direction gauche \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NB\_DIR@{NB\_DIR}!coord.h@{coord.h}}\index{coord.h@{coord.h}!NB\_DIR@{NB\_DIR}}}\mbox{\Hypertarget{coord_8h_ae9ae980041e438eed7a3af43ce4e9f6ba1d22e213a7c89888adc6c00f9c80646b}\label{coord_8h_ae9ae980041e438eed7a3af43ce4e9f6ba1d22e213a7c89888adc6c00f9c80646b}} 
+NB\+\_\+\+DIR&Nombre de directions \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{coord_8h_a3dbcb2b40b4f88bd1d4a5d26398739af}\label{coord_8h_a3dbcb2b40b4f88bd1d4a5d26398739af}} 
+\index{coord.h@{coord.h}!actualiserCoord@{actualiserCoord}}
+\index{actualiserCoord@{actualiserCoord}!coord.h@{coord.h}}
+\doxysubsubsection{\texorpdfstring{actualiserCoord()}{actualiserCoord()}}
+{\footnotesize\ttfamily void actualiser\+Coord (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{coord_8h_ae9ae980041e438eed7a3af43ce4e9f6b}{direction\+\_\+t}}}]{direction,  }\item[{\mbox{\hyperlink{structcoord__t}{coord\+\_\+t}} $\ast$}]{position }\end{DoxyParamCaption})}
+
+
+
+Actualise une position selon un direction prise. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em direction} & La direction prise \\
+\hline
+{\em position} & Les coordonnées modifiées \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{coord_8h_a864f6db7579a0ba123c17f0a72c1aa8e}\label{coord_8h_a864f6db7579a0ba123c17f0a72c1aa8e}} 
+\index{coord.h@{coord.h}!coordAccessible@{coordAccessible}}
+\index{coordAccessible@{coordAccessible}!coord.h@{coord.h}}
+\doxysubsubsection{\texorpdfstring{coordAccessible()}{coordAccessible()}}
+{\footnotesize\ttfamily int coord\+Accessible (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcoord__t}{coord\+\_\+t}} $\ast$}]{coord,  }\item[{\mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$}]{carte }\end{DoxyParamCaption})}
+
+
+
+Vérifie si un carré est accessible. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em carte} & La carte étudiée \\
+\hline
+{\em coord} & Les coordonnées étudiés sur la carte \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+un booléen 
+\end{DoxyReturn}
+\mbox{\Hypertarget{coord_8h_a44b0ce42b4741451bfaf74076435e8e8}\label{coord_8h_a44b0ce42b4741451bfaf74076435e8e8}} 
+\index{coord.h@{coord.h}!coordAlea@{coordAlea}}
+\index{coordAlea@{coordAlea}!coord.h@{coord.h}}
+\doxysubsubsection{\texorpdfstring{coordAlea()}{coordAlea()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structcoord__t}{coord\+\_\+t}} coord\+Alea (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$}]{carte }\end{DoxyParamCaption})}
+
+
+
+Donne des coordonnées aléatoires sur une carte. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em carte} & La carte dont on veut des coordonnées aléatoires \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Des coordonnées aléatoires sur la carte 
+\end{DoxyReturn}
+\mbox{\Hypertarget{coord_8h_aef47ea39dbc00bb97eb82ddd95920458}\label{coord_8h_aef47ea39dbc00bb97eb82ddd95920458}} 
+\index{coord.h@{coord.h}!coordAleaAcces@{coordAleaAcces}}
+\index{coordAleaAcces@{coordAleaAcces}!coord.h@{coord.h}}
+\doxysubsubsection{\texorpdfstring{coordAleaAcces()}{coordAleaAcces()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structcoord__t}{coord\+\_\+t}} coord\+Alea\+Acces (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$}]{carte }\end{DoxyParamCaption})}
+
+
+
+Donne des coordonnées aléatoires d\textquotesingle{}un carré accessible sur une carte. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em carte} & La carte dont on veut des coordonnées aléatoires \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Des coordonnées aléatoires 
+\end{DoxyReturn}
+\mbox{\Hypertarget{coord_8h_a8777484197b86b4f42e18de8424d10f1}\label{coord_8h_a8777484197b86b4f42e18de8424d10f1}} 
+\index{coord.h@{coord.h}!coordExiste@{coordExiste}}
+\index{coordExiste@{coordExiste}!coord.h@{coord.h}}
+\doxysubsubsection{\texorpdfstring{coordExiste()}{coordExiste()}}
+{\footnotesize\ttfamily int coord\+Existe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcoord__t}{coord\+\_\+t}} $\ast$}]{coord,  }\item[{\mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$}]{carte }\end{DoxyParamCaption})}
+
+
+
+Vérifie si un carré existe. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em coord} & Les coordonnées étudiés sur la carte \\
+\hline
+{\em carte} & La carte étudiée \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+un booléen 
+\end{DoxyReturn}
+\mbox{\Hypertarget{coord_8h_a38efaf6ce5b3c16b1866f95b72e8b1c0}\label{coord_8h_a38efaf6ce5b3c16b1866f95b72e8b1c0}} 
+\index{coord.h@{coord.h}!coordProche@{coordProche}}
+\index{coordProche@{coordProche}!coord.h@{coord.h}}
+\doxysubsubsection{\texorpdfstring{coordProche()}{coordProche()}}
+{\footnotesize\ttfamily int coord\+Proche (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{\mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$}]{perso }\end{DoxyParamCaption})}
+
+
+
+Evalue si un carré est dans le champ de vision du perso. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em i} & Le numéro de ligne du carre \\
+\hline
+{\em j} & Le numéro de colonne du carre \\
+\hline
+{\em perso} & Le perso \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Un booléen 
+\end{DoxyReturn}
+\mbox{\Hypertarget{coord_8h_a79bd793bdd087f64350982df9f525882}\label{coord_8h_a79bd793bdd087f64350982df9f525882}} 
+\index{coord.h@{coord.h}!creerCoord@{creerCoord}}
+\index{creerCoord@{creerCoord}!coord.h@{coord.h}}
+\doxysubsubsection{\texorpdfstring{creerCoord()}{creerCoord()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structcoord__t}{coord\+\_\+t}}$\ast$ creer\+Coord (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Créé des coordonnées. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{coord_8h_aab820197d2ac613a68dfad89e2df9404}\label{coord_8h_aab820197d2ac613a68dfad89e2df9404}} 
+\index{coord.h@{coord.h}!detruireCoord@{detruireCoord}}
+\index{detruireCoord@{detruireCoord}!coord.h@{coord.h}}
+\doxysubsubsection{\texorpdfstring{detruireCoord()}{detruireCoord()}}
+{\footnotesize\ttfamily void detruire\+Coord (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcoord__t}{coord\+\_\+t}} $\ast$$\ast$}]{coord }\end{DoxyParamCaption})}
+
+
+
+Désalloue l\textquotesingle{}espace attribué aux coordonnées. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em coord} & Les coordonnées à détruire \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{coord_8h_a587be7e3572b52fb098cf7699ee9480b}\label{coord_8h_a587be7e3572b52fb098cf7699ee9480b}} 
+\index{coord.h@{coord.h}!nextCoord@{nextCoord}}
+\index{nextCoord@{nextCoord}!coord.h@{coord.h}}
+\doxysubsubsection{\texorpdfstring{nextCoord()}{nextCoord()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structcoord__t}{coord\+\_\+t}}$\ast$ next\+Coord (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{coord_8h_ae9ae980041e438eed7a3af43ce4e9f6b}{direction\+\_\+t}}}]{direction,  }\item[{\mbox{\hyperlink{structcoord__t}{coord\+\_\+t}} $\ast$}]{position }\end{DoxyParamCaption})}
+
+
+
+Renvoie les prochaines coordonnées que prendra un point. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em direction} & La direction prise \\
+\hline
+{\em position} & Les coordonnées du point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Instance nouvellement allouée des prochaines coordonnées du point 
+\end{DoxyReturn}

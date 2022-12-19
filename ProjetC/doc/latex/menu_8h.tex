@@ -1,0 +1,191 @@
+\hypertarget{menu_8h}{}\doxysection{Référence du fichier menu.\+h}
+\label{menu_8h}\index{menu.h@{menu.h}}
+
+
+Fichier contenant toutes les déclarations concernant les menus.  
+
+
+{\ttfamily \#include $<$ncurses.\+h$>$}\newline
+Graphe des dépendances par inclusion de menu.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=143pt]{menu_8h__incl}
+\end{center}
+\end{figure}
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Énumérations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{menu_8h_a3a922b9bea86b62e5a3292061e50ab08}{difficulty\+\_\+t}} \{ \mbox{\hyperlink{menu_8h_a3a922b9bea86b62e5a3292061e50ab08aa944be7e4435f82ea4785ae3943070e9}{FACILE}}
+, \mbox{\hyperlink{menu_8h_a3a922b9bea86b62e5a3292061e50ab08a50d1448013c6f17125caee18aa418af7}{NORMAL}}
+, \mbox{\hyperlink{menu_8h_a3a922b9bea86b62e5a3292061e50ab08ab3ec94a39459557e25ffaf508467329b}{DIFFICILE}}
+, \mbox{\hyperlink{menu_8h_a3a922b9bea86b62e5a3292061e50ab08a4f7dcf0a555209425642848b170b8707}{NB\+\_\+\+DIFFICULTY}}
+ \}
+\begin{DoxyCompactList}\small\item\em Les difficultés. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{menu_8h_a800642be45865a20b8f716100d75c280}{choix\+Carte}} (void)
+\begin{DoxyCompactList}\small\item\em Choix de la carte à l\textquotesingle{}ouverture du jeu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{menu_8h_a28c6a40b54bdfc172049f72fa4a780c7}{choix\+Difficulte}} (void)
+\begin{DoxyCompactList}\small\item\em Choix de la difficulté du jeu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{menu_8h_a391528683a24152d78c2863bcf451c88}{menu\+Pause}} (WINDOW $\ast$w, \mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$carte, \mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$perso, int $\ast$running)
+\begin{DoxyCompactList}\small\item\em Menu pause du jeu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{menu_8h_a85e328f2a105a9dd62a641671dfc5a6c}{menu\+Mort}} (\mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$tirs, \mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$mobs, \mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$coffres, WINDOW $\ast$w, \mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$carte, \mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$perso, int $\ast$running)
+\begin{DoxyCompactList}\small\item\em Menu de mort du personnage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{menu_8h_a016a5d341f375d13639c75bf5987fb23}{difficulty}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Fichier contenant toutes les déclarations concernant les menus. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps (\href{mailto:descomps@et.esiea.fr}{\texttt{ descomps@et.\+esiea.\+fr}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+30/09/2022 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Documentation du type de l\textquotesingle{}énumération}
+\mbox{\Hypertarget{menu_8h_a3a922b9bea86b62e5a3292061e50ab08}\label{menu_8h_a3a922b9bea86b62e5a3292061e50ab08}} 
+\index{menu.h@{menu.h}!difficulty\_t@{difficulty\_t}}
+\index{difficulty\_t@{difficulty\_t}!menu.h@{menu.h}}
+\doxysubsubsection{\texorpdfstring{difficulty\_t}{difficulty\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{menu_8h_a3a922b9bea86b62e5a3292061e50ab08}{difficulty\+\_\+t}}}
+
+
+
+Les difficultés. 
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FACILE@{FACILE}!menu.h@{menu.h}}\index{menu.h@{menu.h}!FACILE@{FACILE}}}\mbox{\Hypertarget{menu_8h_a3a922b9bea86b62e5a3292061e50ab08aa944be7e4435f82ea4785ae3943070e9}\label{menu_8h_a3a922b9bea86b62e5a3292061e50ab08aa944be7e4435f82ea4785ae3943070e9}} 
+FACILE&Difficulté facile \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NORMAL@{NORMAL}!menu.h@{menu.h}}\index{menu.h@{menu.h}!NORMAL@{NORMAL}}}\mbox{\Hypertarget{menu_8h_a3a922b9bea86b62e5a3292061e50ab08a50d1448013c6f17125caee18aa418af7}\label{menu_8h_a3a922b9bea86b62e5a3292061e50ab08a50d1448013c6f17125caee18aa418af7}} 
+NORMAL&Difficulté normale \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DIFFICILE@{DIFFICILE}!menu.h@{menu.h}}\index{menu.h@{menu.h}!DIFFICILE@{DIFFICILE}}}\mbox{\Hypertarget{menu_8h_a3a922b9bea86b62e5a3292061e50ab08ab3ec94a39459557e25ffaf508467329b}\label{menu_8h_a3a922b9bea86b62e5a3292061e50ab08ab3ec94a39459557e25ffaf508467329b}} 
+DIFFICILE&Difficulté difficile \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NB\_DIFFICULTY@{NB\_DIFFICULTY}!menu.h@{menu.h}}\index{menu.h@{menu.h}!NB\_DIFFICULTY@{NB\_DIFFICULTY}}}\mbox{\Hypertarget{menu_8h_a3a922b9bea86b62e5a3292061e50ab08a4f7dcf0a555209425642848b170b8707}\label{menu_8h_a3a922b9bea86b62e5a3292061e50ab08a4f7dcf0a555209425642848b170b8707}} 
+NB\+\_\+\+DIFFICULTY&Nombre de difficultés \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{menu_8h_a800642be45865a20b8f716100d75c280}\label{menu_8h_a800642be45865a20b8f716100d75c280}} 
+\index{menu.h@{menu.h}!choixCarte@{choixCarte}}
+\index{choixCarte@{choixCarte}!menu.h@{menu.h}}
+\doxysubsubsection{\texorpdfstring{choixCarte()}{choixCarte()}}
+{\footnotesize\ttfamily int choix\+Carte (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Choix de la carte à l\textquotesingle{}ouverture du jeu. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Renvoie}
+Taille strictement positive de la carte à créer ou zéro si carte à charger en sauvegarde 
+\end{DoxyReturn}
+\mbox{\Hypertarget{menu_8h_a28c6a40b54bdfc172049f72fa4a780c7}\label{menu_8h_a28c6a40b54bdfc172049f72fa4a780c7}} 
+\index{menu.h@{menu.h}!choixDifficulte@{choixDifficulte}}
+\index{choixDifficulte@{choixDifficulte}!menu.h@{menu.h}}
+\doxysubsubsection{\texorpdfstring{choixDifficulte()}{choixDifficulte()}}
+{\footnotesize\ttfamily void choix\+Difficulte (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Choix de la difficulté du jeu. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{menu_8h_a85e328f2a105a9dd62a641671dfc5a6c}\label{menu_8h_a85e328f2a105a9dd62a641671dfc5a6c}} 
+\index{menu.h@{menu.h}!menuMort@{menuMort}}
+\index{menuMort@{menuMort}!menu.h@{menu.h}}
+\doxysubsubsection{\texorpdfstring{menuMort()}{menuMort()}}
+{\footnotesize\ttfamily void menu\+Mort (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$}]{tirs,  }\item[{\mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$}]{mobs,  }\item[{\mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$}]{coffres,  }\item[{WINDOW $\ast$}]{w,  }\item[{\mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$}]{carte,  }\item[{\mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$}]{perso,  }\item[{int $\ast$}]{running }\end{DoxyParamCaption})}
+
+
+
+Menu de mort du personnage. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em tirs} & La liste des tirs \\
+\hline
+{\em mobs} & La liste des mobs \\
+\hline
+{\em coffres} & La liste des coffres \\
+\hline
+{\em w} & Fenêtre de jeu ou s\textquotesingle{}affiche le menu de mort \\
+\hline
+{\em carte} & Carte de jeu \\
+\hline
+{\em perso} & Le personnage en jeu \\
+\hline
+{\em running} & Booléen indiquant si le jeu est en cours \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{menu_8h_a391528683a24152d78c2863bcf451c88}\label{menu_8h_a391528683a24152d78c2863bcf451c88}} 
+\index{menu.h@{menu.h}!menuPause@{menuPause}}
+\index{menuPause@{menuPause}!menu.h@{menu.h}}
+\doxysubsubsection{\texorpdfstring{menuPause()}{menuPause()}}
+{\footnotesize\ttfamily void menu\+Pause (\begin{DoxyParamCaption}\item[{WINDOW $\ast$}]{w,  }\item[{\mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$}]{carte,  }\item[{\mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$}]{perso,  }\item[{int $\ast$}]{running }\end{DoxyParamCaption})}
+
+
+
+Menu pause du jeu. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em w} & Fenêtre de jeu ou s\textquotesingle{}affiche le menu pause \\
+\hline
+{\em carte} & Carte de jeu \\
+\hline
+{\em perso} & Le personnage en jeu \\
+\hline
+{\em running} & Booléen indiquant si le jeu est en cours \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentation des variables}
+\mbox{\Hypertarget{menu_8h_a016a5d341f375d13639c75bf5987fb23}\label{menu_8h_a016a5d341f375d13639c75bf5987fb23}} 
+\index{menu.h@{menu.h}!difficulty@{difficulty}}
+\index{difficulty@{difficulty}!menu.h@{menu.h}}
+\doxysubsubsection{\texorpdfstring{difficulty}{difficulty}}
+{\footnotesize\ttfamily int difficulty\hspace{0.3cm}{\ttfamily [extern]}}
+
+Niveau de difficulté du jeu 

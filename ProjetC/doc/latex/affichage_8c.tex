@@ -1,0 +1,105 @@
+\hypertarget{affichage_8c}{}\doxysection{Référence du fichier affichage.\+c}
+\label{affichage_8c}\index{affichage.c@{affichage.c}}
+
+
+Fonctions liées au module affichage.  
+
+
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}erreur.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}affichage.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de affichage.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{affichage_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{affichage_8c_a12a9b8c1e54e1085d8fc40c87df9d10c}{init\+Color}} ()
+\begin{DoxyCompactList}\small\item\em Initialise les couleurs pour l\textquotesingle{}affichage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{affichage_8c_afec44946433ce3a437055f6ef6db481c}{wprintw\+Carte}} (WINDOW $\ast$w, \mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$carte, \mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$perso)
+\begin{DoxyCompactList}\small\item\em Affiche le jeu sur la sortie ncurses. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{affichage_8c_a33fbbe7b03cde5546d591713116514c8}{wprint\+Stats}} (WINDOW $\ast$w, \mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$perso, int col\+Max)
+\begin{DoxyCompactList}\small\item\em Affiche les statistiques personnage sur la sortie ncurses. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Fonctions liées au module affichage. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps (\href{mailto:descomps@et.esiea.fr}{\texttt{ descomps@et.\+esiea.\+fr}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+27/10/2022 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{affichage_8c_a12a9b8c1e54e1085d8fc40c87df9d10c}\label{affichage_8c_a12a9b8c1e54e1085d8fc40c87df9d10c}} 
+\index{affichage.c@{affichage.c}!initColor@{initColor}}
+\index{initColor@{initColor}!affichage.c@{affichage.c}}
+\doxysubsubsection{\texorpdfstring{initColor()}{initColor()}}
+{\footnotesize\ttfamily void init\+Color (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Initialise les couleurs pour l\textquotesingle{}affichage. 
+
+\begin{DoxyAuthor}{Auteurs}
+Max Descomps 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{affichage_8c_a33fbbe7b03cde5546d591713116514c8}\label{affichage_8c_a33fbbe7b03cde5546d591713116514c8}} 
+\index{affichage.c@{affichage.c}!wprintStats@{wprintStats}}
+\index{wprintStats@{wprintStats}!affichage.c@{affichage.c}}
+\doxysubsubsection{\texorpdfstring{wprintStats()}{wprintStats()}}
+{\footnotesize\ttfamily void wprint\+Stats (\begin{DoxyParamCaption}\item[{WINDOW $\ast$}]{w,  }\item[{\mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$}]{perso,  }\item[{int}]{col\+Max }\end{DoxyParamCaption})}
+
+
+
+Affiche les statistiques personnage sur la sortie ncurses. 
+
+\begin{DoxyAuthor}{Auteurs}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em w} & fenêtre d\textquotesingle{}affichage \\
+\hline
+{\em perso} & Le personnage étudié \\
+\hline
+{\em col\+Max} & La largeur de la fenêtre \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{affichage_8c_afec44946433ce3a437055f6ef6db481c}\label{affichage_8c_afec44946433ce3a437055f6ef6db481c}} 
+\index{affichage.c@{affichage.c}!wprintwCarte@{wprintwCarte}}
+\index{wprintwCarte@{wprintwCarte}!affichage.c@{affichage.c}}
+\doxysubsubsection{\texorpdfstring{wprintwCarte()}{wprintwCarte()}}
+{\footnotesize\ttfamily void wprintw\+Carte (\begin{DoxyParamCaption}\item[{WINDOW $\ast$}]{w,  }\item[{\mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$}]{carte,  }\item[{\mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$}]{perso }\end{DoxyParamCaption})}
+
+
+
+Affiche le jeu sur la sortie ncurses. 
+
+\begin{DoxyAuthor}{Auteurs}
+Dorian Creuze 
+
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em w} & fenêtre d\textquotesingle{}affichage \\
+\hline
+{\em carte} & La carte à afficher \\
+\hline
+{\em perso} & Le personnage sur la carte \\
+\hline
+\end{DoxyParams}

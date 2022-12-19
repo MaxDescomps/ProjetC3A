@@ -1,0 +1,7 @@
+<map id="tir.h" name="tir.h">
+<area shape="rect" id="node1" title="Fichier contenant toutes les déclarations concernant le tir." alt="" coords="151,5,198,32"/>
+<area shape="rect" id="node2" href="$carte_8c.html" title="Fonctions liées au module carte." alt="" coords="5,80,72,107"/>
+<area shape="rect" id="node3" href="$main_8c.html" title="Programme principal du jeu." alt="" coords="96,80,163,107"/>
+<area shape="rect" id="node4" href="$perso_8c.html" title="Fonctions liées au module perso." alt="" coords="187,80,256,107"/>
+<area shape="rect" id="node5" href="$tir_8c.html" title="Fonctions liées au module tir." alt="" coords="281,80,327,107"/>
+</map>

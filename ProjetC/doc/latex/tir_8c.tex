@@ -1,0 +1,228 @@
+\hypertarget{tir_8c}{}\doxysection{Référence du fichier tir.\+c}
+\label{tir_8c}\index{tir.c@{tir.c}}
+
+
+Fonctions liées au module tir.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}tir.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}erreur.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de tir.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tir_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structtir__t}{tir\+\_\+t}} $\ast$ \mbox{\hyperlink{tir_8c_a2c063c973f70b601768daacaceadf124}{creer\+Tir}} (\mbox{\hyperlink{structentite__t}{entite\+\_\+t}} $\ast$entite, \mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$carte)
+\begin{DoxyCompactList}\small\item\em Créé un tir. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tir_8c_a7826f4a7829b61ee77f6d9f88d1ec1b5}{detruire\+Tir}} (\mbox{\hyperlink{structtir__t}{tir\+\_\+t}} $\ast$$\ast$tir)
+\begin{DoxyCompactList}\small\item\em Désalloue l\textquotesingle{}espace attribué au tir. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tir_8c_a04576becc483077363b8a28fee89b432}{detruire\+Tir\+Cb}} (void $\ast$tir)
+\begin{DoxyCompactList}\small\item\em Fonction de callback pour désallouer l\textquotesingle{}espace attribué au tir. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structtir__t}{tir\+\_\+t}} $\ast$ \mbox{\hyperlink{tir_8c_a15110cf9c1d3d320c18b0ccf9c408a7c}{ajout\+Tir}} (\mbox{\hyperlink{structtir__t}{tir\+\_\+t}} $\ast$tir)
+\begin{DoxyCompactList}\small\item\em Fonction d\textquotesingle{}ajout de tir pour liste. \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{tir_8c_acf5b4112d8beb04ed1e8b2aaf88cff2b}{ajout\+Tir\+Cb}} (void $\ast$tir)
+\begin{DoxyCompactList}\small\item\em Fonction de callback d\textquotesingle{}ajout de tir pour liste. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tir_8c_a7f300b6428eb28c2818d1aa26ffad3aa}{tirer}} (\mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$carte, \mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$liste\+Tirs, \mbox{\hyperlink{structentite__t}{entite\+\_\+t}} $\ast$entite)
+\begin{DoxyCompactList}\small\item\em Génère le tir d\textquotesingle{}une entité \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tir_8c_ac3eb7d9dffb31aa09179db3e40dc34d9}{collision\+Vivant\+Tir}} (\mbox{\hyperlink{structentite__t}{entite\+\_\+t}} $\ast$entite, \mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$carte, \mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$liste\+Tirs, \mbox{\hyperlink{carte_8h_a59d9316fee245240d74c52ab19b9dacd}{carre\+\_\+t}} $\ast$carre\+Tir)
+\begin{DoxyCompactList}\small\item\em Gère une entité vivante qui fonce sur un tir. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{tir_8c_a3507432c3fadf7892d3523f00028d6e0}{collision\+Tir\+Entite}} (\mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$carte, \mbox{\hyperlink{structcoord__t}{coord\+\_\+t}} $\ast$coord\+Colli, \mbox{\hyperlink{structtir__t}{tir\+\_\+t}} $\ast$tir)
+\begin{DoxyCompactList}\small\item\em Gère un tir qui fonce sur une entité \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Fonctions liées au module tir. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps (\href{mailto:descomps@et.esiea.fr}{\texttt{ descomps@et.\+esiea.\+fr}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+27/10/2022 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{tir_8c_a15110cf9c1d3d320c18b0ccf9c408a7c}\label{tir_8c_a15110cf9c1d3d320c18b0ccf9c408a7c}} 
+\index{tir.c@{tir.c}!ajoutTir@{ajoutTir}}
+\index{ajoutTir@{ajoutTir}!tir.c@{tir.c}}
+\doxysubsubsection{\texorpdfstring{ajoutTir()}{ajoutTir()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structtir__t}{tir\+\_\+t}}$\ast$ ajout\+Tir (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structtir__t}{tir\+\_\+t}} $\ast$}]{tir }\end{DoxyParamCaption})}
+
+
+
+Fonction d\textquotesingle{}ajout de tir pour liste. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em tir} & Le tir à ajouter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Un tir 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tir_8c_acf5b4112d8beb04ed1e8b2aaf88cff2b}\label{tir_8c_acf5b4112d8beb04ed1e8b2aaf88cff2b}} 
+\index{tir.c@{tir.c}!ajoutTirCb@{ajoutTirCb}}
+\index{ajoutTirCb@{ajoutTirCb}!tir.c@{tir.c}}
+\doxysubsubsection{\texorpdfstring{ajoutTirCb()}{ajoutTirCb()}}
+{\footnotesize\ttfamily void$\ast$ ajout\+Tir\+Cb (\begin{DoxyParamCaption}\item[{void $\ast$}]{tir }\end{DoxyParamCaption})}
+
+
+
+Fonction de callback d\textquotesingle{}ajout de tir pour liste. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em tir} & Le tir à ajouter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Un pointeur void sur le tir 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tir_8c_a3507432c3fadf7892d3523f00028d6e0}\label{tir_8c_a3507432c3fadf7892d3523f00028d6e0}} 
+\index{tir.c@{tir.c}!collisionTirEntite@{collisionTirEntite}}
+\index{collisionTirEntite@{collisionTirEntite}!tir.c@{tir.c}}
+\doxysubsubsection{\texorpdfstring{collisionTirEntite()}{collisionTirEntite()}}
+{\footnotesize\ttfamily int collision\+Tir\+Entite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$}]{carte,  }\item[{\mbox{\hyperlink{structcoord__t}{coord\+\_\+t}} $\ast$}]{coord\+Colli,  }\item[{\mbox{\hyperlink{structtir__t}{tir\+\_\+t}} $\ast$}]{tir }\end{DoxyParamCaption})}
+
+
+
+Gère un tir qui fonce sur une entité 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em carte} & La carte contenant le tir \\
+\hline
+{\em coord\+Colli} & Les coordonnées de la collision \\
+\hline
+{\em tir} & Le tir en collision \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+un booléen indiquant si le tir à heurté une entité 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tir_8c_ac3eb7d9dffb31aa09179db3e40dc34d9}\label{tir_8c_ac3eb7d9dffb31aa09179db3e40dc34d9}} 
+\index{tir.c@{tir.c}!collisionVivantTir@{collisionVivantTir}}
+\index{collisionVivantTir@{collisionVivantTir}!tir.c@{tir.c}}
+\doxysubsubsection{\texorpdfstring{collisionVivantTir()}{collisionVivantTir()}}
+{\footnotesize\ttfamily void collision\+Vivant\+Tir (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structentite__t}{entite\+\_\+t}} $\ast$}]{entite,  }\item[{\mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$}]{carte,  }\item[{\mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$}]{liste\+Tirs,  }\item[{\mbox{\hyperlink{carte_8h_a59d9316fee245240d74c52ab19b9dacd}{carre\+\_\+t}} $\ast$}]{carre\+Tir }\end{DoxyParamCaption})}
+
+
+
+Gère une entité vivante qui fonce sur un tir. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em entite} & L\textquotesingle{}éntité qui fonce sur le tir \\
+\hline
+{\em carte} & La carte ou se produit la collision \\
+\hline
+{\em liste\+Tirs} & La liste des tirs \\
+\hline
+{\em carre\+Tir} & Le carre ou se trouve le tir \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tir_8c_a2c063c973f70b601768daacaceadf124}\label{tir_8c_a2c063c973f70b601768daacaceadf124}} 
+\index{tir.c@{tir.c}!creerTir@{creerTir}}
+\index{creerTir@{creerTir}!tir.c@{tir.c}}
+\doxysubsubsection{\texorpdfstring{creerTir()}{creerTir()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structtir__t}{tir\+\_\+t}}$\ast$ creer\+Tir (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structentite__t}{entite\+\_\+t}} $\ast$}]{entite,  }\item[{\mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$}]{carte }\end{DoxyParamCaption})}
+
+
+
+Créé un tir. 
+
+\begin{DoxyAuthor}{Auteurs}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em entite} & L\textquotesingle{}entité qui tire \\
+\hline
+{\em carte} & La carte ou l\textquotesingle{}entité tire \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Le tir créé 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tir_8c_a7826f4a7829b61ee77f6d9f88d1ec1b5}\label{tir_8c_a7826f4a7829b61ee77f6d9f88d1ec1b5}} 
+\index{tir.c@{tir.c}!detruireTir@{detruireTir}}
+\index{detruireTir@{detruireTir}!tir.c@{tir.c}}
+\doxysubsubsection{\texorpdfstring{detruireTir()}{detruireTir()}}
+{\footnotesize\ttfamily void detruire\+Tir (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structtir__t}{tir\+\_\+t}} $\ast$$\ast$}]{tir }\end{DoxyParamCaption})}
+
+
+
+Désalloue l\textquotesingle{}espace attribué au tir. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em tir} & Le tir à détruire \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tir_8c_a04576becc483077363b8a28fee89b432}\label{tir_8c_a04576becc483077363b8a28fee89b432}} 
+\index{tir.c@{tir.c}!detruireTirCb@{detruireTirCb}}
+\index{detruireTirCb@{detruireTirCb}!tir.c@{tir.c}}
+\doxysubsubsection{\texorpdfstring{detruireTirCb()}{detruireTirCb()}}
+{\footnotesize\ttfamily void detruire\+Tir\+Cb (\begin{DoxyParamCaption}\item[{void $\ast$}]{tir }\end{DoxyParamCaption})}
+
+
+
+Fonction de callback pour désallouer l\textquotesingle{}espace attribué au tir. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em tir} & L\textquotesingle{}adresse du pointeur sur le tir à détruire \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tir_8c_a7f300b6428eb28c2818d1aa26ffad3aa}\label{tir_8c_a7f300b6428eb28c2818d1aa26ffad3aa}} 
+\index{tir.c@{tir.c}!tirer@{tirer}}
+\index{tirer@{tirer}!tir.c@{tir.c}}
+\doxysubsubsection{\texorpdfstring{tirer()}{tirer()}}
+{\footnotesize\ttfamily void tirer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$}]{carte,  }\item[{\mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$}]{liste\+Tirs,  }\item[{\mbox{\hyperlink{structentite__t}{entite\+\_\+t}} $\ast$}]{entite }\end{DoxyParamCaption})}
+
+
+
+Génère le tir d\textquotesingle{}une entité 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em carte} & La carte depuis laquelle on tire \\
+\hline
+{\em liste\+Tirs} & La liste des tirs \\
+\hline
+{\em entite} & L\textquotesingle{}entité qui tire \\
+\hline
+\end{DoxyParams}

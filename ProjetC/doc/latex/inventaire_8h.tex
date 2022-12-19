@@ -1,0 +1,228 @@
+\hypertarget{inventaire_8h}{}\doxysection{Référence du fichier inventaire.\+h}
+\label{inventaire_8h}\index{inventaire.h@{inventaire.h}}
+
+
+Fichier contenant toutes les déclarations concernant l\textquotesingle{}inventaire.  
+
+
+{\ttfamily \#include \char`\"{}item.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de inventaire.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{inventaire_8h__incl}
+\end{center}
+\end{figure}
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{inventaire_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Structures de données}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structinvCase__t}{inv\+Case\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Structure contenant les propiétées d\textquotesingle{}une case d\textquotesingle{}inventaire. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structinventaire__t}{inventaire\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Structure contenant les propiétées d\textquotesingle{}un inventaire. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Définitions de type}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structScarre}{Scarre}} \mbox{\hyperlink{inventaire_8h_a59d9316fee245240d74c52ab19b9dacd}{carre\+\_\+t}}
+\item 
+typedef struct \mbox{\hyperlink{structperso__s}{perso\+\_\+s}} \mbox{\hyperlink{inventaire_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structinvCase__t}{inv\+Case\+\_\+t}} $\ast$ \mbox{\hyperlink{inventaire_8h_a6299f7c734d910651a7c6c2c554e0437}{creer\+Inv\+Case}} (void)
+\begin{DoxyCompactList}\small\item\em Créé une case d\textquotesingle{}inventaire. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{inventaire_8h_a74a49cba25b08434246c348aab2034f2}{detruire\+Inv\+Case}} (\mbox{\hyperlink{structinvCase__t}{inv\+Case\+\_\+t}} $\ast$$\ast$inv\+Case)
+\begin{DoxyCompactList}\small\item\em Détruit une case d\textquotesingle{}inventaire. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structinventaire__t}{inventaire\+\_\+t}} $\ast$ \mbox{\hyperlink{inventaire_8h_a771dfacdebf717d1639422e027d2406d}{creer\+Inv}} (void)
+\begin{DoxyCompactList}\small\item\em Créé un inventaire. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{inventaire_8h_a2bb12c2d86681e34425052a73d23c4dd}{detruire\+Inv}} (\mbox{\hyperlink{structinventaire__t}{inventaire\+\_\+t}} $\ast$$\ast$inventaire)
+\begin{DoxyCompactList}\small\item\em Détruit un inventaire. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{inventaire_8h_a3d009d5c99dd8c1772b50e553ed330f4}{ramasser}} (WINDOW $\ast$fen\+Coffre, WINDOW $\ast$fen\+Inv, \mbox{\hyperlink{item_8h_a39fa0e97dea0645c57b7e7b0d0014ac4}{item\+\_\+t}} $\ast$carre, \mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$perso)
+\begin{DoxyCompactList}\small\item\em Ramasse un item et le met dans l\textquotesingle{}inventaire. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{inventaire_8h_a8da6a82e2e01087852752f765c02d2c3}{wprint\+Inv}} (WINDOW $\ast$w, \mbox{\hyperlink{structinventaire__t}{inventaire\+\_\+t}} $\ast$inventaire)
+\begin{DoxyCompactList}\small\item\em Affiche un inventaire. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{inventaire_8h_a9c630f56f36dcb8e426eb68f33a0a5ef}{utiliser\+Item}} (\mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$perso, \mbox{\hyperlink{carte_8h_a59d9316fee245240d74c52ab19b9dacd}{carre\+\_\+t}} $\ast$carre)
+\begin{DoxyCompactList}\small\item\em Utilise un item de l\textquotesingle{}inventaire. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Fichier contenant toutes les déclarations concernant l\textquotesingle{}inventaire. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps (\href{mailto:descomps@et.esiea.fr}{\texttt{ descomps@et.\+esiea.\+fr}}) 
+
+Dorian Creuze (\href{mailto:creuze@et.esiea.fr}{\texttt{ creuze@et.\+esiea.\+fr}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+20/10/2022 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Documentation des définitions de type}
+\mbox{\Hypertarget{inventaire_8h_a59d9316fee245240d74c52ab19b9dacd}\label{inventaire_8h_a59d9316fee245240d74c52ab19b9dacd}} 
+\index{inventaire.h@{inventaire.h}!carre\_t@{carre\_t}}
+\index{carre\_t@{carre\_t}!inventaire.h@{inventaire.h}}
+\doxysubsubsection{\texorpdfstring{carre\_t}{carre\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structScarre}{Scarre}} \mbox{\hyperlink{carte_8h_a59d9316fee245240d74c52ab19b9dacd}{carre\+\_\+t}}}
+
+Cette déclaration est là pour éviter un conflit d\textquotesingle{}inclusion mutuelle des fichiers \mbox{\hyperlink{inventaire_8h}{inventaire.\+h}} et \mbox{\hyperlink{carte_8h}{carte.\+h}} \mbox{\Hypertarget{inventaire_8h_a550089442e996a6b42d393992dbc5436}\label{inventaire_8h_a550089442e996a6b42d393992dbc5436}} 
+\index{inventaire.h@{inventaire.h}!perso\_t@{perso\_t}}
+\index{perso\_t@{perso\_t}!inventaire.h@{inventaire.h}}
+\doxysubsubsection{\texorpdfstring{perso\_t}{perso\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structperso__s}{perso\+\_\+s}} \mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}}}
+
+Cette déclaration est là pour éviter un conflit d\textquotesingle{}inclusion mutuelle des fichiers \mbox{\hyperlink{inventaire_8h}{inventaire.\+h}} et \mbox{\hyperlink{perso_8h}{perso.\+h}} 
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{inventaire_8h_a771dfacdebf717d1639422e027d2406d}\label{inventaire_8h_a771dfacdebf717d1639422e027d2406d}} 
+\index{inventaire.h@{inventaire.h}!creerInv@{creerInv}}
+\index{creerInv@{creerInv}!inventaire.h@{inventaire.h}}
+\doxysubsubsection{\texorpdfstring{creerInv()}{creerInv()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structinventaire__t}{inventaire\+\_\+t}}$\ast$ creer\+Inv (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Créé un inventaire. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Renvoie}
+Instance nouvellement allouée d\textquotesingle{}un inventaire 
+\end{DoxyReturn}
+\mbox{\Hypertarget{inventaire_8h_a6299f7c734d910651a7c6c2c554e0437}\label{inventaire_8h_a6299f7c734d910651a7c6c2c554e0437}} 
+\index{inventaire.h@{inventaire.h}!creerInvCase@{creerInvCase}}
+\index{creerInvCase@{creerInvCase}!inventaire.h@{inventaire.h}}
+\doxysubsubsection{\texorpdfstring{creerInvCase()}{creerInvCase()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structinvCase__t}{inv\+Case\+\_\+t}}$\ast$ creer\+Inv\+Case (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Créé une case d\textquotesingle{}inventaire. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Renvoie}
+Instance nouvellement allouée d\textquotesingle{}une case d\textquotesingle{}inventaire 
+\end{DoxyReturn}
+\mbox{\Hypertarget{inventaire_8h_a2bb12c2d86681e34425052a73d23c4dd}\label{inventaire_8h_a2bb12c2d86681e34425052a73d23c4dd}} 
+\index{inventaire.h@{inventaire.h}!detruireInv@{detruireInv}}
+\index{detruireInv@{detruireInv}!inventaire.h@{inventaire.h}}
+\doxysubsubsection{\texorpdfstring{detruireInv()}{detruireInv()}}
+{\footnotesize\ttfamily void detruire\+Inv (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structinventaire__t}{inventaire\+\_\+t}} $\ast$$\ast$}]{inventaire }\end{DoxyParamCaption})}
+
+
+
+Détruit un inventaire. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em inventaire} & L\textquotesingle{}inventaire à détruire \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{inventaire_8h_a74a49cba25b08434246c348aab2034f2}\label{inventaire_8h_a74a49cba25b08434246c348aab2034f2}} 
+\index{inventaire.h@{inventaire.h}!detruireInvCase@{detruireInvCase}}
+\index{detruireInvCase@{detruireInvCase}!inventaire.h@{inventaire.h}}
+\doxysubsubsection{\texorpdfstring{detruireInvCase()}{detruireInvCase()}}
+{\footnotesize\ttfamily void detruire\+Inv\+Case (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structinvCase__t}{inv\+Case\+\_\+t}} $\ast$$\ast$}]{inv\+Case }\end{DoxyParamCaption})}
+
+
+
+Détruit une case d\textquotesingle{}inventaire. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em inv\+Case} & La case d\textquotesingle{}inventaire à détruire \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{inventaire_8h_a3d009d5c99dd8c1772b50e553ed330f4}\label{inventaire_8h_a3d009d5c99dd8c1772b50e553ed330f4}} 
+\index{inventaire.h@{inventaire.h}!ramasser@{ramasser}}
+\index{ramasser@{ramasser}!inventaire.h@{inventaire.h}}
+\doxysubsubsection{\texorpdfstring{ramasser()}{ramasser()}}
+{\footnotesize\ttfamily int ramasser (\begin{DoxyParamCaption}\item[{WINDOW $\ast$}]{fen\+Coffre,  }\item[{WINDOW $\ast$}]{fen\+Inv,  }\item[{\mbox{\hyperlink{item_8h_a39fa0e97dea0645c57b7e7b0d0014ac4}{item\+\_\+t}} $\ast$}]{carre,  }\item[{\mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$}]{perso }\end{DoxyParamCaption})}
+
+
+
+Ramasse un item et le met dans l\textquotesingle{}inventaire. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em fen\+Coffre} & La fenêtre d\textquotesingle{}affichage des coffres \\
+\hline
+{\em fen\+Inv} & La fenêtre d\textquotesingle{}affichage de l\textquotesingle{}inventaire \\
+\hline
+{\em carre} & Le carré sur lequel on ramasse \\
+\hline
+{\em perso} & Le personnage qui ramasse \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Un booléen\+: 1 si on a récupéré un bloc, sinon 0 
+\end{DoxyReturn}
+\mbox{\Hypertarget{inventaire_8h_a9c630f56f36dcb8e426eb68f33a0a5ef}\label{inventaire_8h_a9c630f56f36dcb8e426eb68f33a0a5ef}} 
+\index{inventaire.h@{inventaire.h}!utiliserItem@{utiliserItem}}
+\index{utiliserItem@{utiliserItem}!inventaire.h@{inventaire.h}}
+\doxysubsubsection{\texorpdfstring{utiliserItem()}{utiliserItem()}}
+{\footnotesize\ttfamily int utiliser\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$}]{perso,  }\item[{\mbox{\hyperlink{carte_8h_a59d9316fee245240d74c52ab19b9dacd}{carre\+\_\+t}} $\ast$}]{carre }\end{DoxyParamCaption})}
+
+
+
+Utilise un item de l\textquotesingle{}inventaire. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em perso} & Le personnage qui utilise un item \\
+\hline
+{\em carre} & Le carré ou utiliser un item \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Un booléen\+: 1 si on a posé un bloc, sinon 0 
+\end{DoxyReturn}
+\mbox{\Hypertarget{inventaire_8h_a8da6a82e2e01087852752f765c02d2c3}\label{inventaire_8h_a8da6a82e2e01087852752f765c02d2c3}} 
+\index{inventaire.h@{inventaire.h}!wprintInv@{wprintInv}}
+\index{wprintInv@{wprintInv}!inventaire.h@{inventaire.h}}
+\doxysubsubsection{\texorpdfstring{wprintInv()}{wprintInv()}}
+{\footnotesize\ttfamily void wprint\+Inv (\begin{DoxyParamCaption}\item[{WINDOW $\ast$}]{w,  }\item[{\mbox{\hyperlink{structinventaire__t}{inventaire\+\_\+t}} $\ast$}]{inventaire }\end{DoxyParamCaption})}
+
+
+
+Affiche un inventaire. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em w} & La fenêtre d\textquotesingle{}affichage de l\textquotesingle{}inventaire \\
+\hline
+{\em inventaire} & L\textquotesingle{}inventaire à afficher \\
+\hline
+\end{DoxyParams}

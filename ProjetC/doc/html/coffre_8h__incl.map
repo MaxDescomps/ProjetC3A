@@ -1,0 +1,8 @@
+<map id="coffre.h" name="coffre.h">
+<area shape="rect" id="node1" title="Fichier contenant toutes les déclarations communes aux coffres." alt="" coords="63,5,133,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,89,107"/>
+<area shape="rect" id="node3" href="$entite_8h.html" title="Fichier contenant toutes les déclarations communes aux entités." alt="" coords="114,80,186,107"/>
+<area shape="rect" id="node4" href="$coord_8h.html" title="Fichier contenant les déclarations sur les coordonnées servant à résoudre un conflit d&#39;inclusion mutu..." alt="" coords="24,155,95,181"/>
+<area shape="rect" id="node5" href="$liste_8h.html" title="Déclarations relatives au type de structure liste générique." alt="" coords="119,155,181,181"/>
+<area shape="rect" id="node6" href="$matiere_8h.html" title="Fichier contenant les déclarations des matières." alt="" coords="206,155,291,181"/>
+</map>

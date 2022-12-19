@@ -1,0 +1,185 @@
+\hypertarget{entite_8h}{}\doxysection{Référence du fichier entite.\+h}
+\label{entite_8h}\index{entite.h@{entite.h}}
+
+
+Fichier contenant toutes les déclarations communes aux entités.  
+
+
+{\ttfamily \#include \char`\"{}coord.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}liste.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}matiere.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de entite.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=281pt]{entite_8h__incl}
+\end{center}
+\end{figure}
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{entite_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Structures de données}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structentite__t}{entite\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Structure contenant les propiétées d\textquotesingle{}une entité \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Définitions de type}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structScarre}{Scarre}} \mbox{\hyperlink{entite_8h_a59d9316fee245240d74c52ab19b9dacd}{carre\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Énumérations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{entite_8h_a2aba7ee053b5e021d71af3fcf4ea1ae5}{type\+Entite}} \{ \mbox{\hyperlink{entite_8h_a2aba7ee053b5e021d71af3fcf4ea1ae5a55e80c6ee06680555ea45e27f239802f}{ENT\+\_\+\+MOB}}
+, \mbox{\hyperlink{entite_8h_a2aba7ee053b5e021d71af3fcf4ea1ae5a0c9316f6aa1d0bb9beebe1b7e98ddda4}{ENT\+\_\+\+PERSO}}
+, \mbox{\hyperlink{entite_8h_a2aba7ee053b5e021d71af3fcf4ea1ae5ab3a65983f5b5d4f56d7adab6914570e6}{ENT\+\_\+\+TIR}}
+, \mbox{\hyperlink{entite_8h_a2aba7ee053b5e021d71af3fcf4ea1ae5a6ac9cd24270246f64bd3d319467698c3}{ENT\+\_\+\+COFFRE}}
+ \}
+\begin{DoxyCompactList}\small\item\em Le type d\textquotesingle{}entité \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{entite_8h_aec2532b33d2d66f09e5b30ed3ded35ec}{action\+\_\+t}} \{ \mbox{\hyperlink{entite_8h_aec2532b33d2d66f09e5b30ed3ded35eca70b100093f9f5e4ec3406859cc808132}{RIEN}}
+, \mbox{\hyperlink{entite_8h_aec2532b33d2d66f09e5b30ed3ded35eca70c3712cf958573a15ce5f5cd738eb55}{ATTAQUE}}
+ \}
+\begin{DoxyCompactList}\small\item\em Le type d\textquotesingle{}action. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{entite_8h_aa442e91a42434f7f25776fc35971c9f1}{bouger\+Entite}} (\mbox{\hyperlink{coord_8h_ae9ae980041e438eed7a3af43ce4e9f6b}{direction\+\_\+t}} direction, \mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$carte, \mbox{\hyperlink{structentite__t}{entite\+\_\+t}} $\ast$entite, \mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$liste\+Tirs)
+\begin{DoxyCompactList}\small\item\em Déplace une entité \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{entite_8h_a07d41f814469aed4e861f36b32590ab0}{fonce\+Sur\+Tir}} (\mbox{\hyperlink{structentite__t}{entite\+\_\+t}} $\ast$entite, \mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$carte, \mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$liste\+Tirs, \mbox{\hyperlink{carte_8h_a59d9316fee245240d74c52ab19b9dacd}{carre\+\_\+t}} $\ast$carre\+Tir)
+\begin{DoxyCompactList}\small\item\em Gère une entité vivante qui fonce sur un tire. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Fichier contenant toutes les déclarations communes aux entités. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps (\href{mailto:descomps@et.esiea.fr}{\texttt{ descomps@et.\+esiea.\+fr}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+6/10/2022 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Documentation des définitions de type}
+\mbox{\Hypertarget{entite_8h_a59d9316fee245240d74c52ab19b9dacd}\label{entite_8h_a59d9316fee245240d74c52ab19b9dacd}} 
+\index{entite.h@{entite.h}!carre\_t@{carre\_t}}
+\index{carre\_t@{carre\_t}!entite.h@{entite.h}}
+\doxysubsubsection{\texorpdfstring{carre\_t}{carre\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structScarre}{Scarre}} \mbox{\hyperlink{carte_8h_a59d9316fee245240d74c52ab19b9dacd}{carre\+\_\+t}}}
+
+Cette déclaration est là pour éviter un conflit d\textquotesingle{}inclusion mutuelle des fichiers \mbox{\hyperlink{entite_8h}{entite.\+h}} et \mbox{\hyperlink{carte_8h}{carte.\+h}} 
+
+\doxysubsection{Documentation du type de l\textquotesingle{}énumération}
+\mbox{\Hypertarget{entite_8h_aec2532b33d2d66f09e5b30ed3ded35ec}\label{entite_8h_aec2532b33d2d66f09e5b30ed3ded35ec}} 
+\index{entite.h@{entite.h}!action\_t@{action\_t}}
+\index{action\_t@{action\_t}!entite.h@{entite.h}}
+\doxysubsubsection{\texorpdfstring{action\_t}{action\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{entite_8h_aec2532b33d2d66f09e5b30ed3ded35ec}{action\+\_\+t}}}
+
+
+
+Le type d\textquotesingle{}action. 
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RIEN@{RIEN}!entite.h@{entite.h}}\index{entite.h@{entite.h}!RIEN@{RIEN}}}\mbox{\Hypertarget{entite_8h_aec2532b33d2d66f09e5b30ed3ded35eca70b100093f9f5e4ec3406859cc808132}\label{entite_8h_aec2532b33d2d66f09e5b30ed3ded35eca70b100093f9f5e4ec3406859cc808132}} 
+RIEN&Aucune action \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ATTAQUE@{ATTAQUE}!entite.h@{entite.h}}\index{entite.h@{entite.h}!ATTAQUE@{ATTAQUE}}}\mbox{\Hypertarget{entite_8h_aec2532b33d2d66f09e5b30ed3ded35eca70c3712cf958573a15ce5f5cd738eb55}\label{entite_8h_aec2532b33d2d66f09e5b30ed3ded35eca70c3712cf958573a15ce5f5cd738eb55}} 
+ATTAQUE&Action d\textquotesingle{}attaque \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{entite_8h_a2aba7ee053b5e021d71af3fcf4ea1ae5}\label{entite_8h_a2aba7ee053b5e021d71af3fcf4ea1ae5}} 
+\index{entite.h@{entite.h}!typeEntite@{typeEntite}}
+\index{typeEntite@{typeEntite}!entite.h@{entite.h}}
+\doxysubsubsection{\texorpdfstring{typeEntite}{typeEntite}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{entite_8h_a2aba7ee053b5e021d71af3fcf4ea1ae5}{type\+Entite}}}
+
+
+
+Le type d\textquotesingle{}entité 
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENT\_MOB@{ENT\_MOB}!entite.h@{entite.h}}\index{entite.h@{entite.h}!ENT\_MOB@{ENT\_MOB}}}\mbox{\Hypertarget{entite_8h_a2aba7ee053b5e021d71af3fcf4ea1ae5a55e80c6ee06680555ea45e27f239802f}\label{entite_8h_a2aba7ee053b5e021d71af3fcf4ea1ae5a55e80c6ee06680555ea45e27f239802f}} 
+ENT\+\_\+\+MOB&type d\textquotesingle{}entité des mobs \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENT\_PERSO@{ENT\_PERSO}!entite.h@{entite.h}}\index{entite.h@{entite.h}!ENT\_PERSO@{ENT\_PERSO}}}\mbox{\Hypertarget{entite_8h_a2aba7ee053b5e021d71af3fcf4ea1ae5a0c9316f6aa1d0bb9beebe1b7e98ddda4}\label{entite_8h_a2aba7ee053b5e021d71af3fcf4ea1ae5a0c9316f6aa1d0bb9beebe1b7e98ddda4}} 
+ENT\+\_\+\+PERSO&type d\textquotesingle{}entité des persos \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENT\_TIR@{ENT\_TIR}!entite.h@{entite.h}}\index{entite.h@{entite.h}!ENT\_TIR@{ENT\_TIR}}}\mbox{\Hypertarget{entite_8h_a2aba7ee053b5e021d71af3fcf4ea1ae5ab3a65983f5b5d4f56d7adab6914570e6}\label{entite_8h_a2aba7ee053b5e021d71af3fcf4ea1ae5ab3a65983f5b5d4f56d7adab6914570e6}} 
+ENT\+\_\+\+TIR&type d\textquotesingle{}entité des tirs \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENT\_COFFRE@{ENT\_COFFRE}!entite.h@{entite.h}}\index{entite.h@{entite.h}!ENT\_COFFRE@{ENT\_COFFRE}}}\mbox{\Hypertarget{entite_8h_a2aba7ee053b5e021d71af3fcf4ea1ae5a6ac9cd24270246f64bd3d319467698c3}\label{entite_8h_a2aba7ee053b5e021d71af3fcf4ea1ae5a6ac9cd24270246f64bd3d319467698c3}} 
+ENT\+\_\+\+COFFRE&type d\textquotesingle{}entité des coffres \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{entite_8h_aa442e91a42434f7f25776fc35971c9f1}\label{entite_8h_aa442e91a42434f7f25776fc35971c9f1}} 
+\index{entite.h@{entite.h}!bougerEntite@{bougerEntite}}
+\index{bougerEntite@{bougerEntite}!entite.h@{entite.h}}
+\doxysubsubsection{\texorpdfstring{bougerEntite()}{bougerEntite()}}
+{\footnotesize\ttfamily int bouger\+Entite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{coord_8h_ae9ae980041e438eed7a3af43ce4e9f6b}{direction\+\_\+t}}}]{direction,  }\item[{\mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$}]{carte,  }\item[{\mbox{\hyperlink{structentite__t}{entite\+\_\+t}} $\ast$}]{entite,  }\item[{\mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$}]{liste\+Tirs }\end{DoxyParamCaption})}
+
+
+
+Déplace une entité 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em direction} & La direction du déplacement \\
+\hline
+{\em carte} & La carte ou l\textquotesingle{}entité se déplace \\
+\hline
+{\em entite} & L\textquotesingle{}entité qui se déplace \\
+\hline
+{\em liste\+Tirs} & La liste des tirs \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+1 si l\textquotesingle{}entité à pu se déplacer, 0 sinon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{entite_8h_a07d41f814469aed4e861f36b32590ab0}\label{entite_8h_a07d41f814469aed4e861f36b32590ab0}} 
+\index{entite.h@{entite.h}!fonceSurTir@{fonceSurTir}}
+\index{fonceSurTir@{fonceSurTir}!entite.h@{entite.h}}
+\doxysubsubsection{\texorpdfstring{fonceSurTir()}{fonceSurTir()}}
+{\footnotesize\ttfamily void fonce\+Sur\+Tir (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structentite__t}{entite\+\_\+t}} $\ast$}]{entite,  }\item[{\mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$}]{carte,  }\item[{\mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$}]{liste\+Tirs,  }\item[{\mbox{\hyperlink{carte_8h_a59d9316fee245240d74c52ab19b9dacd}{carre\+\_\+t}} $\ast$}]{carre\+Tir }\end{DoxyParamCaption})}
+
+
+
+Gère une entité vivante qui fonce sur un tire. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em entite} & L\textquotesingle{}entité qui fonce sur le tir \\
+\hline
+{\em carte} & La carte ou se produit la collision \\
+\hline
+{\em liste\+Tirs} & La liste des tirs \\
+\hline
+{\em carre\+Tir} & Le carré ou se trouve le tir \\
+\hline
+\end{DoxyParams}

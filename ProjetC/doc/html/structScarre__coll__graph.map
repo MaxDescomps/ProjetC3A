@@ -1,0 +1,5 @@
+<map id="Scarre" name="Scarre">
+<area shape="rect" id="node1" title="Structure contenant les informations d&#39;un carre de la carte." alt="" coords="10,184,73,211"/>
+<area shape="rect" id="node2" href="$structentite__t.html" title="Structure contenant les propiétées d&#39;une entité" alt="" coords="5,95,77,121"/>
+<area shape="rect" id="node3" href="$structcoord__t.html" title="Structure de coordonnees d&#39;un carre de la carte." alt="" coords="6,5,77,32"/>
+</map>

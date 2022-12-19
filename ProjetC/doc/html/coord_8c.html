@@ -1,0 +1,453 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ProjetC: Référence du fichier coord.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ProjetC
+   &#160;<span id="projectnumber">Projet C de 3A à l&#39;ESIEA</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier coord.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Fonctions liées au module coord.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="coord_8h_source.html">coord.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="perso_8h_source.html">perso.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="erreur_8h_source.html">erreur.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de coord.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="coord_8c__incl.png" border="0" usemap="#acoord_8c" alt=""/></div>
+<map name="acoord_8c" id="acoord_8c">
+<area shape="rect" title="Fonctions liées au module coord." alt="" coords="123,5,193,32"/>
+<area shape="rect" title=" " alt="" coords="5,80,76,107"/>
+<area shape="rect" href="coord_8h.html" title="Fichier contenant les déclarations sur les coordonnées servant à résoudre un conflit d&#39;inclusion mutu..." alt="" coords="67,379,137,405"/>
+<area shape="rect" href="perso_8h.html" title="Fichier contenant toutes les déclarations concernant le personnage." alt="" coords="167,80,237,107"/>
+<area shape="rect" href="erreur_8h.html" title="Fichier contenant toutes les déclarations concernant les erreurs." alt="" coords="262,80,334,107"/>
+<area shape="rect" href="inventaire_8h.html" title="Fichier contenant toutes les déclarations concernant l&#39;inventaire." alt="" coords="152,155,252,181"/>
+<area shape="rect" href="carte_8h.html" title="Fichier contenant toutes les déclarations concernant la carte." alt="" coords="277,155,343,181"/>
+<area shape="rect" href="item_8h.html" title="Fichier contenant toutes les déclarations concernant les items." alt="" coords="255,304,319,331"/>
+<area shape="rect" title=" " alt="" coords="359,379,443,405"/>
+<area shape="rect" href="matiere_8h.html" title="Fichier contenant les déclarations des matières." alt="" coords="249,379,334,405"/>
+<area shape="rect" href="mob_8h.html" title="Fichier contenant toutes les déclarations concernant les mobs." alt="" coords="360,229,423,256"/>
+<area shape="rect" href="coffre_8h.html" title="Fichier contenant toutes les déclarations communes aux coffres." alt="" coords="265,229,336,256"/>
+<area shape="rect" href="entite_8h.html" title="Fichier contenant toutes les déclarations communes aux entités." alt="" coords="159,304,231,331"/>
+<area shape="rect" href="menu_8h.html" title="Fichier contenant toutes les déclarations concernant les menus." alt="" coords="395,304,465,331"/>
+<area shape="rect" href="liste_8h.html" title="Déclarations relatives au type de structure liste générique." alt="" coords="161,379,224,405"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:ac825e882fdf36d0e0fe2f6c6642690a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcoord__t.html">coord_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coord_8c.html#ac825e882fdf36d0e0fe2f6c6642690a4">creerCoord</a> ()</td></tr>
+<tr class="memdesc:ac825e882fdf36d0e0fe2f6c6642690a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Créé des coordonnées.  <a href="coord_8c.html#ac825e882fdf36d0e0fe2f6c6642690a4">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ac825e882fdf36d0e0fe2f6c6642690a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab820197d2ac613a68dfad89e2df9404"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coord_8c.html#aab820197d2ac613a68dfad89e2df9404">detruireCoord</a> (<a class="el" href="structcoord__t.html">coord_t</a> **coord)</td></tr>
+<tr class="memdesc:aab820197d2ac613a68dfad89e2df9404"><td class="mdescLeft">&#160;</td><td class="mdescRight">Désalloue l'espace attribué aux coordonnées.  <a href="coord_8c.html#aab820197d2ac613a68dfad89e2df9404">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aab820197d2ac613a68dfad89e2df9404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38efaf6ce5b3c16b1866f95b72e8b1c0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coord_8c.html#a38efaf6ce5b3c16b1866f95b72e8b1c0">coordProche</a> (int i, int j, <a class="el" href="coord_8h.html#a550089442e996a6b42d393992dbc5436">perso_t</a> *perso)</td></tr>
+<tr class="memdesc:a38efaf6ce5b3c16b1866f95b72e8b1c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evalue si un carré est dans le champ de vision du perso.  <a href="coord_8c.html#a38efaf6ce5b3c16b1866f95b72e8b1c0">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a38efaf6ce5b3c16b1866f95b72e8b1c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44b0ce42b4741451bfaf74076435e8e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcoord__t.html">coord_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coord_8c.html#a44b0ce42b4741451bfaf74076435e8e8">coordAlea</a> (<a class="el" href="carte_8h.html#a5e2cbb5c759c9f9224e3be90c6e340d5">carte_t</a> *carte)</td></tr>
+<tr class="memdesc:a44b0ce42b4741451bfaf74076435e8e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Donne des coordonnées aléatoires sur une carte.  <a href="coord_8c.html#a44b0ce42b4741451bfaf74076435e8e8">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a44b0ce42b4741451bfaf74076435e8e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef47ea39dbc00bb97eb82ddd95920458"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcoord__t.html">coord_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coord_8c.html#aef47ea39dbc00bb97eb82ddd95920458">coordAleaAcces</a> (<a class="el" href="carte_8h.html#a5e2cbb5c759c9f9224e3be90c6e340d5">carte_t</a> *carte)</td></tr>
+<tr class="memdesc:aef47ea39dbc00bb97eb82ddd95920458"><td class="mdescLeft">&#160;</td><td class="mdescRight">Donne des coordonnées aléatoires d'un carré accessible sur une carte.  <a href="coord_8c.html#aef47ea39dbc00bb97eb82ddd95920458">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aef47ea39dbc00bb97eb82ddd95920458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8777484197b86b4f42e18de8424d10f1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coord_8c.html#a8777484197b86b4f42e18de8424d10f1">coordExiste</a> (<a class="el" href="structcoord__t.html">coord_t</a> *coord, <a class="el" href="carte_8h.html#a5e2cbb5c759c9f9224e3be90c6e340d5">carte_t</a> *carte)</td></tr>
+<tr class="memdesc:a8777484197b86b4f42e18de8424d10f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vérifie si un carré existe.  <a href="coord_8c.html#a8777484197b86b4f42e18de8424d10f1">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a8777484197b86b4f42e18de8424d10f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a864f6db7579a0ba123c17f0a72c1aa8e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coord_8c.html#a864f6db7579a0ba123c17f0a72c1aa8e">coordAccessible</a> (<a class="el" href="structcoord__t.html">coord_t</a> *coord, <a class="el" href="carte_8h.html#a5e2cbb5c759c9f9224e3be90c6e340d5">carte_t</a> *carte)</td></tr>
+<tr class="memdesc:a864f6db7579a0ba123c17f0a72c1aa8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vérifie si un carré est accessible.  <a href="coord_8c.html#a864f6db7579a0ba123c17f0a72c1aa8e">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a864f6db7579a0ba123c17f0a72c1aa8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dbcb2b40b4f88bd1d4a5d26398739af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coord_8c.html#a3dbcb2b40b4f88bd1d4a5d26398739af">actualiserCoord</a> (<a class="el" href="coord_8h.html#ae9ae980041e438eed7a3af43ce4e9f6b">direction_t</a> direction, <a class="el" href="structcoord__t.html">coord_t</a> *position)</td></tr>
+<tr class="memdesc:a3dbcb2b40b4f88bd1d4a5d26398739af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actualise une position selon un direction prise.  <a href="coord_8c.html#a3dbcb2b40b4f88bd1d4a5d26398739af">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a3dbcb2b40b4f88bd1d4a5d26398739af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a587be7e3572b52fb098cf7699ee9480b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcoord__t.html">coord_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coord_8c.html#a587be7e3572b52fb098cf7699ee9480b">nextCoord</a> (<a class="el" href="coord_8h.html#ae9ae980041e438eed7a3af43ce4e9f6b">direction_t</a> direction, <a class="el" href="structcoord__t.html">coord_t</a> *position)</td></tr>
+<tr class="memdesc:a587be7e3572b52fb098cf7699ee9480b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renvoie les prochaines coordonnées que prendra un point.  <a href="coord_8c.html#a587be7e3572b52fb098cf7699ee9480b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a587be7e3572b52fb098cf7699ee9480b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Fonctions liées au module coord. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Max Descomps (<a href="#" onclick="location.href='mai'+'lto:'+'des'+'co'+'mps'+'@e'+'t.e'+'si'+'ea.'+'fr'; return false;">desco<span style="display: none;">.nosp@m.</span>mps@<span style="display: none;">.nosp@m.</span>et.es<span style="display: none;">.nosp@m.</span>iea.<span style="display: none;">.nosp@m.</span>fr</a>) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.2 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>27/10/2022 </dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2022 </dd></dl>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a3dbcb2b40b4f88bd1d4a5d26398739af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dbcb2b40b4f88bd1d4a5d26398739af">&#9670;&nbsp;</a></span>actualiserCoord()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void actualiserCoord </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="coord_8h.html#ae9ae980041e438eed7a3af43ce4e9f6b">direction_t</a>&#160;</td>
+          <td class="paramname"><em>direction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcoord__t.html">coord_t</a> *&#160;</td>
+          <td class="paramname"><em>position</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Actualise une position selon un direction prise. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Max Descomps </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">direction</td><td>La direction prise </td></tr>
+    <tr><td class="paramname">position</td><td>Les coordonnées modifiées </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a864f6db7579a0ba123c17f0a72c1aa8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a864f6db7579a0ba123c17f0a72c1aa8e">&#9670;&nbsp;</a></span>coordAccessible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int coordAccessible </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcoord__t.html">coord_t</a> *&#160;</td>
+          <td class="paramname"><em>coord</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="carte_8h.html#a5e2cbb5c759c9f9224e3be90c6e340d5">carte_t</a> *&#160;</td>
+          <td class="paramname"><em>carte</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vérifie si un carré est accessible. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Max Descomps </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">carte</td><td>La carte étudiée </td></tr>
+    <tr><td class="paramname">coord</td><td>Les coordonnées étudiés sur la carte </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>un booléen </dd></dl>
+
+</div>
+</div>
+<a id="a44b0ce42b4741451bfaf74076435e8e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44b0ce42b4741451bfaf74076435e8e8">&#9670;&nbsp;</a></span>coordAlea()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structcoord__t.html">coord_t</a> coordAlea </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="carte_8h.html#a5e2cbb5c759c9f9224e3be90c6e340d5">carte_t</a> *&#160;</td>
+          <td class="paramname"><em>carte</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Donne des coordonnées aléatoires sur une carte. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Max Descomps </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">carte</td><td>La carte dont on veut des coordonnées aléatoires </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Des coordonnées aléatoires sur la carte </dd></dl>
+
+</div>
+</div>
+<a id="aef47ea39dbc00bb97eb82ddd95920458"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef47ea39dbc00bb97eb82ddd95920458">&#9670;&nbsp;</a></span>coordAleaAcces()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structcoord__t.html">coord_t</a> coordAleaAcces </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="carte_8h.html#a5e2cbb5c759c9f9224e3be90c6e340d5">carte_t</a> *&#160;</td>
+          <td class="paramname"><em>carte</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Donne des coordonnées aléatoires d'un carré accessible sur une carte. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Max Descomps </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">carte</td><td>La carte dont on veut des coordonnées aléatoires </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Des coordonnées aléatoires </dd></dl>
+
+</div>
+</div>
+<a id="a8777484197b86b4f42e18de8424d10f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8777484197b86b4f42e18de8424d10f1">&#9670;&nbsp;</a></span>coordExiste()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int coordExiste </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcoord__t.html">coord_t</a> *&#160;</td>
+          <td class="paramname"><em>coord</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="carte_8h.html#a5e2cbb5c759c9f9224e3be90c6e340d5">carte_t</a> *&#160;</td>
+          <td class="paramname"><em>carte</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vérifie si un carré existe. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Max Descomps </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coord</td><td>Les coordonnées étudiés sur la carte </td></tr>
+    <tr><td class="paramname">carte</td><td>La carte étudiée </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>un booléen </dd></dl>
+
+</div>
+</div>
+<a id="a38efaf6ce5b3c16b1866f95b72e8b1c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38efaf6ce5b3c16b1866f95b72e8b1c0">&#9670;&nbsp;</a></span>coordProche()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int coordProche </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="coord_8h.html#a550089442e996a6b42d393992dbc5436">perso_t</a> *&#160;</td>
+          <td class="paramname"><em>perso</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Evalue si un carré est dans le champ de vision du perso. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Max Descomps </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>Le numéro de ligne du carre </td></tr>
+    <tr><td class="paramname">j</td><td>Le numéro de colonne du carre </td></tr>
+    <tr><td class="paramname">perso</td><td>Le perso </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Un booléen </dd></dl>
+
+</div>
+</div>
+<a id="ac825e882fdf36d0e0fe2f6c6642690a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac825e882fdf36d0e0fe2f6c6642690a4">&#9670;&nbsp;</a></span>creerCoord()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structcoord__t.html">coord_t</a>* creerCoord </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Créé des coordonnées. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Max Descomps </dd></dl>
+
+</div>
+</div>
+<a id="aab820197d2ac613a68dfad89e2df9404"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab820197d2ac613a68dfad89e2df9404">&#9670;&nbsp;</a></span>detruireCoord()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void detruireCoord </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcoord__t.html">coord_t</a> **&#160;</td>
+          <td class="paramname"><em>coord</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Désalloue l'espace attribué aux coordonnées. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Max Descomps </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coord</td><td>Les coordonnées à détruire </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a587be7e3572b52fb098cf7699ee9480b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a587be7e3572b52fb098cf7699ee9480b">&#9670;&nbsp;</a></span>nextCoord()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structcoord__t.html">coord_t</a>* nextCoord </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="coord_8h.html#ae9ae980041e438eed7a3af43ce4e9f6b">direction_t</a>&#160;</td>
+          <td class="paramname"><em>direction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcoord__t.html">coord_t</a> *&#160;</td>
+          <td class="paramname"><em>position</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Renvoie les prochaines coordonnées que prendra un point. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Max Descomps </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">direction</td><td>La direction prise </td></tr>
+    <tr><td class="paramname">position</td><td>Les coordonnées du point </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Instance nouvellement allouée des prochaines coordonnées du point </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

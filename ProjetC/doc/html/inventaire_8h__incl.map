@@ -1,0 +1,6 @@
+<map id="inventaire.h" name="inventaire.h">
+<area shape="rect" id="node1" title="Fichier contenant toutes les déclarations concernant l&#39;inventaire." alt="" coords="52,5,152,32"/>
+<area shape="rect" id="node2" href="$item_8h.html" title="Fichier contenant toutes les déclarations concernant les items." alt="" coords="70,80,134,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,155,89,181"/>
+<area shape="rect" id="node4" href="$matiere_8h.html" title="Fichier contenant les déclarations des matières." alt="" coords="114,155,199,181"/>
+</map>

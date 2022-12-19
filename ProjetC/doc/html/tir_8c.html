@@ -1,0 +1,437 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ProjetC: Référence du fichier tir.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ProjetC
+   &#160;<span id="projectnumber">Projet C de 3A à l&#39;ESIEA</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier tir.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Fonctions liées au module tir.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="tir_8h_source.html">tir.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="erreur_8h_source.html">erreur.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de tir.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="tir_8c__incl.png" border="0" usemap="#atir_8c" alt=""/></div>
+<map name="atir_8c" id="atir_8c">
+<area shape="rect" title="Fonctions liées au module tir." alt="" coords="123,5,169,32"/>
+<area shape="rect" title=" " alt="" coords="28,80,99,107"/>
+<area shape="rect" href="tir_8h.html" title="Fichier contenant toutes les déclarations concernant le tir." alt="" coords="123,80,169,107"/>
+<area shape="rect" href="erreur_8h.html" title="Fichier contenant toutes les déclarations concernant les erreurs." alt="" coords="194,80,266,107"/>
+<area shape="rect" href="carte_8h.html" title="Fichier contenant toutes les déclarations concernant la carte." alt="" coords="113,155,179,181"/>
+<area shape="rect" href="mob_8h.html" title="Fichier contenant toutes les déclarations concernant les mobs." alt="" coords="9,304,72,331"/>
+<area shape="rect" href="coffre_8h.html" title="Fichier contenant toutes les déclarations communes aux coffres." alt="" coords="220,304,291,331"/>
+<area shape="rect" href="perso_8h.html" title="Fichier contenant toutes les déclarations concernant le personnage." alt="" coords="111,229,181,256"/>
+<area shape="rect" href="entite_8h.html" title="Fichier contenant toutes les déclarations communes aux entités." alt="" coords="239,379,311,405"/>
+<area shape="rect" href="menu_8h.html" title="Fichier contenant toutes les déclarations concernant les menus." alt="" coords="5,379,76,405"/>
+<area shape="rect" href="coord_8h.html" title="Fichier contenant les déclarations sur les coordonnées servant à résoudre un conflit d&#39;inclusion mutu..." alt="" coords="240,453,311,480"/>
+<area shape="rect" href="liste_8h.html" title="Déclarations relatives au type de structure liste générique." alt="" coords="335,453,397,480"/>
+<area shape="rect" href="matiere_8h.html" title="Fichier contenant les déclarations des matières." alt="" coords="130,453,215,480"/>
+<area shape="rect" title=" " alt="" coords="21,453,105,480"/>
+<area shape="rect" href="inventaire_8h.html" title="Fichier contenant toutes les déclarations concernant l&#39;inventaire." alt="" coords="96,304,196,331"/>
+<area shape="rect" href="item_8h.html" title="Fichier contenant toutes les déclarations concernant les items." alt="" coords="101,379,165,405"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a2c063c973f70b601768daacaceadf124"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtir__t.html">tir_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tir_8c.html#a2c063c973f70b601768daacaceadf124">creerTir</a> (<a class="el" href="structentite__t.html">entite_t</a> *entite, <a class="el" href="carte_8h.html#a5e2cbb5c759c9f9224e3be90c6e340d5">carte_t</a> *carte)</td></tr>
+<tr class="memdesc:a2c063c973f70b601768daacaceadf124"><td class="mdescLeft">&#160;</td><td class="mdescRight">Créé un tir.  <a href="tir_8c.html#a2c063c973f70b601768daacaceadf124">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a2c063c973f70b601768daacaceadf124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7826f4a7829b61ee77f6d9f88d1ec1b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tir_8c.html#a7826f4a7829b61ee77f6d9f88d1ec1b5">detruireTir</a> (<a class="el" href="structtir__t.html">tir_t</a> **tir)</td></tr>
+<tr class="memdesc:a7826f4a7829b61ee77f6d9f88d1ec1b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Désalloue l'espace attribué au tir.  <a href="tir_8c.html#a7826f4a7829b61ee77f6d9f88d1ec1b5">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a7826f4a7829b61ee77f6d9f88d1ec1b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04576becc483077363b8a28fee89b432"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tir_8c.html#a04576becc483077363b8a28fee89b432">detruireTirCb</a> (void *tir)</td></tr>
+<tr class="memdesc:a04576becc483077363b8a28fee89b432"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction de callback pour désallouer l'espace attribué au tir.  <a href="tir_8c.html#a04576becc483077363b8a28fee89b432">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a04576becc483077363b8a28fee89b432"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15110cf9c1d3d320c18b0ccf9c408a7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtir__t.html">tir_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tir_8c.html#a15110cf9c1d3d320c18b0ccf9c408a7c">ajoutTir</a> (<a class="el" href="structtir__t.html">tir_t</a> *tir)</td></tr>
+<tr class="memdesc:a15110cf9c1d3d320c18b0ccf9c408a7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction d'ajout de tir pour liste.  <a href="tir_8c.html#a15110cf9c1d3d320c18b0ccf9c408a7c">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a15110cf9c1d3d320c18b0ccf9c408a7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf5b4112d8beb04ed1e8b2aaf88cff2b"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tir_8c.html#acf5b4112d8beb04ed1e8b2aaf88cff2b">ajoutTirCb</a> (void *tir)</td></tr>
+<tr class="memdesc:acf5b4112d8beb04ed1e8b2aaf88cff2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction de callback d'ajout de tir pour liste.  <a href="tir_8c.html#acf5b4112d8beb04ed1e8b2aaf88cff2b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:acf5b4112d8beb04ed1e8b2aaf88cff2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f300b6428eb28c2818d1aa26ffad3aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tir_8c.html#a7f300b6428eb28c2818d1aa26ffad3aa">tirer</a> (<a class="el" href="carte_8h.html#a5e2cbb5c759c9f9224e3be90c6e340d5">carte_t</a> *carte, <a class="el" href="liste_8h.html#a5c0748de3a145ae666a86b5cdab511d5">liste_t</a> *listeTirs, <a class="el" href="structentite__t.html">entite_t</a> *entite)</td></tr>
+<tr class="memdesc:a7f300b6428eb28c2818d1aa26ffad3aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Génère le tir d'une entité  <a href="tir_8c.html#a7f300b6428eb28c2818d1aa26ffad3aa">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a7f300b6428eb28c2818d1aa26ffad3aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3eb7d9dffb31aa09179db3e40dc34d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tir_8c.html#ac3eb7d9dffb31aa09179db3e40dc34d9">collisionVivantTir</a> (<a class="el" href="structentite__t.html">entite_t</a> *entite, <a class="el" href="carte_8h.html#a5e2cbb5c759c9f9224e3be90c6e340d5">carte_t</a> *carte, <a class="el" href="liste_8h.html#a5c0748de3a145ae666a86b5cdab511d5">liste_t</a> *listeTirs, <a class="el" href="carte_8h.html#a59d9316fee245240d74c52ab19b9dacd">carre_t</a> *carreTir)</td></tr>
+<tr class="memdesc:ac3eb7d9dffb31aa09179db3e40dc34d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gère une entité vivante qui fonce sur un tir.  <a href="tir_8c.html#ac3eb7d9dffb31aa09179db3e40dc34d9">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ac3eb7d9dffb31aa09179db3e40dc34d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3507432c3fadf7892d3523f00028d6e0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tir_8c.html#a3507432c3fadf7892d3523f00028d6e0">collisionTirEntite</a> (<a class="el" href="carte_8h.html#a5e2cbb5c759c9f9224e3be90c6e340d5">carte_t</a> *carte, <a class="el" href="structcoord__t.html">coord_t</a> *coordColli, <a class="el" href="structtir__t.html">tir_t</a> *tir)</td></tr>
+<tr class="memdesc:a3507432c3fadf7892d3523f00028d6e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gère un tir qui fonce sur une entité  <a href="tir_8c.html#a3507432c3fadf7892d3523f00028d6e0">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a3507432c3fadf7892d3523f00028d6e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Fonctions liées au module tir. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Max Descomps (<a href="#" onclick="location.href='mai'+'lto:'+'des'+'co'+'mps'+'@e'+'t.e'+'si'+'ea.'+'fr'; return false;">desco<span style="display: none;">.nosp@m.</span>mps@<span style="display: none;">.nosp@m.</span>et.es<span style="display: none;">.nosp@m.</span>iea.<span style="display: none;">.nosp@m.</span>fr</a>) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.2 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>27/10/2022 </dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2022 </dd></dl>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a15110cf9c1d3d320c18b0ccf9c408a7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15110cf9c1d3d320c18b0ccf9c408a7c">&#9670;&nbsp;</a></span>ajoutTir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structtir__t.html">tir_t</a>* ajoutTir </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtir__t.html">tir_t</a> *&#160;</td>
+          <td class="paramname"><em>tir</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction d'ajout de tir pour liste. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Max Descomps </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tir</td><td>Le tir à ajouter </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Un tir </dd></dl>
+
+</div>
+</div>
+<a id="acf5b4112d8beb04ed1e8b2aaf88cff2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf5b4112d8beb04ed1e8b2aaf88cff2b">&#9670;&nbsp;</a></span>ajoutTirCb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* ajoutTirCb </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>tir</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction de callback d'ajout de tir pour liste. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Max Descomps </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tir</td><td>Le tir à ajouter </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Un pointeur void sur le tir </dd></dl>
+
+</div>
+</div>
+<a id="a3507432c3fadf7892d3523f00028d6e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3507432c3fadf7892d3523f00028d6e0">&#9670;&nbsp;</a></span>collisionTirEntite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int collisionTirEntite </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="carte_8h.html#a5e2cbb5c759c9f9224e3be90c6e340d5">carte_t</a> *&#160;</td>
+          <td class="paramname"><em>carte</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcoord__t.html">coord_t</a> *&#160;</td>
+          <td class="paramname"><em>coordColli</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structtir__t.html">tir_t</a> *&#160;</td>
+          <td class="paramname"><em>tir</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gère un tir qui fonce sur une entité </p>
+<dl class="section author"><dt>Auteur</dt><dd>Max Descomps </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">carte</td><td>La carte contenant le tir </td></tr>
+    <tr><td class="paramname">coordColli</td><td>Les coordonnées de la collision </td></tr>
+    <tr><td class="paramname">tir</td><td>Le tir en collision </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>un booléen indiquant si le tir à heurté une entité </dd></dl>
+
+</div>
+</div>
+<a id="ac3eb7d9dffb31aa09179db3e40dc34d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3eb7d9dffb31aa09179db3e40dc34d9">&#9670;&nbsp;</a></span>collisionVivantTir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void collisionVivantTir </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structentite__t.html">entite_t</a> *&#160;</td>
+          <td class="paramname"><em>entite</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="carte_8h.html#a5e2cbb5c759c9f9224e3be90c6e340d5">carte_t</a> *&#160;</td>
+          <td class="paramname"><em>carte</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="liste_8h.html#a5c0748de3a145ae666a86b5cdab511d5">liste_t</a> *&#160;</td>
+          <td class="paramname"><em>listeTirs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="carte_8h.html#a59d9316fee245240d74c52ab19b9dacd">carre_t</a> *&#160;</td>
+          <td class="paramname"><em>carreTir</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gère une entité vivante qui fonce sur un tir. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Max Descomps </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entite</td><td>L'éntité qui fonce sur le tir </td></tr>
+    <tr><td class="paramname">carte</td><td>La carte ou se produit la collision </td></tr>
+    <tr><td class="paramname">listeTirs</td><td>La liste des tirs </td></tr>
+    <tr><td class="paramname">carreTir</td><td>Le carre ou se trouve le tir </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2c063c973f70b601768daacaceadf124"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c063c973f70b601768daacaceadf124">&#9670;&nbsp;</a></span>creerTir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structtir__t.html">tir_t</a>* creerTir </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structentite__t.html">entite_t</a> *&#160;</td>
+          <td class="paramname"><em>entite</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="carte_8h.html#a5e2cbb5c759c9f9224e3be90c6e340d5">carte_t</a> *&#160;</td>
+          <td class="paramname"><em>carte</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Créé un tir. </p>
+<dl class="section author"><dt>Auteurs</dt><dd>Max Descomps </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entite</td><td>L'entité qui tire </td></tr>
+    <tr><td class="paramname">carte</td><td>La carte ou l'entité tire </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Le tir créé </dd></dl>
+
+</div>
+</div>
+<a id="a7826f4a7829b61ee77f6d9f88d1ec1b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7826f4a7829b61ee77f6d9f88d1ec1b5">&#9670;&nbsp;</a></span>detruireTir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void detruireTir </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtir__t.html">tir_t</a> **&#160;</td>
+          <td class="paramname"><em>tir</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Désalloue l'espace attribué au tir. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Max Descomps </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tir</td><td>Le tir à détruire </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a04576becc483077363b8a28fee89b432"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04576becc483077363b8a28fee89b432">&#9670;&nbsp;</a></span>detruireTirCb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void detruireTirCb </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>tir</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction de callback pour désallouer l'espace attribué au tir. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Max Descomps </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tir</td><td>L'adresse du pointeur sur le tir à détruire </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7f300b6428eb28c2818d1aa26ffad3aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f300b6428eb28c2818d1aa26ffad3aa">&#9670;&nbsp;</a></span>tirer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tirer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="carte_8h.html#a5e2cbb5c759c9f9224e3be90c6e340d5">carte_t</a> *&#160;</td>
+          <td class="paramname"><em>carte</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="liste_8h.html#a5c0748de3a145ae666a86b5cdab511d5">liste_t</a> *&#160;</td>
+          <td class="paramname"><em>listeTirs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structentite__t.html">entite_t</a> *&#160;</td>
+          <td class="paramname"><em>entite</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Génère le tir d'une entité </p>
+<dl class="section author"><dt>Auteur</dt><dd>Max Descomps </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">carte</td><td>La carte depuis laquelle on tire </td></tr>
+    <tr><td class="paramname">listeTirs</td><td>La liste des tirs </td></tr>
+    <tr><td class="paramname">entite</td><td>L'entité qui tire </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

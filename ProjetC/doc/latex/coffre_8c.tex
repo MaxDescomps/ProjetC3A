@@ -1,0 +1,172 @@
+\hypertarget{coffre_8c}{}\doxysection{Référence du fichier coffre.\+c}
+\label{coffre_8c}\index{coffre.c@{coffre.c}}
+
+
+Fonctions liées au module coffre.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}coffre.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}erreur.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}carte.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de coffre.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{coffre_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structcoffre__t}{coffre\+\_\+t}} $\ast$ \mbox{\hyperlink{coffre_8c_a1e9fcff8d50bb6e740651a1d5e39add0}{creer\+Coffre}} (\mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$liste\+Coffres)
+\begin{DoxyCompactList}\small\item\em Créé un coffre. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{coffre_8c_ae097a2b4d1774152e1e80f6a53416b12}{detruire\+Coffre}} (\mbox{\hyperlink{structcoffre__t}{coffre\+\_\+t}} $\ast$$\ast$coffre)
+\begin{DoxyCompactList}\small\item\em Détruit un coffre. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{coffre_8c_aabd430cbd8fa1ffaab9beac501529f75}{detruire\+Coffre\+Cb}} (void $\ast$coffre)
+\begin{DoxyCompactList}\small\item\em Fonction de callback pour détruire un coffre. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structcoffre__t}{coffre\+\_\+t}} $\ast$ \mbox{\hyperlink{coffre_8c_aa7d634842d8619fd517f0850cfa453ea}{ajout\+Coffre}} (\mbox{\hyperlink{structcoffre__t}{coffre\+\_\+t}} $\ast$coffre)
+\begin{DoxyCompactList}\small\item\em Ajout de coffre pour liste doublement chaînée. \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{coffre_8c_ae6185663ccb2ca312a05e06a6559c6f4}{ajout\+Coffre\+Cb}} (void $\ast$coffre)
+\begin{DoxyCompactList}\small\item\em Fonction de callback pour ajout de coffre pour liste doublement chaînée. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{coffre_8c_a69e1e09a32145286760797a6dbb29b8b}{wprint\+Coffre}} (WINDOW $\ast$w, \mbox{\hyperlink{structcoffre__t}{coffre\+\_\+t}} $\ast$coffre)
+\begin{DoxyCompactList}\small\item\em Affiche le contenu d\textquotesingle{}un coffre. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Fonctions liées au module coffre. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps (\href{mailto:descomps@et.esiea.fr}{\texttt{ descomps@et.\+esiea.\+fr}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+27/10/2022 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{coffre_8c_aa7d634842d8619fd517f0850cfa453ea}\label{coffre_8c_aa7d634842d8619fd517f0850cfa453ea}} 
+\index{coffre.c@{coffre.c}!ajoutCoffre@{ajoutCoffre}}
+\index{ajoutCoffre@{ajoutCoffre}!coffre.c@{coffre.c}}
+\doxysubsubsection{\texorpdfstring{ajoutCoffre()}{ajoutCoffre()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structcoffre__t}{coffre\+\_\+t}}$\ast$ ajout\+Coffre (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcoffre__t}{coffre\+\_\+t}} $\ast$}]{coffre }\end{DoxyParamCaption})}
+
+
+
+Ajout de coffre pour liste doublement chaînée. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em coffre} & Le coffre à ajouter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Le coffre ajouté 
+\end{DoxyReturn}
+\mbox{\Hypertarget{coffre_8c_ae6185663ccb2ca312a05e06a6559c6f4}\label{coffre_8c_ae6185663ccb2ca312a05e06a6559c6f4}} 
+\index{coffre.c@{coffre.c}!ajoutCoffreCb@{ajoutCoffreCb}}
+\index{ajoutCoffreCb@{ajoutCoffreCb}!coffre.c@{coffre.c}}
+\doxysubsubsection{\texorpdfstring{ajoutCoffreCb()}{ajoutCoffreCb()}}
+{\footnotesize\ttfamily void$\ast$ ajout\+Coffre\+Cb (\begin{DoxyParamCaption}\item[{void $\ast$}]{coffre }\end{DoxyParamCaption})}
+
+
+
+Fonction de callback pour ajout de coffre pour liste doublement chaînée. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em coffre} & Le coffre à ajouter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Le coffre ajouté 
+\end{DoxyReturn}
+\mbox{\Hypertarget{coffre_8c_a1e9fcff8d50bb6e740651a1d5e39add0}\label{coffre_8c_a1e9fcff8d50bb6e740651a1d5e39add0}} 
+\index{coffre.c@{coffre.c}!creerCoffre@{creerCoffre}}
+\index{creerCoffre@{creerCoffre}!coffre.c@{coffre.c}}
+\doxysubsubsection{\texorpdfstring{creerCoffre()}{creerCoffre()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structcoffre__t}{coffre\+\_\+t}}$\ast$ creer\+Coffre (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$}]{liste\+Coffres }\end{DoxyParamCaption})}
+
+
+
+Créé un coffre. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em liste\+Coffres} & La liste des coffres \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Instance nouvellement allouée de coffre 
+\end{DoxyReturn}
+\mbox{\Hypertarget{coffre_8c_ae097a2b4d1774152e1e80f6a53416b12}\label{coffre_8c_ae097a2b4d1774152e1e80f6a53416b12}} 
+\index{coffre.c@{coffre.c}!detruireCoffre@{detruireCoffre}}
+\index{detruireCoffre@{detruireCoffre}!coffre.c@{coffre.c}}
+\doxysubsubsection{\texorpdfstring{detruireCoffre()}{detruireCoffre()}}
+{\footnotesize\ttfamily void detruire\+Coffre (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcoffre__t}{coffre\+\_\+t}} $\ast$$\ast$}]{coffre }\end{DoxyParamCaption})}
+
+
+
+Détruit un coffre. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em coffre} & Le coffre à détruire \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{coffre_8c_aabd430cbd8fa1ffaab9beac501529f75}\label{coffre_8c_aabd430cbd8fa1ffaab9beac501529f75}} 
+\index{coffre.c@{coffre.c}!detruireCoffreCb@{detruireCoffreCb}}
+\index{detruireCoffreCb@{detruireCoffreCb}!coffre.c@{coffre.c}}
+\doxysubsubsection{\texorpdfstring{detruireCoffreCb()}{detruireCoffreCb()}}
+{\footnotesize\ttfamily void detruire\+Coffre\+Cb (\begin{DoxyParamCaption}\item[{void $\ast$}]{coffre }\end{DoxyParamCaption})}
+
+
+
+Fonction de callback pour détruire un coffre. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em coffre} & Le coffre à détruire \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{coffre_8c_a69e1e09a32145286760797a6dbb29b8b}\label{coffre_8c_a69e1e09a32145286760797a6dbb29b8b}} 
+\index{coffre.c@{coffre.c}!wprintCoffre@{wprintCoffre}}
+\index{wprintCoffre@{wprintCoffre}!coffre.c@{coffre.c}}
+\doxysubsubsection{\texorpdfstring{wprintCoffre()}{wprintCoffre()}}
+{\footnotesize\ttfamily void wprint\+Coffre (\begin{DoxyParamCaption}\item[{WINDOW $\ast$}]{w,  }\item[{\mbox{\hyperlink{structcoffre__t}{coffre\+\_\+t}} $\ast$}]{coffre }\end{DoxyParamCaption})}
+
+
+
+Affiche le contenu d\textquotesingle{}un coffre. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em w} & La fenêtre d\textquotesingle{}affichage \\
+\hline
+{\em coffre} & Le coffre à afficher \\
+\hline
+\end{DoxyParams}

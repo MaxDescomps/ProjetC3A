@@ -1,0 +1,113 @@
+\hypertarget{input_8h}{}\doxysection{Référence du fichier input.\+h}
+\label{input_8h}\index{input.h@{input.h}}
+
+
+Fichier contenant toutes les déclarations concernant l\textquotesingle{}entrée sécurisée de données par l\textquotesingle{}utilisateur.  
+
+
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{input_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{input_8h_a3a28a4f2b577d36b462ff82b9d07f5da}{vider\+Stdin}} (void)
+\begin{DoxyCompactList}\small\item\em Vide le buffer de l\textquotesingle{}entrée standard. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{input_8h_aac4b3d439ec23f80d2c7312993888c2a}{lire\+Str}} (char $\ast$buffer, int taille)
+\begin{DoxyCompactList}\small\item\em Lit une chaîne de caractères sur l\textquotesingle{}entrée standard de manière sécurisée. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{input_8h_ae8ff2339c8fb42ec25807673d2dff4a0}{lire\+Char}} (void)
+\begin{DoxyCompactList}\small\item\em Lit un caractère sur l\textquotesingle{}entrée standard de manière sécurisée. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{input_8h_ac4ee6eace969c0b21c2fd9a4890703e2}{lire\+Int}} (void)
+\begin{DoxyCompactList}\small\item\em Lit un entier sur l\textquotesingle{}entrée standard de manière sécurisée. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Fichier contenant toutes les déclarations concernant l\textquotesingle{}entrée sécurisée de données par l\textquotesingle{}utilisateur. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps (\href{mailto:descomps@et.esiea.fr}{\texttt{ descomps@et.\+esiea.\+fr}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+1/10/2022 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{input_8h_ae8ff2339c8fb42ec25807673d2dff4a0}\label{input_8h_ae8ff2339c8fb42ec25807673d2dff4a0}} 
+\index{input.h@{input.h}!lireChar@{lireChar}}
+\index{lireChar@{lireChar}!input.h@{input.h}}
+\doxysubsubsection{\texorpdfstring{lireChar()}{lireChar()}}
+{\footnotesize\ttfamily char lire\+Char (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Lit un caractère sur l\textquotesingle{}entrée standard de manière sécurisée. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Renvoie}
+Le caractère lu 
+\end{DoxyReturn}
+\mbox{\Hypertarget{input_8h_ac4ee6eace969c0b21c2fd9a4890703e2}\label{input_8h_ac4ee6eace969c0b21c2fd9a4890703e2}} 
+\index{input.h@{input.h}!lireInt@{lireInt}}
+\index{lireInt@{lireInt}!input.h@{input.h}}
+\doxysubsubsection{\texorpdfstring{lireInt()}{lireInt()}}
+{\footnotesize\ttfamily int lire\+Int (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Lit un entier sur l\textquotesingle{}entrée standard de manière sécurisée. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Renvoie}
+L\textquotesingle{}entier lu ou zero si la valeur est incorrecte 
+\end{DoxyReturn}
+\mbox{\Hypertarget{input_8h_aac4b3d439ec23f80d2c7312993888c2a}\label{input_8h_aac4b3d439ec23f80d2c7312993888c2a}} 
+\index{input.h@{input.h}!lireStr@{lireStr}}
+\index{lireStr@{lireStr}!input.h@{input.h}}
+\doxysubsubsection{\texorpdfstring{lireStr()}{lireStr()}}
+{\footnotesize\ttfamily char$\ast$ lire\+Str (\begin{DoxyParamCaption}\item[{char $\ast$}]{buffer,  }\item[{int}]{taille }\end{DoxyParamCaption})}
+
+
+
+Lit une chaîne de caractères sur l\textquotesingle{}entrée standard de manière sécurisée. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em buffer} & Enregistrement de la chaîne lue \\
+\hline
+{\em taille} & Nombre maximum de caractères lus \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+La chaîne de caractères lue 
+\end{DoxyReturn}
+\mbox{\Hypertarget{input_8h_a3a28a4f2b577d36b462ff82b9d07f5da}\label{input_8h_a3a28a4f2b577d36b462ff82b9d07f5da}} 
+\index{input.h@{input.h}!viderStdin@{viderStdin}}
+\index{viderStdin@{viderStdin}!input.h@{input.h}}
+\doxysubsubsection{\texorpdfstring{viderStdin()}{viderStdin()}}
+{\footnotesize\ttfamily void vider\+Stdin (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Vide le buffer de l\textquotesingle{}entrée standard. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}

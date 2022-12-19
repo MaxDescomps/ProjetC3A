@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ProjetC:  Fichier source de inventaire.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ProjetC
+   &#160;<span id="projectnumber">Projet C de 3A à l&#39;ESIEA</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">inventaire.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="inventaire_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="inventaire_8h.html#a59d9316fee245240d74c52ab19b9dacd">    1</a></span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="item_8h.html">item.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structScarre.html">Scarre</a> <a class="code" href="structScarre.html">carre_t</a>;  </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structperso__s.html">perso_s</a> <a class="code" href="structperso__s.html">perso_t</a>;  </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structinvCase__t.html">   22</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span>{</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="structinvCase__t.html#ae2b2527b05754bd62dd3bdb3fa98ea7e">   23</a></span>&#160;    <a class="code" href="item_8h.html#a9da4042a096d752e77b7551cd48d4439">itemType_t</a> <a class="code" href="structinvCase__t.html#ae2b2527b05754bd62dd3bdb3fa98ea7e">type</a>; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="structinvCase__t.html#a644220328ccb0d96e68e82e31c0080c0">   24</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structinvCase__t.html#a644220328ccb0d96e68e82e31c0080c0">nb</a>; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structinvCase__t.html#ab08a2b51cd6744046df6574664791669">   25</a></span>&#160;    <a class="code" href="structitem__s.html">item_t</a>* <a class="code" href="structinvCase__t.html#ab08a2b51cd6744046df6574664791669">item</a>; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}<a class="code" href="structinvCase__t.html">invCase_t</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="structinventaire__t.html">   32</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span>{</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structinventaire__t.html#a650c906b696af547992b3331eca67ea9">   33</a></span>&#160;    <a class="code" href="structinvCase__t.html">invCase_t</a>** <a class="code" href="structinventaire__t.html#a650c906b696af547992b3331eca67ea9">invCase</a>; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="structinventaire__t.html#abadbb99aa185834f6a3796cf5f3afb7a">   34</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structinventaire__t.html#abadbb99aa185834f6a3796cf5f3afb7a">nbItem</a>; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="structinventaire__t.html#a943a4866c0427699be849dbcea4c8453">   35</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structinventaire__t.html#a943a4866c0427699be849dbcea4c8453">numCase</a>; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}<a class="code" href="structinventaire__t.html">inventaire_t</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<a class="code" href="structinvCase__t.html">invCase_t</a>* <a class="code" href="inventaire_8h.html#a6299f7c734d910651a7c6c2c554e0437">creerInvCase</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">void</span> <a class="code" href="inventaire_8h.html#a74a49cba25b08434246c348aab2034f2">detruireInvCase</a>(<a class="code" href="structinvCase__t.html">invCase_t</a>** invCase);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<a class="code" href="structinventaire__t.html">inventaire_t</a>* <a class="code" href="inventaire_8h.html#a771dfacdebf717d1639422e027d2406d">creerInv</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordtype">void</span> <a class="code" href="inventaire_8h.html#a2bb12c2d86681e34425052a73d23c4dd">detruireInv</a>(<a class="code" href="structinventaire__t.html">inventaire_t</a>** <a class="code" href="structperso__s.html#aac90f5837a140c74c7499113ae7598df">inventaire</a>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">int</span> <a class="code" href="inventaire_8h.html#a3d009d5c99dd8c1772b50e553ed330f4">ramasser</a>(WINDOW* fenCoffre, WINDOW* fenInv, <a class="code" href="structitem__s.html">item_t</a>* carre, <a class="code" href="structperso__s.html">perso_t</a>* perso);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keywordtype">void</span> <a class="code" href="inventaire_8h.html#a8da6a82e2e01087852752f765c02d2c3">wprintInv</a>(WINDOW* w, <a class="code" href="structinventaire__t.html">inventaire_t</a>* <a class="code" href="structperso__s.html#aac90f5837a140c74c7499113ae7598df">inventaire</a>);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keywordtype">int</span> <a class="code" href="inventaire_8h.html#a9c630f56f36dcb8e426eb68f33a0a5ef">utiliserItem</a>(<a class="code" href="structperso__s.html">perso_t</a>* perso, <a class="code" href="structScarre.html">carre_t</a>* carre);</div>
+<div class="ttc" id="ainventaire_8h_html_a2bb12c2d86681e34425052a73d23c4dd"><div class="ttname"><a href="inventaire_8h.html#a2bb12c2d86681e34425052a73d23c4dd">detruireInv</a></div><div class="ttdeci">void detruireInv(inventaire_t **inventaire)</div><div class="ttdoc">Détruit un inventaire.</div><div class="ttdef"><b>Definition:</b> inventaire.c:63</div></div>
+<div class="ttc" id="ainventaire_8h_html_a3d009d5c99dd8c1772b50e553ed330f4"><div class="ttname"><a href="inventaire_8h.html#a3d009d5c99dd8c1772b50e553ed330f4">ramasser</a></div><div class="ttdeci">int ramasser(WINDOW *fenCoffre, WINDOW *fenInv, item_t *carre, perso_t *perso)</div><div class="ttdoc">Ramasse un item et le met dans l'inventaire.</div><div class="ttdef"><b>Definition:</b> inventaire.c:78</div></div>
+<div class="ttc" id="ainventaire_8h_html_a6299f7c734d910651a7c6c2c554e0437"><div class="ttname"><a href="inventaire_8h.html#a6299f7c734d910651a7c6c2c554e0437">creerInvCase</a></div><div class="ttdeci">invCase_t * creerInvCase(void)</div><div class="ttdoc">Créé une case d'inventaire.</div><div class="ttdef"><b>Definition:</b> inventaire.c:17</div></div>
+<div class="ttc" id="ainventaire_8h_html_a74a49cba25b08434246c348aab2034f2"><div class="ttname"><a href="inventaire_8h.html#a74a49cba25b08434246c348aab2034f2">detruireInvCase</a></div><div class="ttdeci">void detruireInvCase(invCase_t **invCase)</div><div class="ttdoc">Détruit une case d'inventaire.</div><div class="ttdef"><b>Definition:</b> inventaire.c:33</div></div>
+<div class="ttc" id="ainventaire_8h_html_a771dfacdebf717d1639422e027d2406d"><div class="ttname"><a href="inventaire_8h.html#a771dfacdebf717d1639422e027d2406d">creerInv</a></div><div class="ttdeci">inventaire_t * creerInv(void)</div><div class="ttdoc">Créé un inventaire.</div><div class="ttdef"><b>Definition:</b> inventaire.c:42</div></div>
+<div class="ttc" id="ainventaire_8h_html_a8da6a82e2e01087852752f765c02d2c3"><div class="ttname"><a href="inventaire_8h.html#a8da6a82e2e01087852752f765c02d2c3">wprintInv</a></div><div class="ttdeci">void wprintInv(WINDOW *w, inventaire_t *inventaire)</div><div class="ttdoc">Affiche un inventaire.</div><div class="ttdef"><b>Definition:</b> inventaire.c:238</div></div>
+<div class="ttc" id="ainventaire_8h_html_a9c630f56f36dcb8e426eb68f33a0a5ef"><div class="ttname"><a href="inventaire_8h.html#a9c630f56f36dcb8e426eb68f33a0a5ef">utiliserItem</a></div><div class="ttdeci">int utiliserItem(perso_t *perso, carre_t *carre)</div><div class="ttdoc">Utilise un item de l'inventaire.</div><div class="ttdef"><b>Definition:</b> inventaire.c:265</div></div>
+<div class="ttc" id="aitem_8h_html"><div class="ttname"><a href="item_8h.html">item.h</a></div><div class="ttdoc">Fichier contenant toutes les déclarations concernant les items.</div></div>
+<div class="ttc" id="aitem_8h_html_a9da4042a096d752e77b7551cd48d4439"><div class="ttname"><a href="item_8h.html#a9da4042a096d752e77b7551cd48d4439">itemType_t</a></div><div class="ttdeci">enum itemType_s itemType_t</div><div class="ttdoc">Le type d'item.</div></div>
+<div class="ttc" id="astructScarre_html"><div class="ttname"><a href="structScarre.html">Scarre</a></div><div class="ttdoc">Structure contenant les informations d'un carre de la carte.</div><div class="ttdef"><b>Definition:</b> carte.h:52</div></div>
+<div class="ttc" id="astructinvCase__t_html"><div class="ttname"><a href="structinvCase__t.html">invCase_t</a></div><div class="ttdoc">Structure contenant les propiétées d'une case d'inventaire.</div><div class="ttdef"><b>Definition:</b> inventaire.h:22</div></div>
+<div class="ttc" id="astructinvCase__t_html_a644220328ccb0d96e68e82e31c0080c0"><div class="ttname"><a href="structinvCase__t.html#a644220328ccb0d96e68e82e31c0080c0">invCase_t::nb</a></div><div class="ttdeci">int nb</div><div class="ttdef"><b>Definition:</b> inventaire.h:24</div></div>
+<div class="ttc" id="astructinvCase__t_html_ab08a2b51cd6744046df6574664791669"><div class="ttname"><a href="structinvCase__t.html#ab08a2b51cd6744046df6574664791669">invCase_t::item</a></div><div class="ttdeci">item_t * item</div><div class="ttdef"><b>Definition:</b> inventaire.h:25</div></div>
+<div class="ttc" id="astructinvCase__t_html_ae2b2527b05754bd62dd3bdb3fa98ea7e"><div class="ttname"><a href="structinvCase__t.html#ae2b2527b05754bd62dd3bdb3fa98ea7e">invCase_t::type</a></div><div class="ttdeci">itemType_t type</div><div class="ttdef"><b>Definition:</b> inventaire.h:23</div></div>
+<div class="ttc" id="astructinventaire__t_html"><div class="ttname"><a href="structinventaire__t.html">inventaire_t</a></div><div class="ttdoc">Structure contenant les propiétées d'un inventaire.</div><div class="ttdef"><b>Definition:</b> inventaire.h:32</div></div>
+<div class="ttc" id="astructinventaire__t_html_a650c906b696af547992b3331eca67ea9"><div class="ttname"><a href="structinventaire__t.html#a650c906b696af547992b3331eca67ea9">inventaire_t::invCase</a></div><div class="ttdeci">invCase_t ** invCase</div><div class="ttdef"><b>Definition:</b> inventaire.h:33</div></div>
+<div class="ttc" id="astructinventaire__t_html_a943a4866c0427699be849dbcea4c8453"><div class="ttname"><a href="structinventaire__t.html#a943a4866c0427699be849dbcea4c8453">inventaire_t::numCase</a></div><div class="ttdeci">int numCase</div><div class="ttdef"><b>Definition:</b> inventaire.h:35</div></div>
+<div class="ttc" id="astructinventaire__t_html_abadbb99aa185834f6a3796cf5f3afb7a"><div class="ttname"><a href="structinventaire__t.html#abadbb99aa185834f6a3796cf5f3afb7a">inventaire_t::nbItem</a></div><div class="ttdeci">int nbItem</div><div class="ttdef"><b>Definition:</b> inventaire.h:34</div></div>
+<div class="ttc" id="astructitem__s_html"><div class="ttname"><a href="structitem__s.html">item_s</a></div><div class="ttdoc">Structure contenant les propiétées d'un item.</div><div class="ttdef"><b>Definition:</b> item.h:29</div></div>
+<div class="ttc" id="astructperso__s_html"><div class="ttname"><a href="structperso__s.html">perso_s</a></div><div class="ttdoc">Structure contenant les informations sur le personnage.</div><div class="ttdef"><b>Definition:</b> perso.h:30</div></div>
+<div class="ttc" id="astructperso__s_html_aac90f5837a140c74c7499113ae7598df"><div class="ttname"><a href="structperso__s.html#aac90f5837a140c74c7499113ae7598df">perso_s::inventaire</a></div><div class="ttdeci">inventaire_t * inventaire</div><div class="ttdef"><b>Definition:</b> perso.h:45</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

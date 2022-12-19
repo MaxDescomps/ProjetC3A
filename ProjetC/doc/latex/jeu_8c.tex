@@ -1,0 +1,127 @@
+\hypertarget{jeu_8c}{}\doxysection{Référence du fichier jeu.\+c}
+\label{jeu_8c}\index{jeu.c@{jeu.c}}
+
+
+Fonctions liées au module jeu.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}jeu.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de jeu.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{jeu_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{jeu_8c_aa006630ff9d729795490f23e8efc3f71}{quitter\+Jeu}} (\mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$$\ast$tirs, \mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$$\ast$mobs, \mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$$\ast$coffres, \mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$$\ast$perso, \mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$$\ast$carte, WINDOW $\ast$plateau, WINDOW $\ast$stats, WINDOW $\ast$carte\+Perso, WINDOW $\ast$inv)
+\begin{DoxyCompactList}\small\item\em Gère la mémoire pour quitter la partie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{jeu_8c_a6a27457ccadfdc3106c602a5ac4f88d1}{nettoyer\+Jeu}} (\mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$tirs, \mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$mobs, \mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$coffres)
+\begin{DoxyCompactList}\small\item\em Détruit les éléments ponctuels d\textquotesingle{}une partie en vue de la recharger. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{jeu_8c_aa98aaf614e815724cdca1cdf122e4858}{sauvegarde}} (\mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$carte, \mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$perso)
+\begin{DoxyCompactList}\small\item\em Sauvegarde la partie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Fonctions liées au module jeu. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps (\href{mailto:descomps@et.esiea.fr}{\texttt{ descomps@et.\+esiea.\+fr}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+27/10/2022 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{jeu_8c_a6a27457ccadfdc3106c602a5ac4f88d1}\label{jeu_8c_a6a27457ccadfdc3106c602a5ac4f88d1}} 
+\index{jeu.c@{jeu.c}!nettoyerJeu@{nettoyerJeu}}
+\index{nettoyerJeu@{nettoyerJeu}!jeu.c@{jeu.c}}
+\doxysubsubsection{\texorpdfstring{nettoyerJeu()}{nettoyerJeu()}}
+{\footnotesize\ttfamily void nettoyer\+Jeu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$}]{tirs,  }\item[{\mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$}]{mobs,  }\item[{\mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$}]{coffres }\end{DoxyParamCaption})}
+
+
+
+Détruit les éléments ponctuels d\textquotesingle{}une partie en vue de la recharger. 
+
+\begin{DoxyAuthor}{Auteurs}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em tirs} & La liste des tirs \\
+\hline
+{\em mobs} & La liste des mobs \\
+\hline
+{\em coffres} & La liste des coffres \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{jeu_8c_aa006630ff9d729795490f23e8efc3f71}\label{jeu_8c_aa006630ff9d729795490f23e8efc3f71}} 
+\index{jeu.c@{jeu.c}!quitterJeu@{quitterJeu}}
+\index{quitterJeu@{quitterJeu}!jeu.c@{jeu.c}}
+\doxysubsubsection{\texorpdfstring{quitterJeu()}{quitterJeu()}}
+{\footnotesize\ttfamily void quitter\+Jeu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$$\ast$}]{tirs,  }\item[{\mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$$\ast$}]{mobs,  }\item[{\mbox{\hyperlink{liste_8h_a5c0748de3a145ae666a86b5cdab511d5}{liste\+\_\+t}} $\ast$$\ast$}]{coffres,  }\item[{\mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$$\ast$}]{perso,  }\item[{\mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$$\ast$}]{carte,  }\item[{WINDOW $\ast$}]{plateau,  }\item[{WINDOW $\ast$}]{stats,  }\item[{WINDOW $\ast$}]{carte\+Perso,  }\item[{WINDOW $\ast$}]{inv }\end{DoxyParamCaption})}
+
+
+
+Gère la mémoire pour quitter la partie. 
+
+\begin{DoxyAuthor}{Auteurs}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em tirs} & La liste des tirs \\
+\hline
+{\em mobs} & La liste des mobs \\
+\hline
+{\em coffres} & La liste des coffres \\
+\hline
+{\em perso} & Le personnage en jeu \\
+\hline
+{\em carte} & La carte de jeu \\
+\hline
+{\em plateau} & La fenêtre d\textquotesingle{}affichage du jeu \\
+\hline
+{\em stats} & La fenêtre d\textquotesingle{}affichage des statistiques du personnage \\
+\hline
+{\em carte\+Perso} & La fenêtre d\textquotesingle{}affichage de la minicarte du personnage \\
+\hline
+{\em inv} & La fenêtre d\textquotesingle{}affichage de l\textquotesingle{}inventaire \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{jeu_8c_aa98aaf614e815724cdca1cdf122e4858}\label{jeu_8c_aa98aaf614e815724cdca1cdf122e4858}} 
+\index{jeu.c@{jeu.c}!sauvegarde@{sauvegarde}}
+\index{sauvegarde@{sauvegarde}!jeu.c@{jeu.c}}
+\doxysubsubsection{\texorpdfstring{sauvegarde()}{sauvegarde()}}
+{\footnotesize\ttfamily int sauvegarde (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$}]{carte,  }\item[{\mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$}]{perso }\end{DoxyParamCaption})}
+
+
+
+Sauvegarde la partie. 
+
+\begin{DoxyAuthor}{Auteurs}
+Dorian Creuze 
+
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em carte} & La carte à sauvegarder \\
+\hline
+{\em perso} & Le perso sur la carte \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Un code de sortie entier 
+\end{DoxyReturn}

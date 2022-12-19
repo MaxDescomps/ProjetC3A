@@ -1,0 +1,172 @@
+\hypertarget{affichage_8h}{}\doxysection{Référence du fichier affichage.\+h}
+\label{affichage_8h}\index{affichage.h@{affichage.h}}
+
+
+Fichier contenant les déclarations des fonctions d\textquotesingle{}affichage.  
+
+
+{\ttfamily \#include \char`\"{}perso.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de affichage.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{affichage_8h__incl}
+\end{center}
+\end{figure}
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{affichage_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{affichage_8h_aa777bae5d7f4119da57cc77b369498f8}{COLOR\+\_\+\+TURQUOISE}}~8
+\item 
+\#define \mbox{\hyperlink{affichage_8h_a96846fe78e5009ccb4432a994c1e452f}{COLOR\+\_\+\+MARRON}}~9
+\item 
+\#define \mbox{\hyperlink{affichage_8h_a779da05648f9155f38ff0b37006052d5}{COLOR\+\_\+\+JAUNE}}~10
+\item 
+\#define \mbox{\hyperlink{affichage_8h_a44a2983b7787a594667efeea0bd5e290}{COLOR\+\_\+\+VERT}}~11
+\item 
+\#define \mbox{\hyperlink{affichage_8h_ad132d47f9b74017302e1d51f2b168816}{COLOR\+\_\+\+ROSE}}~12
+\item 
+\#define \mbox{\hyperlink{affichage_8h_a2619e78e72a59323962f995f65c9daf9}{STATS\+\_\+\+SIZE}}~4
+\item 
+\#define \mbox{\hyperlink{affichage_8h_acef4618ba839ee67d70deded43e7f5f0}{INV\+\_\+\+SIZE}}~1
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{affichage_8h_ace001132b81583add37c55ef614b81f8}{init\+Color}} (void)
+\begin{DoxyCompactList}\small\item\em Initialise les couleurs pour l\textquotesingle{}affichage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{affichage_8h_afec44946433ce3a437055f6ef6db481c}{wprintw\+Carte}} (WINDOW $\ast$w, \mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$carte, \mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$perso)
+\begin{DoxyCompactList}\small\item\em Affiche le jeu sur la sortie ncurses. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{affichage_8h_a33fbbe7b03cde5546d591713116514c8}{wprint\+Stats}} (WINDOW $\ast$w, \mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$perso, int col\+Max)
+\begin{DoxyCompactList}\small\item\em Affiche les statistiques personnage sur la sortie ncurses. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Fichier contenant les déclarations des fonctions d\textquotesingle{}affichage. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps (\href{mailto:descomps@et.esiea.fr}{\texttt{ descomps@et.\+esiea.\+fr}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+4/10/2022 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Documentation des macros}
+\mbox{\Hypertarget{affichage_8h_a779da05648f9155f38ff0b37006052d5}\label{affichage_8h_a779da05648f9155f38ff0b37006052d5}} 
+\index{affichage.h@{affichage.h}!COLOR\_JAUNE@{COLOR\_JAUNE}}
+\index{COLOR\_JAUNE@{COLOR\_JAUNE}!affichage.h@{affichage.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_JAUNE}{COLOR\_JAUNE}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+JAUNE~10}
+
+Couleur custom jaune \mbox{\Hypertarget{affichage_8h_a96846fe78e5009ccb4432a994c1e452f}\label{affichage_8h_a96846fe78e5009ccb4432a994c1e452f}} 
+\index{affichage.h@{affichage.h}!COLOR\_MARRON@{COLOR\_MARRON}}
+\index{COLOR\_MARRON@{COLOR\_MARRON}!affichage.h@{affichage.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_MARRON}{COLOR\_MARRON}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+MARRON~9}
+
+Couleur custom marron \mbox{\Hypertarget{affichage_8h_ad132d47f9b74017302e1d51f2b168816}\label{affichage_8h_ad132d47f9b74017302e1d51f2b168816}} 
+\index{affichage.h@{affichage.h}!COLOR\_ROSE@{COLOR\_ROSE}}
+\index{COLOR\_ROSE@{COLOR\_ROSE}!affichage.h@{affichage.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_ROSE}{COLOR\_ROSE}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+ROSE~12}
+
+Couleur custom rose \mbox{\Hypertarget{affichage_8h_aa777bae5d7f4119da57cc77b369498f8}\label{affichage_8h_aa777bae5d7f4119da57cc77b369498f8}} 
+\index{affichage.h@{affichage.h}!COLOR\_TURQUOISE@{COLOR\_TURQUOISE}}
+\index{COLOR\_TURQUOISE@{COLOR\_TURQUOISE}!affichage.h@{affichage.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_TURQUOISE}{COLOR\_TURQUOISE}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+TURQUOISE~8}
+
+Couleur custom turquoise \mbox{\Hypertarget{affichage_8h_a44a2983b7787a594667efeea0bd5e290}\label{affichage_8h_a44a2983b7787a594667efeea0bd5e290}} 
+\index{affichage.h@{affichage.h}!COLOR\_VERT@{COLOR\_VERT}}
+\index{COLOR\_VERT@{COLOR\_VERT}!affichage.h@{affichage.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_VERT}{COLOR\_VERT}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+VERT~11}
+
+Couleur custom vert \mbox{\Hypertarget{affichage_8h_acef4618ba839ee67d70deded43e7f5f0}\label{affichage_8h_acef4618ba839ee67d70deded43e7f5f0}} 
+\index{affichage.h@{affichage.h}!INV\_SIZE@{INV\_SIZE}}
+\index{INV\_SIZE@{INV\_SIZE}!affichage.h@{affichage.h}}
+\doxysubsubsection{\texorpdfstring{INV\_SIZE}{INV\_SIZE}}
+{\footnotesize\ttfamily \#define INV\+\_\+\+SIZE~1}
+
+Hauteur de la fenêtre de l\textquotesingle{}inventaire sans padding \mbox{\Hypertarget{affichage_8h_a2619e78e72a59323962f995f65c9daf9}\label{affichage_8h_a2619e78e72a59323962f995f65c9daf9}} 
+\index{affichage.h@{affichage.h}!STATS\_SIZE@{STATS\_SIZE}}
+\index{STATS\_SIZE@{STATS\_SIZE}!affichage.h@{affichage.h}}
+\doxysubsubsection{\texorpdfstring{STATS\_SIZE}{STATS\_SIZE}}
+{\footnotesize\ttfamily \#define STATS\+\_\+\+SIZE~4}
+
+Hauteur de la fenêtre des stats sans padding 
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{affichage_8h_ace001132b81583add37c55ef614b81f8}\label{affichage_8h_ace001132b81583add37c55ef614b81f8}} 
+\index{affichage.h@{affichage.h}!initColor@{initColor}}
+\index{initColor@{initColor}!affichage.h@{affichage.h}}
+\doxysubsubsection{\texorpdfstring{initColor()}{initColor()}}
+{\footnotesize\ttfamily void init\+Color (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Initialise les couleurs pour l\textquotesingle{}affichage. 
+
+\begin{DoxyAuthor}{Auteurs}
+Max Descomps 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{affichage_8h_a33fbbe7b03cde5546d591713116514c8}\label{affichage_8h_a33fbbe7b03cde5546d591713116514c8}} 
+\index{affichage.h@{affichage.h}!wprintStats@{wprintStats}}
+\index{wprintStats@{wprintStats}!affichage.h@{affichage.h}}
+\doxysubsubsection{\texorpdfstring{wprintStats()}{wprintStats()}}
+{\footnotesize\ttfamily void wprint\+Stats (\begin{DoxyParamCaption}\item[{WINDOW $\ast$}]{w,  }\item[{\mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$}]{perso,  }\item[{int}]{col\+Max }\end{DoxyParamCaption})}
+
+
+
+Affiche les statistiques personnage sur la sortie ncurses. 
+
+\begin{DoxyAuthor}{Auteurs}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em w} & fenêtre d\textquotesingle{}affichage \\
+\hline
+{\em perso} & Le personnage étudié \\
+\hline
+{\em col\+Max} & La largeur de la fenêtre \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{affichage_8h_afec44946433ce3a437055f6ef6db481c}\label{affichage_8h_afec44946433ce3a437055f6ef6db481c}} 
+\index{affichage.h@{affichage.h}!wprintwCarte@{wprintwCarte}}
+\index{wprintwCarte@{wprintwCarte}!affichage.h@{affichage.h}}
+\doxysubsubsection{\texorpdfstring{wprintwCarte()}{wprintwCarte()}}
+{\footnotesize\ttfamily void wprintw\+Carte (\begin{DoxyParamCaption}\item[{WINDOW $\ast$}]{w,  }\item[{\mbox{\hyperlink{carte_8h_a5e2cbb5c759c9f9224e3be90c6e340d5}{carte\+\_\+t}} $\ast$}]{carte,  }\item[{\mbox{\hyperlink{coord_8h_a550089442e996a6b42d393992dbc5436}{perso\+\_\+t}} $\ast$}]{perso }\end{DoxyParamCaption})}
+
+
+
+Affiche le jeu sur la sortie ncurses. 
+
+\begin{DoxyAuthor}{Auteurs}
+Dorian Creuze 
+
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em w} & fenêtre d\textquotesingle{}affichage \\
+\hline
+{\em carte} & La carte à afficher \\
+\hline
+{\em perso} & Le personnage sur la carte \\
+\hline
+\end{DoxyParams}

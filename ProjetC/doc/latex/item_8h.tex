@@ -1,0 +1,302 @@
+\hypertarget{item_8h}{}\doxysection{Référence du fichier item.\+h}
+\label{item_8h}\index{item.h@{item.h}}
+
+
+Fichier contenant toutes les déclarations concernant les items.  
+
+
+{\ttfamily \#include $<$ncurses.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}matiere.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de item.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{item_8h__incl}
+\end{center}
+\end{figure}
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{item_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Structures de données}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structitem__s}{item\+\_\+s}}
+\begin{DoxyCompactList}\small\item\em Structure contenant les propiétées d\textquotesingle{}un item. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structconso__s}{conso\+\_\+s}}
+\begin{DoxyCompactList}\small\item\em Structure contenant les propiétées d\textquotesingle{}un consommable. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structarme__s}{arme\+\_\+s}}
+\begin{DoxyCompactList}\small\item\em Structure contenant les propiétées d\textquotesingle{}une arme. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Définitions de type}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \mbox{\hyperlink{item_8h_a54f57d77ae5f656b3247eaf463ce76ee}{item\+Type\+\_\+s}} \mbox{\hyperlink{item_8h_a9da4042a096d752e77b7551cd48d4439}{item\+Type\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Le type d\textquotesingle{}item. \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{structitem__s}{item\+\_\+s}} \mbox{\hyperlink{item_8h_a39fa0e97dea0645c57b7e7b0d0014ac4}{item\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Structure contenant les propiétées d\textquotesingle{}un item. \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{structconso__s}{conso\+\_\+s}} \mbox{\hyperlink{item_8h_a822bbdc95db49f907b0229c212564d4f}{conso\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Structure contenant les propiétées d\textquotesingle{}un consommable. \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{structarme__s}{arme\+\_\+s}} \mbox{\hyperlink{item_8h_a2cef8ad3151bbf5cc647a1149b3209bc}{arme\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Structure contenant les propiétées d\textquotesingle{}une arme. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Énumérations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{item_8h_a54f57d77ae5f656b3247eaf463ce76ee}{item\+Type\+\_\+s}} \{ \mbox{\hyperlink{item_8h_a54f57d77ae5f656b3247eaf463ce76eea067e3c952f95ec3b88e28baca8fce648}{NOTYPE}}
+, \mbox{\hyperlink{item_8h_a54f57d77ae5f656b3247eaf463ce76eeaabec81083b94f521744e24a37ca23657}{BLOC}}
+, \mbox{\hyperlink{item_8h_a54f57d77ae5f656b3247eaf463ce76eea67c496eee7e7349709db95f918460093}{ARME}}
+, \mbox{\hyperlink{item_8h_a54f57d77ae5f656b3247eaf463ce76eea8bc09035b2ca527fff0d247e405a76bd}{CONSO}}
+ \}
+\begin{DoxyCompactList}\small\item\em Le type d\textquotesingle{}item. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{item_8h_a39fa0e97dea0645c57b7e7b0d0014ac4}{item\+\_\+t}} $\ast$ \mbox{\hyperlink{item_8h_ac5024dbd3d658f98599a267dec08cde8}{creer\+Item}} (void)
+\begin{DoxyCompactList}\small\item\em Créé un item générique pour tests. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{item_8h_a809c118b9a076e43223a217d3a851ed1}{detruire\+Item}} (\mbox{\hyperlink{item_8h_a39fa0e97dea0645c57b7e7b0d0014ac4}{item\+\_\+t}} $\ast$$\ast$item)
+\begin{DoxyCompactList}\small\item\em Détruit un item. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{item_8h_a05f6009173271fe3e43ad549ea1b38d0}{detruire\+Item\+Cb}} (void $\ast$item)
+\begin{DoxyCompactList}\small\item\em Fonction de callback pour détruire un item. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{item_8h_a39fa0e97dea0645c57b7e7b0d0014ac4}{item\+\_\+t}} $\ast$ \mbox{\hyperlink{item_8h_a34353ef7c6dccaca2456a061b8187cef}{ajout\+Item}} (\mbox{\hyperlink{item_8h_a39fa0e97dea0645c57b7e7b0d0014ac4}{item\+\_\+t}} $\ast$item)
+\begin{DoxyCompactList}\small\item\em Ajout d\textquotesingle{}item pour liste doublement chaînée. \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{item_8h_a20b8fdc4cf3b9b7de2e5b700a6188790}{ajout\+Item\+Cb}} (void $\ast$item)
+\begin{DoxyCompactList}\small\item\em Fonction de callback d\textquotesingle{}ajout d\textquotesingle{}item pour liste doublement chaînée. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{item_8h_a822bbdc95db49f907b0229c212564d4f}{conso\+\_\+t}} $\ast$ \mbox{\hyperlink{item_8h_a6c25a1208515e0371a61ff175a572a0c}{creer\+Conso}} (void)
+\begin{DoxyCompactList}\small\item\em Créé un consommable. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{item_8h_addf8209a091a97135b2b6c92663390d1}{afficher\+Item}} (WINDOW $\ast$w, \mbox{\hyperlink{item_8h_a39fa0e97dea0645c57b7e7b0d0014ac4}{item\+\_\+t}} $\ast$item)
+\begin{DoxyCompactList}\small\item\em Affiche un item. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Fichier contenant toutes les déclarations concernant les items. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps (\href{mailto:descomps@et.esiea.fr}{\texttt{ descomps@et.\+esiea.\+fr}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+22/10/2022 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Documentation des définitions de type}
+\mbox{\Hypertarget{item_8h_a2cef8ad3151bbf5cc647a1149b3209bc}\label{item_8h_a2cef8ad3151bbf5cc647a1149b3209bc}} 
+\index{item.h@{item.h}!arme\_t@{arme\_t}}
+\index{arme\_t@{arme\_t}!item.h@{item.h}}
+\doxysubsubsection{\texorpdfstring{arme\_t}{arme\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structarme__s}{arme\+\_\+s}} \mbox{\hyperlink{item_8h_a2cef8ad3151bbf5cc647a1149b3209bc}{arme\+\_\+t}}}
+
+
+
+Structure contenant les propiétées d\textquotesingle{}une arme. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{item_8h_a822bbdc95db49f907b0229c212564d4f}\label{item_8h_a822bbdc95db49f907b0229c212564d4f}} 
+\index{item.h@{item.h}!conso\_t@{conso\_t}}
+\index{conso\_t@{conso\_t}!item.h@{item.h}}
+\doxysubsubsection{\texorpdfstring{conso\_t}{conso\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structconso__s}{conso\+\_\+s}} \mbox{\hyperlink{item_8h_a822bbdc95db49f907b0229c212564d4f}{conso\+\_\+t}}}
+
+
+
+Structure contenant les propiétées d\textquotesingle{}un consommable. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{item_8h_a39fa0e97dea0645c57b7e7b0d0014ac4}\label{item_8h_a39fa0e97dea0645c57b7e7b0d0014ac4}} 
+\index{item.h@{item.h}!item\_t@{item\_t}}
+\index{item\_t@{item\_t}!item.h@{item.h}}
+\doxysubsubsection{\texorpdfstring{item\_t}{item\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structitem__s}{item\+\_\+s}} \mbox{\hyperlink{item_8h_a39fa0e97dea0645c57b7e7b0d0014ac4}{item\+\_\+t}}}
+
+
+
+Structure contenant les propiétées d\textquotesingle{}un item. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{item_8h_a9da4042a096d752e77b7551cd48d4439}\label{item_8h_a9da4042a096d752e77b7551cd48d4439}} 
+\index{item.h@{item.h}!itemType\_t@{itemType\_t}}
+\index{itemType\_t@{itemType\_t}!item.h@{item.h}}
+\doxysubsubsection{\texorpdfstring{itemType\_t}{itemType\_t}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{item_8h_a54f57d77ae5f656b3247eaf463ce76ee}{item\+Type\+\_\+s}} \mbox{\hyperlink{item_8h_a9da4042a096d752e77b7551cd48d4439}{item\+Type\+\_\+t}}}
+
+
+
+Le type d\textquotesingle{}item. 
+
+
+
+\doxysubsection{Documentation du type de l\textquotesingle{}énumération}
+\mbox{\Hypertarget{item_8h_a54f57d77ae5f656b3247eaf463ce76ee}\label{item_8h_a54f57d77ae5f656b3247eaf463ce76ee}} 
+\index{item.h@{item.h}!itemType\_s@{itemType\_s}}
+\index{itemType\_s@{itemType\_s}!item.h@{item.h}}
+\doxysubsubsection{\texorpdfstring{itemType\_s}{itemType\_s}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{item_8h_a54f57d77ae5f656b3247eaf463ce76ee}{item\+Type\+\_\+s}}}
+
+
+
+Le type d\textquotesingle{}item. 
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NOTYPE@{NOTYPE}!item.h@{item.h}}\index{item.h@{item.h}!NOTYPE@{NOTYPE}}}\mbox{\Hypertarget{item_8h_a54f57d77ae5f656b3247eaf463ce76eea067e3c952f95ec3b88e28baca8fce648}\label{item_8h_a54f57d77ae5f656b3247eaf463ce76eea067e3c952f95ec3b88e28baca8fce648}} 
+NOTYPE&Type d\textquotesingle{}item null \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BLOC@{BLOC}!item.h@{item.h}}\index{item.h@{item.h}!BLOC@{BLOC}}}\mbox{\Hypertarget{item_8h_a54f57d77ae5f656b3247eaf463ce76eeaabec81083b94f521744e24a37ca23657}\label{item_8h_a54f57d77ae5f656b3247eaf463ce76eeaabec81083b94f521744e24a37ca23657}} 
+BLOC&Type d\textquotesingle{}item bloc \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ARME@{ARME}!item.h@{item.h}}\index{item.h@{item.h}!ARME@{ARME}}}\mbox{\Hypertarget{item_8h_a54f57d77ae5f656b3247eaf463ce76eea67c496eee7e7349709db95f918460093}\label{item_8h_a54f57d77ae5f656b3247eaf463ce76eea67c496eee7e7349709db95f918460093}} 
+ARME&Type d\textquotesingle{}item arme \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CONSO@{CONSO}!item.h@{item.h}}\index{item.h@{item.h}!CONSO@{CONSO}}}\mbox{\Hypertarget{item_8h_a54f57d77ae5f656b3247eaf463ce76eea8bc09035b2ca527fff0d247e405a76bd}\label{item_8h_a54f57d77ae5f656b3247eaf463ce76eea8bc09035b2ca527fff0d247e405a76bd}} 
+CONSO&Type d\textquotesingle{}item consommable \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{item_8h_addf8209a091a97135b2b6c92663390d1}\label{item_8h_addf8209a091a97135b2b6c92663390d1}} 
+\index{item.h@{item.h}!afficherItem@{afficherItem}}
+\index{afficherItem@{afficherItem}!item.h@{item.h}}
+\doxysubsubsection{\texorpdfstring{afficherItem()}{afficherItem()}}
+{\footnotesize\ttfamily void afficher\+Item (\begin{DoxyParamCaption}\item[{WINDOW $\ast$}]{w,  }\item[{\mbox{\hyperlink{item_8h_a39fa0e97dea0645c57b7e7b0d0014ac4}{item\+\_\+t}} $\ast$}]{item }\end{DoxyParamCaption})}
+
+
+
+Affiche un item. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em w} & La fenêtre d\textquotesingle{}affichage \\
+\hline
+{\em item} & L\textquotesingle{}item à afficher \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{item_8h_a34353ef7c6dccaca2456a061b8187cef}\label{item_8h_a34353ef7c6dccaca2456a061b8187cef}} 
+\index{item.h@{item.h}!ajoutItem@{ajoutItem}}
+\index{ajoutItem@{ajoutItem}!item.h@{item.h}}
+\doxysubsubsection{\texorpdfstring{ajoutItem()}{ajoutItem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{item_8h_a39fa0e97dea0645c57b7e7b0d0014ac4}{item\+\_\+t}}$\ast$ ajout\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{item_8h_a39fa0e97dea0645c57b7e7b0d0014ac4}{item\+\_\+t}} $\ast$}]{item }\end{DoxyParamCaption})}
+
+
+
+Ajout d\textquotesingle{}item pour liste doublement chaînée. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em item} & L\textquotesingle{}item à ajouter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+L\textquotesingle{}item ajouté 
+\end{DoxyReturn}
+\mbox{\Hypertarget{item_8h_a20b8fdc4cf3b9b7de2e5b700a6188790}\label{item_8h_a20b8fdc4cf3b9b7de2e5b700a6188790}} 
+\index{item.h@{item.h}!ajoutItemCb@{ajoutItemCb}}
+\index{ajoutItemCb@{ajoutItemCb}!item.h@{item.h}}
+\doxysubsubsection{\texorpdfstring{ajoutItemCb()}{ajoutItemCb()}}
+{\footnotesize\ttfamily void$\ast$ ajout\+Item\+Cb (\begin{DoxyParamCaption}\item[{void $\ast$}]{item }\end{DoxyParamCaption})}
+
+
+
+Fonction de callback d\textquotesingle{}ajout d\textquotesingle{}item pour liste doublement chaînée. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em item} & L\textquotesingle{}item à ajouter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+L\textquotesingle{}item ajouté 
+\end{DoxyReturn}
+\mbox{\Hypertarget{item_8h_a6c25a1208515e0371a61ff175a572a0c}\label{item_8h_a6c25a1208515e0371a61ff175a572a0c}} 
+\index{item.h@{item.h}!creerConso@{creerConso}}
+\index{creerConso@{creerConso}!item.h@{item.h}}
+\doxysubsubsection{\texorpdfstring{creerConso()}{creerConso()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{item_8h_a822bbdc95db49f907b0229c212564d4f}{conso\+\_\+t}}$\ast$ creer\+Conso (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Créé un consommable. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Renvoie}
+Instance nouvellement allouée d\textquotesingle{}un consommable 
+\end{DoxyReturn}
+\mbox{\Hypertarget{item_8h_ac5024dbd3d658f98599a267dec08cde8}\label{item_8h_ac5024dbd3d658f98599a267dec08cde8}} 
+\index{item.h@{item.h}!creerItem@{creerItem}}
+\index{creerItem@{creerItem}!item.h@{item.h}}
+\doxysubsubsection{\texorpdfstring{creerItem()}{creerItem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{item_8h_a39fa0e97dea0645c57b7e7b0d0014ac4}{item\+\_\+t}}$\ast$ creer\+Item (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Créé un item générique pour tests. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Renvoie}
+Instance nouvellement allouée d\textquotesingle{}un item 
+\end{DoxyReturn}
+\mbox{\Hypertarget{item_8h_a809c118b9a076e43223a217d3a851ed1}\label{item_8h_a809c118b9a076e43223a217d3a851ed1}} 
+\index{item.h@{item.h}!detruireItem@{detruireItem}}
+\index{detruireItem@{detruireItem}!item.h@{item.h}}
+\doxysubsubsection{\texorpdfstring{detruireItem()}{detruireItem()}}
+{\footnotesize\ttfamily void detruire\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{item_8h_a39fa0e97dea0645c57b7e7b0d0014ac4}{item\+\_\+t}} $\ast$$\ast$}]{item }\end{DoxyParamCaption})}
+
+
+
+Détruit un item. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em item} & L\textquotesingle{}item à détruire \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{item_8h_a05f6009173271fe3e43ad549ea1b38d0}\label{item_8h_a05f6009173271fe3e43ad549ea1b38d0}} 
+\index{item.h@{item.h}!detruireItemCb@{detruireItemCb}}
+\index{detruireItemCb@{detruireItemCb}!item.h@{item.h}}
+\doxysubsubsection{\texorpdfstring{detruireItemCb()}{detruireItemCb()}}
+{\footnotesize\ttfamily void detruire\+Item\+Cb (\begin{DoxyParamCaption}\item[{void $\ast$}]{item }\end{DoxyParamCaption})}
+
+
+
+Fonction de callback pour détruire un item. 
+
+\begin{DoxyAuthor}{Auteur}
+Max Descomps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em item} & L\textquotesingle{}item à détruire \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ProjetC: Référence du fichier jeu.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ProjetC
+   &#160;<span id="projectnumber">Projet C de 3A à l&#39;ESIEA</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier jeu.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Fonctions liées au module jeu.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="jeu_8h_source.html">jeu.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de jeu.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="jeu_8c__incl.png" border="0" usemap="#ajeu_8c" alt=""/></div>
+<map name="ajeu_8c" id="ajeu_8c">
+<area shape="rect" title="Fonctions liées au module jeu." alt="" coords="154,5,207,32"/>
+<area shape="rect" title=" " alt="" coords="51,80,121,107"/>
+<area shape="rect" title=" " alt="" coords="145,80,216,107"/>
+<area shape="rect" href="jeu_8h.html" title="Fichier contenant toutes les déclarations concernant le jeu." alt="" coords="240,80,295,107"/>
+<area shape="rect" href="carte_8h.html" title="Fichier contenant toutes les déclarations concernant la carte." alt="" coords="269,155,335,181"/>
+<area shape="rect" href="perso_8h.html" title="Fichier contenant toutes les déclarations concernant le personnage." alt="" coords="196,229,267,256"/>
+<area shape="rect" href="mob_8h.html" title="Fichier contenant toutes les déclarations concernant les mobs." alt="" coords="273,304,336,331"/>
+<area shape="rect" href="coffre_8h.html" title="Fichier contenant toutes les déclarations communes aux coffres." alt="" coords="360,304,431,331"/>
+<area shape="rect" href="entite_8h.html" title="Fichier contenant toutes les déclarations communes aux entités." alt="" coords="102,379,174,405"/>
+<area shape="rect" href="menu_8h.html" title="Fichier contenant toutes les déclarations concernant les menus." alt="" coords="287,379,357,405"/>
+<area shape="rect" href="coord_8h.html" title="Fichier contenant les déclarations sur les coordonnées servant à résoudre un conflit d&#39;inclusion mutu..." alt="" coords="5,453,76,480"/>
+<area shape="rect" href="liste_8h.html" title="Déclarations relatives au type de structure liste générique." alt="" coords="100,453,163,480"/>
+<area shape="rect" href="matiere_8h.html" title="Fichier contenant les déclarations des matières." alt="" coords="187,453,273,480"/>
+<area shape="rect" title=" " alt="" coords="297,453,381,480"/>
+<area shape="rect" href="inventaire_8h.html" title="Fichier contenant toutes les déclarations concernant l&#39;inventaire." alt="" coords="149,304,249,331"/>
+<area shape="rect" href="item_8h.html" title="Fichier contenant toutes les déclarations concernant les items." alt="" coords="198,379,262,405"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:aa006630ff9d729795490f23e8efc3f71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jeu_8c.html#aa006630ff9d729795490f23e8efc3f71">quitterJeu</a> (<a class="el" href="liste_8h.html#a5c0748de3a145ae666a86b5cdab511d5">liste_t</a> **tirs, <a class="el" href="liste_8h.html#a5c0748de3a145ae666a86b5cdab511d5">liste_t</a> **mobs, <a class="el" href="liste_8h.html#a5c0748de3a145ae666a86b5cdab511d5">liste_t</a> **coffres, <a class="el" href="coord_8h.html#a550089442e996a6b42d393992dbc5436">perso_t</a> **perso, <a class="el" href="carte_8h.html#a5e2cbb5c759c9f9224e3be90c6e340d5">carte_t</a> **carte, WINDOW *plateau, WINDOW *stats, WINDOW *cartePerso, WINDOW *inv)</td></tr>
+<tr class="memdesc:aa006630ff9d729795490f23e8efc3f71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gère la mémoire pour quitter la partie.  <a href="jeu_8c.html#aa006630ff9d729795490f23e8efc3f71">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aa006630ff9d729795490f23e8efc3f71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a27457ccadfdc3106c602a5ac4f88d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jeu_8c.html#a6a27457ccadfdc3106c602a5ac4f88d1">nettoyerJeu</a> (<a class="el" href="liste_8h.html#a5c0748de3a145ae666a86b5cdab511d5">liste_t</a> *tirs, <a class="el" href="liste_8h.html#a5c0748de3a145ae666a86b5cdab511d5">liste_t</a> *mobs, <a class="el" href="liste_8h.html#a5c0748de3a145ae666a86b5cdab511d5">liste_t</a> *coffres)</td></tr>
+<tr class="memdesc:a6a27457ccadfdc3106c602a5ac4f88d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Détruit les éléments ponctuels d'une partie en vue de la recharger.  <a href="jeu_8c.html#a6a27457ccadfdc3106c602a5ac4f88d1">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a6a27457ccadfdc3106c602a5ac4f88d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa98aaf614e815724cdca1cdf122e4858"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jeu_8c.html#aa98aaf614e815724cdca1cdf122e4858">sauvegarde</a> (<a class="el" href="carte_8h.html#a5e2cbb5c759c9f9224e3be90c6e340d5">carte_t</a> *carte, <a class="el" href="coord_8h.html#a550089442e996a6b42d393992dbc5436">perso_t</a> *perso)</td></tr>
+<tr class="memdesc:aa98aaf614e815724cdca1cdf122e4858"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sauvegarde la partie.  <a href="jeu_8c.html#aa98aaf614e815724cdca1cdf122e4858">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aa98aaf614e815724cdca1cdf122e4858"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Fonctions liées au module jeu. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Max Descomps (<a href="#" onclick="location.href='mai'+'lto:'+'des'+'co'+'mps'+'@e'+'t.e'+'si'+'ea.'+'fr'; return false;">desco<span style="display: none;">.nosp@m.</span>mps@<span style="display: none;">.nosp@m.</span>et.es<span style="display: none;">.nosp@m.</span>iea.<span style="display: none;">.nosp@m.</span>fr</a>) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.2 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>27/10/2022 </dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2022 </dd></dl>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a6a27457ccadfdc3106c602a5ac4f88d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a27457ccadfdc3106c602a5ac4f88d1">&#9670;&nbsp;</a></span>nettoyerJeu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nettoyerJeu </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="liste_8h.html#a5c0748de3a145ae666a86b5cdab511d5">liste_t</a> *&#160;</td>
+          <td class="paramname"><em>tirs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="liste_8h.html#a5c0748de3a145ae666a86b5cdab511d5">liste_t</a> *&#160;</td>
+          <td class="paramname"><em>mobs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="liste_8h.html#a5c0748de3a145ae666a86b5cdab511d5">liste_t</a> *&#160;</td>
+          <td class="paramname"><em>coffres</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Détruit les éléments ponctuels d'une partie en vue de la recharger. </p>
+<dl class="section author"><dt>Auteurs</dt><dd>Max Descomps </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tirs</td><td>La liste des tirs </td></tr>
+    <tr><td class="paramname">mobs</td><td>La liste des mobs </td></tr>
+    <tr><td class="paramname">coffres</td><td>La liste des coffres </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa006630ff9d729795490f23e8efc3f71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa006630ff9d729795490f23e8efc3f71">&#9670;&nbsp;</a></span>quitterJeu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void quitterJeu </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="liste_8h.html#a5c0748de3a145ae666a86b5cdab511d5">liste_t</a> **&#160;</td>
+          <td class="paramname"><em>tirs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="liste_8h.html#a5c0748de3a145ae666a86b5cdab511d5">liste_t</a> **&#160;</td>
+          <td class="paramname"><em>mobs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="liste_8h.html#a5c0748de3a145ae666a86b5cdab511d5">liste_t</a> **&#160;</td>
+          <td class="paramname"><em>coffres</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="coord_8h.html#a550089442e996a6b42d393992dbc5436">perso_t</a> **&#160;</td>
+          <td class="paramname"><em>perso</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="carte_8h.html#a5e2cbb5c759c9f9224e3be90c6e340d5">carte_t</a> **&#160;</td>
+          <td class="paramname"><em>carte</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WINDOW *&#160;</td>
+          <td class="paramname"><em>plateau</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WINDOW *&#160;</td>
+          <td class="paramname"><em>stats</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WINDOW *&#160;</td>
+          <td class="paramname"><em>cartePerso</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WINDOW *&#160;</td>
+          <td class="paramname"><em>inv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gère la mémoire pour quitter la partie. </p>
+<dl class="section author"><dt>Auteurs</dt><dd>Max Descomps </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tirs</td><td>La liste des tirs </td></tr>
+    <tr><td class="paramname">mobs</td><td>La liste des mobs </td></tr>
+    <tr><td class="paramname">coffres</td><td>La liste des coffres </td></tr>
+    <tr><td class="paramname">perso</td><td>Le personnage en jeu </td></tr>
+    <tr><td class="paramname">carte</td><td>La carte de jeu </td></tr>
+    <tr><td class="paramname">plateau</td><td>La fenêtre d'affichage du jeu </td></tr>
+    <tr><td class="paramname">stats</td><td>La fenêtre d'affichage des statistiques du personnage </td></tr>
+    <tr><td class="paramname">cartePerso</td><td>La fenêtre d'affichage de la minicarte du personnage </td></tr>
+    <tr><td class="paramname">inv</td><td>La fenêtre d'affichage de l'inventaire </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa98aaf614e815724cdca1cdf122e4858"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa98aaf614e815724cdca1cdf122e4858">&#9670;&nbsp;</a></span>sauvegarde()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sauvegarde </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="carte_8h.html#a5e2cbb5c759c9f9224e3be90c6e340d5">carte_t</a> *&#160;</td>
+          <td class="paramname"><em>carte</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="coord_8h.html#a550089442e996a6b42d393992dbc5436">perso_t</a> *&#160;</td>
+          <td class="paramname"><em>perso</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sauvegarde la partie. </p>
+<dl class="section author"><dt>Auteurs</dt><dd>Dorian Creuze </dd>
+<dd>
+Max Descomps </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">carte</td><td>La carte à sauvegarder </td></tr>
+    <tr><td class="paramname">perso</td><td>Le perso sur la carte </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Un code de sortie entier </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
